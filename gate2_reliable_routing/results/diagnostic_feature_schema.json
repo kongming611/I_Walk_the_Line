@@ -1,0 +1,37 @@
+{
+  "schema_version": "gate2_diagnostic_features_v1",
+  "gate0_feature_columns": [
+    "mean_abs_skewness",
+    "mean_abs_excess_kurtosis",
+    "mean_abs_pearson_correlation",
+    "mean_abs_spearman_correlation",
+    "nonlinearity_gain_median",
+    "nonlinearity_gain_mean",
+    "nonlinearity_gain_max"
+  ],
+  "extra_feature_columns": [
+    "robust_skew_abs_median",
+    "robust_tail_q99_iqr_median",
+    "max_abs_z_q995",
+    "crossfit_residual_dependence_mean",
+    "crossfit_residual_dependence_max",
+    "residual_skew_abs_median",
+    "residual_excess_kurtosis_abs_median",
+    "split_graph_stability_jaccard",
+    "split_graph_disagreement"
+  ],
+  "forbidden_inputs": [
+    "truth_adjacency",
+    "cdfm_f1",
+    "lingam_f1",
+    "mechanism",
+    "noise",
+    "lambda",
+    "task_id"
+  ],
+  "notes": {
+    "crossfit_residual": "3-fold held-out linear residual rank dependence over top-5 absolute Pearson pairs",
+    "split_stability": "Jaccard of DirectLiNGAM edge sets from even/odd rows; no truth used",
+    "failure_policy": "numeric safe zeros plus diagnostic_failure=1; evaluator forces CDFM fallback"
+  }
+}

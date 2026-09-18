@@ -1,0 +1,77 @@
+{
+  "schema_version": "gate2_tasks_v1",
+  "task_count": 3300,
+  "smoke_count": 24,
+  "manifest_sha256": "6a9d5ab0a173131b5f621fc95cb7139c7baedec1ab9095dcb9a0d92d4818301e",
+  "source_domains": [
+    {
+      "domain": "src_rff_laplace",
+      "mechanism": "rff",
+      "noise": "laplace"
+    },
+    {
+      "domain": "src_rff_gaussian",
+      "mechanism": "rff",
+      "noise": "gaussian"
+    },
+    {
+      "domain": "src_tanh_laplace",
+      "mechanism": "tanh",
+      "noise": "laplace"
+    },
+    {
+      "domain": "src_tanh_gaussian",
+      "mechanism": "tanh",
+      "noise": "gaussian"
+    },
+    {
+      "domain": "src_softsign_laplace",
+      "mechanism": "softsign",
+      "noise": "laplace"
+    },
+    {
+      "domain": "src_interaction_studentt8",
+      "mechanism": "interaction",
+      "noise": "student_t8"
+    }
+  ],
+  "target_domains": [
+    {
+      "domain": "tgt_rff_studentt3",
+      "mechanism": "rff",
+      "noise": "student_t3"
+    },
+    {
+      "domain": "tgt_tanh_studentt3",
+      "mechanism": "tanh",
+      "noise": "student_t3"
+    },
+    {
+      "domain": "tgt_softsign_gaussian",
+      "mechanism": "softsign",
+      "noise": "gaussian"
+    },
+    {
+      "domain": "tgt_sine_laplace",
+      "mechanism": "sine",
+      "noise": "laplace"
+    },
+    {
+      "domain": "tgt_rff_exponential",
+      "mechanism": "rff",
+      "noise": "exponential"
+    },
+    {
+      "domain": "tgt_interaction_exponential",
+      "mechanism": "interaction",
+      "noise": "exponential"
+    }
+  ],
+  "split_counts": {
+    "train": 600,
+    "dev": 300,
+    "calibration": 600
+  },
+  "target_tasks_per_domain": 300,
+  "seed": 2026091701
+}

@@ -1,0 +1,22 @@
+{
+  "status": "PASS_WITH_WARNING",
+  "task_count": 3300,
+  "solver_rows": 3300,
+  "feature_rows": 3300,
+  "test_prediction_rows": 1800,
+  "freeze_model_sha256": "b42ef29948a0ffa7d09f6b7a6b264c2dac4322b76a9e3e167698febd20b9d35f",
+  "warnings": [
+    "source_feature_digest_changed_by_post_freeze_checkpoint_serialization"
+  ],
+  "checks": [
+    "task counts",
+    "graph-seed isolation",
+    "matrix direction/shapes",
+    "raw solver replay",
+    "feature finiteness",
+    "freeze hashes",
+    "prediction loss formula",
+    "threshold monotonicity",
+    "risk calibration simulation"
+  ]
+}

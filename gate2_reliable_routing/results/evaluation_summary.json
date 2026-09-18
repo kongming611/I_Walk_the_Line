@@ -1,0 +1,308 @@
+{
+  "schema_version": "gate2_evaluation_v1",
+  "n_total_test_tasks": 1800,
+  "n_successful_tasks": 1800,
+  "technical_failure_count": 0,
+  "technical_failure_rate": 0.0,
+  "risk_thresholds": {
+    "mean_harm_H": 0.02,
+    "severe_harm_rate_T": 0.05
+  },
+  "methods": {
+    "always_cdfm": {
+      "mean_harm_H": 0.0,
+      "severe_harm_rate_T": 0.0,
+      "net_gain_vs_cdfm": 0.0,
+      "mean_hybrid_f1": 0.7381114460807154,
+      "mean_oracle_gap": 0.0848846798317753,
+      "switch_rate": 0.0,
+      "oracle_gain": 0.0848846798317753,
+      "bootstrap_upper_harm_pointwise": 0.0,
+      "bootstrap_upper_severe_pointwise": 0.0,
+      "bootstrap_lower_net_pointwise": 0.0,
+      "simultaneous_max_harm_upper": 0.0,
+      "simultaneous_max_severe_upper": 0.0
+    },
+    "always_lingam": {
+      "mean_harm_H": 0.2029195242789683,
+      "severe_harm_rate_T": 0.4638888888888889,
+      "net_gain_vs_cdfm": -0.118034844447193,
+      "mean_hybrid_f1": 0.6200766016335226,
+      "mean_oracle_gap": 0.2029195242789683,
+      "switch_rate": 1.0,
+      "oracle_gain": 0.0848846798317753,
+      "bootstrap_upper_harm_pointwise": 0.21308919685966657,
+      "bootstrap_upper_severe_pointwise": 0.48333333333333334,
+      "bootstrap_lower_net_pointwise": -0.13107909268889045,
+      "simultaneous_max_harm_upper": 0.4197817050481388,
+      "simultaneous_max_severe_upper": 0.935372685185185
+    },
+    "old_gate0_router": {
+      "mean_harm_H": 0.09021623536379239,
+      "severe_harm_rate_T": 0.23277777777777778,
+      "net_gain_vs_cdfm": -0.05515800864494853,
+      "mean_hybrid_f1": 0.682953437435767,
+      "mean_oracle_gap": 0.14004268847672383,
+      "switch_rate": 0.5088888888888888,
+      "oracle_gain": 0.0848846798317753,
+      "bootstrap_upper_harm_pointwise": 0.09733200131014688,
+      "bootstrap_upper_severe_pointwise": 0.24833333333333332,
+      "bootstrap_lower_net_pointwise": -0.0637553807418749,
+      "simultaneous_max_harm_upper": 0.3223055774470509,
+      "simultaneous_max_severe_upper": 0.8620393518518517
+    },
+    "logistic_router": {
+      "mean_harm_H": 0.05738080832566889,
+      "severe_harm_rate_T": 0.14333333333333334,
+      "net_gain_vs_cdfm": 0.0062620481637355695,
+      "mean_hybrid_f1": 0.744373494244451,
+      "mean_oracle_gap": 0.07862263166803972,
+      "switch_rate": 0.5494444444444444,
+      "oracle_gain": 0.0848846798317753,
+      "bootstrap_upper_harm_pointwise": 0.06317534554787128,
+      "bootstrap_upper_severe_pointwise": 0.15722222222222224,
+      "bootstrap_lower_net_pointwise": -0.001792716288240152,
+      "simultaneous_max_harm_upper": 0.22065699313262183,
+      "simultaneous_max_severe_upper": 0.48
+    },
+    "gain_regression": {
+      "mean_harm_H": 0.0004631947201304938,
+      "severe_harm_rate_T": 0.0011111111111111111,
+      "net_gain_vs_cdfm": 0.02742036125654845,
+      "mean_hybrid_f1": 0.765531807337264,
+      "mean_oracle_gap": 0.057464318575226846,
+      "switch_rate": 0.19166666666666668,
+      "oracle_gain": 0.0848846798317753,
+      "bootstrap_upper_harm_pointwise": 0.0007448445633542324,
+      "bootstrap_upper_severe_pointwise": 0.002777777777777778,
+      "bootstrap_lower_net_pointwise": 0.024524255308953052,
+      "simultaneous_max_harm_upper": 0.003992997061916157,
+      "simultaneous_max_severe_upper": 0.02
+    },
+    "l2d_weighted": {
+      "mean_harm_H": 0.0013490061672164506,
+      "severe_harm_rate_T": 0.002777777777777778,
+      "net_gain_vs_cdfm": 0.035574628107723084,
+      "mean_hybrid_f1": 0.7736860741884385,
+      "mean_oracle_gap": 0.04931005172405221,
+      "switch_rate": 0.24222222222222223,
+      "oracle_gain": 0.0848846798317753,
+      "bootstrap_upper_harm_pointwise": 0.0022044442744067584,
+      "bootstrap_upper_severe_pointwise": 0.005,
+      "bootstrap_lower_net_pointwise": 0.03222550856186344,
+      "simultaneous_max_harm_upper": 0.013605879908943628,
+      "simultaneous_max_severe_upper": 0.02666666666666667
+    },
+    "gain_crc": {
+      "mean_harm_H": 0.0024487795735727877,
+      "severe_harm_rate_T": 0.007222222222222222,
+      "net_gain_vs_cdfm": 0.0273766312870095,
+      "mean_hybrid_f1": 0.7654880773677251,
+      "mean_oracle_gap": 0.057508048544765794,
+      "switch_rate": 0.21222222222222223,
+      "oracle_gain": 0.0848846798317753,
+      "bootstrap_upper_harm_pointwise": 0.0035262975843803382,
+      "bootstrap_upper_severe_pointwise": 0.010555555555555556,
+      "bootstrap_lower_net_pointwise": 0.024350795628673674,
+      "simultaneous_max_harm_upper": 0.013961408774521771,
+      "simultaneous_max_severe_upper": 0.048706018518518406
+    },
+    "gain_ltt": {
+      "mean_harm_H": 0.0004631947201304938,
+      "severe_harm_rate_T": 0.0011111111111111111,
+      "net_gain_vs_cdfm": 0.02728588792883841,
+      "mean_hybrid_f1": 0.7653973340095539,
+      "mean_oracle_gap": 0.05759879190293688,
+      "switch_rate": 0.18944444444444444,
+      "oracle_gain": 0.0848846798317753,
+      "bootstrap_upper_harm_pointwise": 0.0007380810413676723,
+      "bootstrap_upper_severe_pointwise": 0.002777777777777778,
+      "bootstrap_lower_net_pointwise": 0.024391478264237727,
+      "simultaneous_max_harm_upper": 0.004138075317835566,
+      "simultaneous_max_severe_upper": 0.02
+    },
+    "conformal_uncertain": {
+      "mean_harm_H": 0.0013490061672164506,
+      "severe_harm_rate_T": 0.002777777777777778,
+      "net_gain_vs_cdfm": 0.035574628107723084,
+      "mean_hybrid_f1": 0.7736860741884385,
+      "mean_oracle_gap": 0.04931005172405221,
+      "switch_rate": 0.24222222222222223,
+      "oracle_gain": 0.0848846798317753,
+      "bootstrap_upper_harm_pointwise": 0.002199247669352729,
+      "bootstrap_upper_severe_pointwise": 0.005,
+      "bootstrap_lower_net_pointwise": 0.03211976158124927,
+      "simultaneous_max_harm_upper": 0.013115654415256122,
+      "simultaneous_max_severe_upper": 0.02666666666666667
+    },
+    "support_gate": {
+      "mean_harm_H": 7.977207977207986e-05,
+      "severe_harm_rate_T": 0.0,
+      "net_gain_vs_cdfm": 0.011610692428442447,
+      "mean_hybrid_f1": 0.749722138509158,
+      "mean_oracle_gap": 0.07327398740333287,
+      "switch_rate": 0.065,
+      "oracle_gain": 0.0848846798317753,
+      "bootstrap_upper_harm_pointwise": 0.00018518518518518545,
+      "bootstrap_upper_severe_pointwise": 0.0,
+      "bootstrap_lower_net_pointwise": 0.009534573646633836,
+      "simultaneous_max_harm_upper": 0.0016923076923076941,
+      "simultaneous_max_severe_upper": 0.0
+    },
+    "conservative_min_ltt": {
+      "mean_harm_H": 0.0016720933293722837,
+      "severe_harm_rate_T": 0.005555555555555556,
+      "net_gain_vs_cdfm": -0.0016720933293722837,
+      "mean_hybrid_f1": 0.7364393527513433,
+      "mean_oracle_gap": 0.08655677316114758,
+      "switch_rate": 0.006111111111111111,
+      "oracle_gain": 0.0848846798317753,
+      "bootstrap_upper_harm_pointwise": 0.002716612788862939,
+      "bootstrap_upper_severe_pointwise": 0.008888888888888889,
+      "bootstrap_lower_net_pointwise": -0.0026534069304575453,
+      "simultaneous_max_harm_upper": 0.0227033260965811,
+      "simultaneous_max_severe_upper": 0.0687060185185184
+    },
+    "support_gain_ltt": {
+      "mean_harm_H": 7.977207977207986e-05,
+      "severe_harm_rate_T": 0.0,
+      "net_gain_vs_cdfm": 0.011610692428442447,
+      "mean_hybrid_f1": 0.749722138509158,
+      "mean_oracle_gap": 0.07327398740333287,
+      "switch_rate": 0.065,
+      "oracle_gain": 0.0848846798317753,
+      "bootstrap_upper_harm_pointwise": 0.0001965811965811968,
+      "bootstrap_upper_severe_pointwise": 0.0,
+      "bootstrap_lower_net_pointwise": 0.009662558892066535,
+      "simultaneous_max_harm_upper": 0.002077029914529911,
+      "simultaneous_max_severe_upper": 0.0
+    }
+  },
+  "decision": {
+    "label": "BORDERLINE",
+    "rationale": "safe substantive candidate=l2d_weighted",
+    "qualifying_candidates": [
+      {
+        "method": "gain_regression",
+        "safe_point": true,
+        "substantive": true,
+        "switch_rate": 0.19166666666666668,
+        "net_gain": 0.02742036125654845
+      },
+      {
+        "method": "l2d_weighted",
+        "safe_point": true,
+        "substantive": true,
+        "switch_rate": 0.24222222222222223,
+        "net_gain": 0.035574628107723084
+      },
+      {
+        "method": "gain_crc",
+        "safe_point": true,
+        "substantive": true,
+        "switch_rate": 0.21222222222222223,
+        "net_gain": 0.0273766312870095
+      },
+      {
+        "method": "gain_ltt",
+        "safe_point": true,
+        "substantive": true,
+        "switch_rate": 0.18944444444444444,
+        "net_gain": 0.02728588792883841
+      },
+      {
+        "method": "conformal_uncertain",
+        "safe_point": true,
+        "substantive": true,
+        "switch_rate": 0.24222222222222223,
+        "net_gain": 0.035574628107723084
+      }
+    ],
+    "all_candidates": [
+      {
+        "method": "always_cdfm",
+        "safe_point": true,
+        "substantive": false,
+        "switch_rate": 0.0,
+        "net_gain": 0.0
+      },
+      {
+        "method": "always_lingam",
+        "safe_point": false,
+        "substantive": false,
+        "switch_rate": 1.0,
+        "net_gain": -0.118034844447193
+      },
+      {
+        "method": "old_gate0_router",
+        "safe_point": false,
+        "substantive": false,
+        "switch_rate": 0.5088888888888888,
+        "net_gain": -0.05515800864494853
+      },
+      {
+        "method": "logistic_router",
+        "safe_point": false,
+        "substantive": false,
+        "switch_rate": 0.5494444444444444,
+        "net_gain": 0.0062620481637355695
+      },
+      {
+        "method": "gain_regression",
+        "safe_point": true,
+        "substantive": true,
+        "switch_rate": 0.19166666666666668,
+        "net_gain": 0.02742036125654845
+      },
+      {
+        "method": "l2d_weighted",
+        "safe_point": true,
+        "substantive": true,
+        "switch_rate": 0.24222222222222223,
+        "net_gain": 0.035574628107723084
+      },
+      {
+        "method": "gain_crc",
+        "safe_point": true,
+        "substantive": true,
+        "switch_rate": 0.21222222222222223,
+        "net_gain": 0.0273766312870095
+      },
+      {
+        "method": "gain_ltt",
+        "safe_point": true,
+        "substantive": true,
+        "switch_rate": 0.18944444444444444,
+        "net_gain": 0.02728588792883841
+      },
+      {
+        "method": "conformal_uncertain",
+        "safe_point": true,
+        "substantive": true,
+        "switch_rate": 0.24222222222222223,
+        "net_gain": 0.035574628107723084
+      },
+      {
+        "method": "support_gate",
+        "safe_point": true,
+        "substantive": false,
+        "switch_rate": 0.065,
+        "net_gain": 0.011610692428442447
+      },
+      {
+        "method": "conservative_min_ltt",
+        "safe_point": true,
+        "substantive": false,
+        "switch_rate": 0.006111111111111111,
+        "net_gain": -0.0016720933293722837
+      },
+      {
+        "method": "support_gain_ltt",
+        "safe_point": true,
+        "substantive": false,
+        "switch_rate": 0.065,
+        "net_gain": 0.011610692428442447
+      }
+    ]
+  }
+}

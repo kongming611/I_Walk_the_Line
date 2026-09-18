@@ -1,0 +1,13 @@
+{
+  "schema_version": "gate2_analysis_v1",
+  "source_sha256": {
+    "router_predictions.csv": "30b041d393d3f919f5e6e7b09509d2e717fc625d062d970f2405d967b3ac0f6d",
+    "evaluation_summary.json": "0f8bec8d27317ebc49d5c9069f4a4fb9ce97a84ab8326bcde8e19a9acbd84a22",
+    "domain_summary.csv": "5dd8cc4c9c41cdc5bf557e9932700d85bb901c29c3fa806c0a316a2639b9ad01",
+    "bootstrap_summary.csv": "e2db97567ada79f6a943f45f8db709cbc8e8785ed1d2b43ddfa34e68fa0e3660"
+  },
+  "notes": [
+    "mechanism_summary aggregates the single frozen test evaluation by target mechanism/noise",
+    "ablation_summary compares pre-registered policy families; it does not refit on test labels"
+  ]
+}
