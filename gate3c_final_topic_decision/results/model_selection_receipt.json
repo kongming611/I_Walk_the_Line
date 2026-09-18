@@ -1,0 +1,66 @@
+{
+  "selection_status": "PASS",
+  "selected_model": "M3_RandomForest",
+  "eligible_models": [
+    "M3_RandomForest",
+    "M4_HistGradientBoosting"
+  ],
+  "candidate_models": {
+    "M1_Ridge": {
+      "macro_spearman": 0.3727272727272727,
+      "domains_rho_gt_0.20": 5,
+      "domains_rho_lt_0": 2,
+      "eligible": false
+    },
+    "M2_AdditiveSpline": {
+      "macro_spearman": 0.4287878787878787,
+      "domains_rho_gt_0.20": 6,
+      "domains_rho_lt_0": 2,
+      "eligible": false
+    },
+    "M3_RandomForest": {
+      "macro_spearman": 0.46969696969696967,
+      "domains_rho_gt_0.20": 6,
+      "domains_rho_lt_0": 1,
+      "eligible": true
+    },
+    "M4_HistGradientBoosting": {
+      "macro_spearman": 0.4878787878787878,
+      "domains_rho_gt_0.20": 6,
+      "domains_rho_lt_0": 1,
+      "eligible": true
+    }
+  },
+  "tie_pool": [
+    "M3_RandomForest",
+    "M4_HistGradientBoosting"
+  ],
+  "selection_rule": "highest DEV macro Spearman among eligible; if within 0.02, simplest model",
+  "final_truth_loaded": false,
+  "schema_version": "gate3c_model_selection_receipt_v1",
+  "protocol_sha256": "f546f92835628bfec354208e4edbd164777e9a95d0f4905f25b6d3fadd4687f3",
+  "train_task_count": 160,
+  "dev_task_count": 80,
+  "proposed_features": [
+    "cdfm_edge_density",
+    "cdfm_max_degree",
+    "cdfm_mean_entropy",
+    "cdfm_auto_threshold",
+    "cdfm_threshold_margin_mean",
+    "cdfm_threshold_margin_p10",
+    "cdfm_threshold_margin_p25",
+    "cdfm_threshold_near_frac_002",
+    "cdfm_threshold_near_frac_005",
+    "cdfm_bootstrap_disagreement",
+    "cdfm_bootstrap_edge_jaccard",
+    "cdfm_bootstrap_probability_drift_mean",
+    "cdfm_bootstrap_probability_drift_p90",
+    "cdfm_bootstrap_threshold_std",
+    "cdfm_bootstrap_threshold_crossing_rate"
+  ],
+  "feature_files_sha256": {
+    "train": "65402bb3136a1dae101ac5868dbc82de6056384ac3bbeac724bb88984ac47abf",
+    "dev": "0ab7ef7565b8e9b4961500f161cab86e93bba8a99269e6d4fe08bd62424e4ae8"
+  },
+  "test_truth_used_for_selection": false
+}

@@ -1,0 +1,17 @@
+{
+  "schema_version": "gate3c_pre_truth_hashes_v1",
+  "final_truth_loaded": false,
+  "files": {
+    "frozen_protocol.json": "f546f92835628bfec354208e4edbd164777e9a95d0f4905f25b6d3fadd4687f3",
+    "train_manifest.csv": "748c90888538e91f40c9be926fa7899341693c4a83e53f24d33f667094dcf598",
+    "dev_manifest.csv": "167fc5cbc61bdc39ba9654b1e8f61f9597d5bb8c1c335192999fb9901bd5996f",
+    "final_manifest.csv": "e29a5384a84d5413954248c4a83e00568bba242f54b86ba0c99eb33f8432631a",
+    "train_features.csv": "65402bb3136a1dae101ac5868dbc82de6056384ac3bbeac724bb88984ac47abf",
+    "dev_features.csv": "0ab7ef7565b8e9b4961500f161cab86e93bba8a99269e6d4fe08bd62424e4ae8",
+    "final_features_ground_truth_free.csv": "23730d6b0b7c4bad0ecfe73a25a3ad44f5dde44a2bfe8a1c8b4075677f7ed0e7",
+    "model_selection_results.csv": "06221dcf282a0152da87dc18693531418526df271808e97dd12f5d8cd6231a1c",
+    "model_selection_receipt.json": "e2bef4df84cd63f045683331e317e1ee14e2c9cd76d5c8189b2be3774eb24665",
+    "final_model_receipt.json": "7c24b0c583c2a3a7f1ddc55db37d92e3a3697948667e82a1a78aba5951768bd5",
+    "final_predictions_before_truth.csv": "b1bb30f0cd695d28de21d22f0e95a7c51821b7df22e3553adb59695a80a2cc7c"
+  }
+}

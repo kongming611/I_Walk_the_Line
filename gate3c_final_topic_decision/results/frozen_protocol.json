@@ -1,0 +1,236 @@
+{
+  "schema_version": "gate3c_final_topic_decision_protocol_v1",
+  "freeze_date": "2026-09-18",
+  "frozen_before_final_truth_evaluation": true,
+  "scientific_question": "Can ground-truth-free CDFM outputs, distance to the adaptive decision threshold, and resampling stability predict whole-graph CDFM structural-error risk under unseen mechanism, unseen graph, and noise shift?",
+  "historical_evidence_status": "Gate-3A and Gate-3A.1 final-test results are development knowledge for this gate, not independent final confirmation.",
+  "data": {
+    "train": {
+      "mechanisms": [
+        "linear",
+        "tanh",
+        "rff",
+        "interaction"
+      ],
+      "noises": [
+        "laplace",
+        "gaussian",
+        "student_t8",
+        "student_t3"
+      ],
+      "tasks_per_domain": 10,
+      "task_count": 160,
+      "graph_seed_range": [
+        400000,
+        400159
+      ]
+    },
+    "dev": {
+      "mechanisms": [
+        "softsign",
+        "sine"
+      ],
+      "noises": [
+        "laplace",
+        "gaussian",
+        "student_t8",
+        "student_t3"
+      ],
+      "tasks_per_domain": 10,
+      "task_count": 80,
+      "graph_seed_range": [
+        500000,
+        500079
+      ]
+    },
+    "final": {
+      "mechanisms": [
+        "quadratic",
+        "piecewise"
+      ],
+      "noises": [
+        "gaussian",
+        "student_t3",
+        "exponential"
+      ],
+      "tasks_per_domain": 20,
+      "task_count": 120,
+      "graph_seed_range": [
+        600000,
+        600119
+      ],
+      "joint_shift_domains": [
+        "quadratic_exponential",
+        "piecewise_exponential"
+      ]
+    },
+    "N": 1000,
+    "D": 10,
+    "all_graph_seeds_unique_across_splits": true,
+    "exponential_noise_used_in_train_or_dev": false
+  },
+  "generator": {
+    "historical_source": "gate2_reliable_routing.generate_tasks",
+    "local_extension": {
+      "quadratic": "z + 0.35*z**2, z=slope*x+bias",
+      "piecewise": "z if z>=0 else 0.2*z, z=slope*x+bias"
+    },
+    "unseen_claim_boundary": "unseen mechanism families for the risk predictor",
+    "lambda_semantics": "linear=0.0; all non-linear families=1.0"
+  },
+  "cdfm": {
+    "model": "DMIRLAB/CDFM",
+    "call": "CDFM.from_pretrained('DMIRLAB/CDFM').predict(X)",
+    "training": false,
+    "fine_tuning": false,
+    "source_modification": false,
+    "bootstrap_per_dataset": 2,
+    "threshold": "official model.predict(X) adaptive threshold"
+  },
+  "proposed_features": [
+    "cdfm_edge_density",
+    "cdfm_max_degree",
+    "cdfm_mean_entropy",
+    "cdfm_auto_threshold",
+    "cdfm_threshold_margin_mean",
+    "cdfm_threshold_margin_p10",
+    "cdfm_threshold_margin_p25",
+    "cdfm_threshold_near_frac_002",
+    "cdfm_threshold_near_frac_005",
+    "cdfm_bootstrap_disagreement",
+    "cdfm_bootstrap_edge_jaccard",
+    "cdfm_bootstrap_probability_drift_mean",
+    "cdfm_bootstrap_probability_drift_p90",
+    "cdfm_bootstrap_threshold_std",
+    "cdfm_bootstrap_threshold_crossing_rate"
+  ],
+  "baseline_features": {
+    "B1_metadata_ridge": [
+      "mean_abs_skewness",
+      "mean_abs_excess_kurtosis",
+      "mean_abs_pearson_correlation",
+      "mean_abs_spearman_correlation",
+      "nonlinearity_gain_median",
+      "nonlinearity_gain_mean",
+      "nonlinearity_gain_max"
+    ],
+    "B2_ood_only": "robust Mahalanobis score on metadata, fit on TRAIN only, then Ridge(alpha=1.0)",
+    "B3_confidence_ridge": [
+      "cdfm_mean_edge_probability",
+      "cdfm_mean_confidence",
+      "cdfm_mean_entropy",
+      "cdfm_mean_margin"
+    ],
+    "B4_threshold_aware_ridge": [
+      "cdfm_edge_density",
+      "cdfm_max_degree",
+      "cdfm_mean_entropy",
+      "cdfm_auto_threshold",
+      "cdfm_threshold_margin_mean",
+      "cdfm_threshold_margin_p10",
+      "cdfm_threshold_margin_p25",
+      "cdfm_threshold_near_frac_002",
+      "cdfm_threshold_near_frac_005"
+    ],
+    "B5_proposed_ridge": [
+      "cdfm_edge_density",
+      "cdfm_max_degree",
+      "cdfm_mean_entropy",
+      "cdfm_auto_threshold",
+      "cdfm_threshold_margin_mean",
+      "cdfm_threshold_margin_p10",
+      "cdfm_threshold_margin_p25",
+      "cdfm_threshold_near_frac_002",
+      "cdfm_threshold_near_frac_005",
+      "cdfm_bootstrap_disagreement",
+      "cdfm_bootstrap_edge_jaccard",
+      "cdfm_bootstrap_probability_drift_mean",
+      "cdfm_bootstrap_probability_drift_p90",
+      "cdfm_bootstrap_threshold_std",
+      "cdfm_bootstrap_threshold_crossing_rate"
+    ]
+  },
+  "candidate_models": {
+    "M1_Ridge": "Pipeline(StandardScaler(), Ridge(alpha=1.0))",
+    "M2_AdditiveSpline": "Pipeline(SplineTransformer(n_knots=4, degree=2, include_bias=False), StandardScaler(), Ridge(alpha=1.0))",
+    "M3_RandomForest": {
+      "n_estimators": 400,
+      "max_depth": 5,
+      "min_samples_leaf": 5,
+      "max_features": "sqrt",
+      "random_state": 20260918,
+      "n_jobs": -1
+    },
+    "M4_HistGradientBoosting": {
+      "learning_rate": 0.05,
+      "max_iter": 200,
+      "max_leaf_nodes": 7,
+      "min_samples_leaf": 10,
+      "l2_regularization": 1.0,
+      "random_state": 20260918
+    }
+  },
+  "model_selection": {
+    "fit_split": "TRAIN only",
+    "evaluation_split": "DEV only",
+    "primary_metric": "macro mean Spearman across 8 DEV domains",
+    "constraints": {
+      "minimum_domains_rho_gt_0.20": 6,
+      "maximum_domains_rho_lt_0": 1
+    },
+    "tie_break": "if macro rho difference is strictly less than 0.02, choose simpler: Ridge > Spline > RF > HistGB",
+    "no_search": true
+  },
+  "evaluation": {
+    "coverages": [
+      0.25,
+      0.5,
+      0.75,
+      1.0
+    ],
+    "bootstrap_resamples_per_final_domain_metric": 2000,
+    "bootstrap_seed": 20260918,
+    "macro_spearman": "domain-aware bootstrap: resample tasks within each domain, then average six domain Spearman values",
+    "relative_risk_reduction_at_50": "(full risk - risk@50) / full risk"
+  },
+  "topic_gate": {
+    "TOPIC_GO": {
+      "macro_spearman_min": 0.4,
+      "domains_rho_gt_0.20_min": 5,
+      "domains_rho_gt_0.30_min": 4,
+      "domains_rho_lt_neg_0.10_max": 0,
+      "domains_risk50_below_full_min": 5,
+      "macro_relative_reduction_min": 0.15,
+      "joint_shift_at_least_one_rho_gt_0.30": true,
+      "joint_shift_other_rho_nonnegative": true
+    },
+    "TOPIC_BORDERLINE": {
+      "macro_spearman_min": 0.25,
+      "domains_risk50_below_full_min": 4,
+      "macro_relative_reduction_min": 0.1
+    },
+    "TOPIC_STOP": {
+      "macro_spearman_lt": 0.25,
+      "domains_risk50_below_full_lt": 4,
+      "macro_relative_reduction_lt": 0.1,
+      "both_joint_shift_rho_nonpositive": true
+    }
+  },
+  "method_readiness": {
+    "comparison": "selected proposed model versus B4 threshold-aware Ridge",
+    "GO": "rho gain >= 0.05 with reduction loss no worse than 0.03, OR reduction gain >= 0.03 with rho loss no worse than 0.05",
+    "otherwise": "METHOD_BORDERLINE",
+    "operational_non_sacrifice_tolerances": {
+      "rho": 0.05,
+      "relative_reduction": 0.03
+    }
+  },
+  "truth_isolation": {
+    "feature_builder_accepts_truth": false,
+    "final_truth_loader": "called only after final_model_receipt.json and pre_truth_hashes.json",
+    "final_truth_used_for_feature_construction": false,
+    "final_truth_used_for_model_selection": false,
+    "final_truth_used_for_hyperparameter_choice": false,
+    "final_truth_used_for_gate_threshold_modification": false
+  }
+}

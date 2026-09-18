@@ -1,0 +1,12 @@
+{
+  "schema_version": "gate3c_final_truth_open_receipt_v1",
+  "final_truth_loaded_after_freeze_receipts": true,
+  "final_truth_used_for_feature_construction": false,
+  "final_truth_used_for_model_selection": false,
+  "final_truth_used_for_hyperparameter_choice": false,
+  "final_truth_used_for_gate_threshold_modification": false,
+  "pre_truth_hashes_verified": true,
+  "final_task_count": 120,
+  "model_selection_receipt_sha256": "e2bef4df84cd63f045683331e317e1ee14e2c9cd76d5c8189b2be3774eb24665",
+  "final_model_receipt_sha256": "7c24b0c583c2a3a7f1ddc55db37d92e3a3697948667e82a1a78aba5951768bd5"
+}
