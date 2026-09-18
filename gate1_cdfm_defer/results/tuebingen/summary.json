@@ -1,0 +1,28 @@
+{
+  "pair_count": 95,
+  "total_weight": 34.9979,
+  "technical_failures": {
+    "cdfm": 0,
+    "direct_lingam": 0
+  },
+  "scores": {
+    "always_cdfm": 0.6347409415993532,
+    "always_direct_lingam": 0.5050188725609251,
+    "frozen_hybrid": 0.6699116232688247,
+    "oracle": 0.8061797993593902,
+    "best_single": 0.6347409415993532,
+    "hybrid_minus_best_single": 0.03517068166947146,
+    "oracle_gap": 0.17143885776003698,
+    "captured_gap": 0.20514999999999925
+  },
+  "sanity_targets": {
+    "cdfm": 0.671,
+    "direct_lingam": 0.508
+  },
+  "sanity_tolerance": 0.05,
+  "sanity": {
+    "cdfm_absolute_delta": 0.036259058400646804,
+    "direct_lingam_absolute_delta": 0.00298112743907486,
+    "passed": true
+  }
+}

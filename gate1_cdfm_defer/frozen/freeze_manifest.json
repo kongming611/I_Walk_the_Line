@@ -1,0 +1,65 @@
+{
+  "schema_version": "gate1_frozen_router_v1",
+  "frozen_at_utc": "2026-09-16T02:55:29.367410+00:00",
+  "gate1_label_or_performance_seen_before_freeze": false,
+  "model_path": "frozen/router.joblib",
+  "model_sha256": "d3bc82692d4dfa84ca77b1f328efd7485d4a2634c41a88898933d8be85848233",
+  "training": {
+    "source": "Gate-0 frozen 150-dataset results and meta-features",
+    "row_count": 150,
+    "base_seed_count": 30,
+    "row_identity_sha256": "9028cbc5e0128410e836ca2e8ab14bfe1242d99a93da11c4bbd4c01609f6e525",
+    "input_sha256": {
+      "gate0_per_dataset_results": "dc444dbd2571cc70557d57842ef7159f123d28fb6f3f6bffdd1d3d681d27b26c",
+      "gate0_meta_features": "967330711d35f7a62408262fd87c1fc209d4a3580e199c6f17de95d0f458868f",
+      "gate0_summary": "e419022b1111b7fb4bf458ef636f69d1a3d077b1598bf0453d6aca50f364cc71",
+      "gate0_meta_feature_source": "134f22fbaccc93909b89b4f20e31863e8f8290a91cab7e58eff1479de17b3bec"
+    },
+    "target_definition": "lingam_f1 >= cdfm_f1 + 0.03",
+    "class_counts": {
+      "use_cdfm": 96,
+      "defer_to_lingam": 54
+    }
+  },
+  "feature_pipeline": {
+    "feature_columns": [
+      "mean_abs_skewness",
+      "mean_abs_excess_kurtosis",
+      "mean_abs_pearson_correlation",
+      "mean_abs_spearman_correlation",
+      "nonlinearity_gain_median",
+      "nonlinearity_gain_mean",
+      "nonlinearity_gain_max"
+    ],
+    "top_pair_count": 10,
+    "pair_cv_splits": 3,
+    "pair_cv_seed": 20260916,
+    "gain_epsilon": 1e-12,
+    "nonlinear_regressor": "SplineTransformer(n_knots=7, degree=3, include_bias=False) + Ridge(alpha=1e-3)",
+    "source_file": "../gate0_cdfm_defer/meta_features.py",
+    "forbidden_features": [
+      "mechanism_label",
+      "lambda",
+      "dataset_id",
+      "base_seed",
+      "ground_truth",
+      "algorithm_output",
+      "algorithm_metric"
+    ]
+  },
+  "router": {
+    "type": "StandardScaler + LogisticRegression",
+    "class_weight": "balanced",
+    "max_iter": 2000,
+    "random_state": 20260916,
+    "decision_threshold": 0.5,
+    "gate1_refit_allowed": false
+  },
+  "environment": {
+    "python": "3.11.14",
+    "numpy": "2.4.4",
+    "pandas": "3.0.2",
+    "scikit_learn": "1.8.0",
+    "joblib": "1.5.3"
+  }
+}

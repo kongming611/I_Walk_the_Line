@@ -1,0 +1,197 @@
+{
+  "schema_version": "gate1_real_sources_v1",
+  "tuebingen": {
+    "url": "https://webdav.tuebingen.mpg.de/cause-effect/pairs_1.0.zip",
+    "archive_path": "data/real/tuebingen/pairs_1.0.zip",
+    "archive_sha256": "58e1d6ec441bdf1ad785f87cb65e68c24ced1fdadf50a58f62b7dbe620b23744",
+    "metadata_sha256": "e468bdf2f84f57a5cece24ccb033929a973a4b94f3cd01ae948ccfb4919962c9",
+    "strict_pair_count": 95,
+    "total_weight": 34.9979,
+    "manifest_path": "data/real/tuebingen/strict95_manifest.csv"
+  },
+  "causal_chamber": {
+    "source_repository": "https://github.com/DMIRLAB-Group/CDFM",
+    "source_commit": "996816049ac5d36fc85e3c2b501509cbd8bc3d7f",
+    "variable_order": [
+      "red",
+      "green",
+      "blue",
+      "current",
+      "pol_1",
+      "pol_2",
+      "ir_1",
+      "vis_1",
+      "ir_2",
+      "vis_2",
+      "ir_3",
+      "vis_3",
+      "angle_1",
+      "angle_2",
+      "l_11",
+      "l_12",
+      "l_21",
+      "l_22",
+      "l_31",
+      "l_32"
+    ],
+    "a1_environment": "uniform_reference",
+    "a2_environments": [
+      "uniform_red_strong",
+      "uniform_green_strong",
+      "uniform_blue_strong",
+      "uniform_v_c_strong",
+      "uniform_t_ir_1_strong",
+      "uniform_t_ir_2_strong",
+      "uniform_t_ir_3_strong",
+      "uniform_t_vis_1_strong",
+      "uniform_t_vis_2_strong",
+      "uniform_t_vis_3_strong",
+      "uniform_pol_1_strong",
+      "uniform_pol_2_strong",
+      "uniform_v_angle_1_strong",
+      "uniform_v_angle_2_strong",
+      "uniform_l_11_mid",
+      "uniform_l_12_mid",
+      "uniform_l_21_mid",
+      "uniform_l_22_mid",
+      "uniform_l_31_mid",
+      "uniform_l_32_mid"
+    ],
+    "full_ground_truth_edge_count": 57,
+    "induced_ground_truth_edge_count": 39,
+    "files": [
+      {
+        "relative_path": "data/real/causal_chamber/dag.csv",
+        "url": "https://raw.githubusercontent.com/DMIRLAB-Group/CDFM/996816049ac5d36fc85e3c2b501509cbd8bc3d7f/tests/data/causal_chamber/dag.csv",
+        "sha256": "63be41c935bb3f897b49a91a5fadc15fe9511528da4063e7e1dc988eb4b04d06",
+        "size_bytes": 782
+      },
+      {
+        "relative_path": "data/real/causal_chamber/task_a1/uniform_reference.csv",
+        "url": "https://raw.githubusercontent.com/DMIRLAB-Group/CDFM/996816049ac5d36fc85e3c2b501509cbd8bc3d7f/tests/data/causal_chamber/task_a1/uniform_reference.csv",
+        "sha256": "f92bae1ec96db4033a9ad32c62b8e2da729e98eef17ad443b907a437cc195a3e",
+        "size_bytes": 2676135
+      },
+      {
+        "relative_path": "data/real/causal_chamber/task_a2/uniform_red_strong.csv",
+        "url": "https://raw.githubusercontent.com/DMIRLAB-Group/CDFM/996816049ac5d36fc85e3c2b501509cbd8bc3d7f/tests/data/causal_chamber/task_a2/uniform_red_strong.csv",
+        "sha256": "745a28b84ed21c96165d5a85446402ef9c6cd5629f2eeab723bf8078d99c6e21",
+        "size_bytes": 270411
+      },
+      {
+        "relative_path": "data/real/causal_chamber/task_a2/uniform_green_strong.csv",
+        "url": "https://raw.githubusercontent.com/DMIRLAB-Group/CDFM/996816049ac5d36fc85e3c2b501509cbd8bc3d7f/tests/data/causal_chamber/task_a2/uniform_green_strong.csv",
+        "sha256": "b3de0d0de182803f775a9c370b37d241c1b2e3f700b59a027cf18c388bd07e1f",
+        "size_bytes": 270472
+      },
+      {
+        "relative_path": "data/real/causal_chamber/task_a2/uniform_blue_strong.csv",
+        "url": "https://raw.githubusercontent.com/DMIRLAB-Group/CDFM/996816049ac5d36fc85e3c2b501509cbd8bc3d7f/tests/data/causal_chamber/task_a2/uniform_blue_strong.csv",
+        "sha256": "19e1118a140a4eaa22add3330a9ef06bd1d4768388c5a46d205252c2acdc742f",
+        "size_bytes": 271377
+      },
+      {
+        "relative_path": "data/real/causal_chamber/task_a2/uniform_v_c_strong.csv",
+        "url": "https://raw.githubusercontent.com/DMIRLAB-Group/CDFM/996816049ac5d36fc85e3c2b501509cbd8bc3d7f/tests/data/causal_chamber/task_a2/uniform_v_c_strong.csv",
+        "sha256": "c8d66781adef2bdd918aee07ed32b403575f27aa61baa41a361ebfc4376d6279",
+        "size_bytes": 282968
+      },
+      {
+        "relative_path": "data/real/causal_chamber/task_a2/uniform_t_ir_1_strong.csv",
+        "url": "https://raw.githubusercontent.com/DMIRLAB-Group/CDFM/996816049ac5d36fc85e3c2b501509cbd8bc3d7f/tests/data/causal_chamber/task_a2/uniform_t_ir_1_strong.csv",
+        "sha256": "e8390aae55cc265eead6bdd6885888db6c78de05d46c4b4f0db25f4914633082",
+        "size_bytes": 266643
+      },
+      {
+        "relative_path": "data/real/causal_chamber/task_a2/uniform_t_ir_2_strong.csv",
+        "url": "https://raw.githubusercontent.com/DMIRLAB-Group/CDFM/996816049ac5d36fc85e3c2b501509cbd8bc3d7f/tests/data/causal_chamber/task_a2/uniform_t_ir_2_strong.csv",
+        "sha256": "29a346ec7b764eaa469290f088155b0aaefacfff645fb97af933a5617ca26383",
+        "size_bytes": 266641
+      },
+      {
+        "relative_path": "data/real/causal_chamber/task_a2/uniform_t_ir_3_strong.csv",
+        "url": "https://raw.githubusercontent.com/DMIRLAB-Group/CDFM/996816049ac5d36fc85e3c2b501509cbd8bc3d7f/tests/data/causal_chamber/task_a2/uniform_t_ir_3_strong.csv",
+        "sha256": "31afef7e0700fd30a941a971842990f4d5c476736cbbe4d4d3d272740e4c59a5",
+        "size_bytes": 266798
+      },
+      {
+        "relative_path": "data/real/causal_chamber/task_a2/uniform_t_vis_1_strong.csv",
+        "url": "https://raw.githubusercontent.com/DMIRLAB-Group/CDFM/996816049ac5d36fc85e3c2b501509cbd8bc3d7f/tests/data/causal_chamber/task_a2/uniform_t_vis_1_strong.csv",
+        "sha256": "6ed5ad357ece4541bb749d0d9bd1915979c98a97cf7da94c6c8e4c71251fc452",
+        "size_bytes": 266769
+      },
+      {
+        "relative_path": "data/real/causal_chamber/task_a2/uniform_t_vis_2_strong.csv",
+        "url": "https://raw.githubusercontent.com/DMIRLAB-Group/CDFM/996816049ac5d36fc85e3c2b501509cbd8bc3d7f/tests/data/causal_chamber/task_a2/uniform_t_vis_2_strong.csv",
+        "sha256": "897186fc6f0b09631f205107dba8ca71bc7d45457e2c5fdd7d9730330e53be17",
+        "size_bytes": 266901
+      },
+      {
+        "relative_path": "data/real/causal_chamber/task_a2/uniform_t_vis_3_strong.csv",
+        "url": "https://raw.githubusercontent.com/DMIRLAB-Group/CDFM/996816049ac5d36fc85e3c2b501509cbd8bc3d7f/tests/data/causal_chamber/task_a2/uniform_t_vis_3_strong.csv",
+        "sha256": "3621747166d7fa8402af75454b5f45096833f1092ca5fead96def3e93f4f5753",
+        "size_bytes": 266922
+      },
+      {
+        "relative_path": "data/real/causal_chamber/task_a2/uniform_pol_1_strong.csv",
+        "url": "https://raw.githubusercontent.com/DMIRLAB-Group/CDFM/996816049ac5d36fc85e3c2b501509cbd8bc3d7f/tests/data/causal_chamber/task_a2/uniform_pol_1_strong.csv",
+        "sha256": "91b8066dbeb81a1a2873b3311ba7d754fb54aef763cd3a255d2cc86841a23c60",
+        "size_bytes": 264924
+      },
+      {
+        "relative_path": "data/real/causal_chamber/task_a2/uniform_pol_2_strong.csv",
+        "url": "https://raw.githubusercontent.com/DMIRLAB-Group/CDFM/996816049ac5d36fc85e3c2b501509cbd8bc3d7f/tests/data/causal_chamber/task_a2/uniform_pol_2_strong.csv",
+        "sha256": "052c80df2fa5c354177308620d674277ee26a543a7414ddb04b23a491c9b9b51",
+        "size_bytes": 264956
+      },
+      {
+        "relative_path": "data/real/causal_chamber/task_a2/uniform_v_angle_1_strong.csv",
+        "url": "https://raw.githubusercontent.com/DMIRLAB-Group/CDFM/996816049ac5d36fc85e3c2b501509cbd8bc3d7f/tests/data/causal_chamber/task_a2/uniform_v_angle_1_strong.csv",
+        "sha256": "81497f6830f55674d8071cf1e8eb7589fd31909a9ec478ac7f1d52cb5a5a77ad",
+        "size_bytes": 282658
+      },
+      {
+        "relative_path": "data/real/causal_chamber/task_a2/uniform_v_angle_2_strong.csv",
+        "url": "https://raw.githubusercontent.com/DMIRLAB-Group/CDFM/996816049ac5d36fc85e3c2b501509cbd8bc3d7f/tests/data/causal_chamber/task_a2/uniform_v_angle_2_strong.csv",
+        "sha256": "80e6042b095a031ad86b3d7dd0dae3e4d53783bc78fb66feb1a34a15164b7b1e",
+        "size_bytes": 283696
+      },
+      {
+        "relative_path": "data/real/causal_chamber/task_a2/uniform_l_11_mid.csv",
+        "url": "https://raw.githubusercontent.com/DMIRLAB-Group/CDFM/996816049ac5d36fc85e3c2b501509cbd8bc3d7f/tests/data/causal_chamber/task_a2/uniform_l_11_mid.csv",
+        "sha256": "3bf3159e4a8fb1f376eb981bb351abc6eade8e6645a70cbfdd2b64cea52a2234",
+        "size_bytes": 268106
+      },
+      {
+        "relative_path": "data/real/causal_chamber/task_a2/uniform_l_12_mid.csv",
+        "url": "https://raw.githubusercontent.com/DMIRLAB-Group/CDFM/996816049ac5d36fc85e3c2b501509cbd8bc3d7f/tests/data/causal_chamber/task_a2/uniform_l_12_mid.csv",
+        "sha256": "1250f659f71433ee4ea89822e630c93b5bc5ff04b24be2179972a9641261be2b",
+        "size_bytes": 268389
+      },
+      {
+        "relative_path": "data/real/causal_chamber/task_a2/uniform_l_21_mid.csv",
+        "url": "https://raw.githubusercontent.com/DMIRLAB-Group/CDFM/996816049ac5d36fc85e3c2b501509cbd8bc3d7f/tests/data/causal_chamber/task_a2/uniform_l_21_mid.csv",
+        "sha256": "824fef82cef55c177de751a27a16827b4adc7d07d77e13b5026e304be7f02fac",
+        "size_bytes": 268664
+      },
+      {
+        "relative_path": "data/real/causal_chamber/task_a2/uniform_l_22_mid.csv",
+        "url": "https://raw.githubusercontent.com/DMIRLAB-Group/CDFM/996816049ac5d36fc85e3c2b501509cbd8bc3d7f/tests/data/causal_chamber/task_a2/uniform_l_22_mid.csv",
+        "sha256": "7646ad294a8aef468508e549de7b0950ee73becff332774d8bbdd293bd5d4c0d",
+        "size_bytes": 268087
+      },
+      {
+        "relative_path": "data/real/causal_chamber/task_a2/uniform_l_31_mid.csv",
+        "url": "https://raw.githubusercontent.com/DMIRLAB-Group/CDFM/996816049ac5d36fc85e3c2b501509cbd8bc3d7f/tests/data/causal_chamber/task_a2/uniform_l_31_mid.csv",
+        "sha256": "cb4988ad1fa6637fb832f93ed81e0b69fbc102371570c582c0b76578457dd38e",
+        "size_bytes": 268458
+      },
+      {
+        "relative_path": "data/real/causal_chamber/task_a2/uniform_l_32_mid.csv",
+        "url": "https://raw.githubusercontent.com/DMIRLAB-Group/CDFM/996816049ac5d36fc85e3c2b501509cbd8bc3d7f/tests/data/causal_chamber/task_a2/uniform_l_32_mid.csv",
+        "sha256": "7b8eb2664ce39daaf36da59a2fb86954d55fc065e2a59457c872f33a74f38c3b",
+        "size_bytes": 268179
+      }
+    ]
+  }
+}

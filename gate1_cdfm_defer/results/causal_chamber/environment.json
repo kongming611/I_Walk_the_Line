@@ -1,0 +1,70 @@
+{
+  "python": "3.11.14",
+  "platform": "Windows-10-10.0.22631-SP0",
+  "device": "cpu",
+  "cuda_available": false,
+  "packages": {
+    "cdfm-base": "0.1.0",
+    "causal-learn": "0.1.4.5",
+    "numpy": "2.4.4",
+    "pandas": "3.0.2",
+    "scikit-learn": "1.8.0",
+    "torch": "2.7.1"
+  },
+  "cdfm_info": {
+    "architecture": "CDFM",
+    "parameters": 9662124,
+    "device": "cpu",
+    "threshold": null,
+    "config": {
+      "embed_dim": 128,
+      "p_dim": 64,
+      "nhead": 8,
+      "dim_feedforward": 512,
+      "num_inds": 128,
+      "num_of_experts": 16,
+      "num_layers": 20,
+      "num_blocks_of_embedding": 3,
+      "calibration_config": {
+        "type": "linear",
+        "coefficients": [
+          0.33267646101338766,
+          -8.561597875439013,
+          -5.6420445061231765,
+          0.10496176235327509,
+          0.42748426213984464,
+          1.5096967709632714,
+          0.6579849133570793,
+          0.2591098974196735,
+          4.62897198057523,
+          -0.15767788685985695,
+          3.2585565096628075
+        ],
+        "feature_names": [
+          "mean",
+          "std",
+          "p25",
+          "p50",
+          "p75",
+          "p90",
+          "logD",
+          "median_gap",
+          "max_gap",
+          "knee_T"
+        ]
+      }
+    },
+    "calibration": {
+      "type": "linear",
+      "n_features": 10
+    }
+  },
+  "cdfm_threshold_policy": "official auto calibration per environment",
+  "direct_lingam": {
+    "measure": "pwling",
+    "matrix_input": "B[target,source]"
+  },
+  "router_refit": false,
+  "a2_official_notebook_vote_threshold": 0.25,
+  "a2_official_notebook_average_logits_threshold": 0.7
+}

@@ -1,0 +1,43 @@
+{
+  "dataset_id": "uniform_reference",
+  "n_samples": 10000,
+  "n_variables": 20,
+  "cdfm_f1": 0.7272727272727274,
+  "cdfm_precision": 0.8888888888888888,
+  "cdfm_recall": 0.6153846153846154,
+  "cdfm_shd": 17,
+  "cdfm_auroc": 0.9353334837205804,
+  "cdfm_threshold": 0.894057443320168,
+  "cdfm_runtime_sec": 180.89840580002056,
+  "lingam_f1": 0.5301204819277109,
+  "lingam_precision": 0.5,
+  "lingam_recall": 0.5641025641025641,
+  "lingam_shd": 37,
+  "lingam_runtime_sec": 5.63843469999847,
+  "mean_abs_skewness": 0.12676649712984503,
+  "mean_abs_excess_kurtosis": 0.9194488492925179,
+  "mean_abs_pearson_correlation": 0.1548043916521068,
+  "mean_abs_spearman_correlation": 0.15388170310481414,
+  "nonlinearity_gain_median": 0.027378576181879354,
+  "nonlinearity_gain_mean": 0.033983586586433495,
+  "nonlinearity_gain_max": 0.0648235839595703,
+  "feature_runtime_sec": 0.34874800001853146,
+  "router_defer_probability": 0.6171094405994342,
+  "router_prediction": 1,
+  "selected_solver": "DirectLiNGAM",
+  "router_target": 0,
+  "hybrid_f1": 0.5301204819277109,
+  "oracle_f1": 0.7272727272727274,
+  "expected_cdfm_f1": 0.7272727272727273,
+  "sanity_tolerance": 0.03,
+  "sanity_absolute_delta": 1.1102230246251565e-16,
+  "sanity_passed": true,
+  "paper_reference": {
+    "cdfm_f1": 0.727,
+    "direct_lingam_f1": 0.495
+  },
+  "official_notebook_reference": {
+    "cdfm_f1": 0.7272727272727273,
+    "cdfm_auroc": 0.9353
+  }
+}
