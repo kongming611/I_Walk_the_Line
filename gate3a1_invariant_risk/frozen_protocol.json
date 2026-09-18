@@ -1,0 +1,94 @@
+{
+  "schema_version": "gate3a1_frozen_protocol_v1",
+  "frozen_before_confirmatory_truth_evaluation": true,
+  "freeze_date": "2026-09-18",
+  "scientific_question": "Do mechanism-direction-stable, ground-truth-free CDFM reliability signals predict graph risk on unseen mechanisms and unseen graph instances?",
+  "training": {
+    "source": "gate3a_risk_predictability/results/predictions.csv",
+    "families": ["linear", "tanh", "rff", "interaction"],
+    "graph_seeds": [310000, 310014],
+    "task_count": 60
+  },
+  "confirmatory_test": {
+    "families": {
+      "softsign": {"noise": "laplace", "graph_seed_start": 320000, "graph_seed_end": 320024},
+      "sine": {"noise": "laplace", "graph_seed_start": 321000, "graph_seed_end": 321024}
+    },
+    "N": 1000,
+    "D": 10,
+    "bootstrap_cdfm_per_dataset": 2,
+    "task_count": 50
+  },
+  "primary": {
+    "name": "stable_ridge_v1",
+    "features": [
+      "cdfm_edge_density",
+      "cdfm_max_degree",
+      "cdfm_mean_entropy",
+      "cdfm_bootstrap_disagreement",
+      "cdfm_bootstrap_edge_jaccard"
+    ],
+    "model": "Pipeline(StandardScaler(), Ridge(alpha=1.0))"
+  },
+  "secondary_threshold_aware": {
+    "name": "threshold_aware_ridge",
+    "features": [
+      "cdfm_edge_density",
+      "cdfm_max_degree",
+      "cdfm_mean_entropy",
+      "cdfm_bootstrap_disagreement",
+      "cdfm_bootstrap_edge_jaccard",
+      "cdfm_auto_threshold",
+      "cdfm_threshold_margin_mean",
+      "cdfm_threshold_margin_p10",
+      "cdfm_threshold_margin_p25",
+      "cdfm_threshold_near_frac_002",
+      "cdfm_threshold_near_frac_005"
+    ],
+    "model": "Pipeline(StandardScaler(), Ridge(alpha=1.0))"
+  },
+  "baselines": {
+    "constant": "mean training true_risk; expected risk-coverage equals family full risk",
+    "confidence_ridge": [
+      "cdfm_mean_edge_probability",
+      "cdfm_mean_confidence",
+      "cdfm_mean_entropy",
+      "cdfm_mean_margin"
+    ],
+    "metadata_ridge": [
+      "mean_abs_skewness",
+      "mean_abs_excess_kurtosis",
+      "mean_abs_pearson_correlation",
+      "mean_abs_spearman_correlation",
+      "nonlinearity_gain_median",
+      "nonlinearity_gain_mean",
+      "nonlinearity_gain_max"
+    ],
+    "ood_only": "robust metadata Mahalanobis score fitted on the 60 training tasks, then one-feature Ridge(alpha=1.0)",
+    "old_candidate_ridge": "exact Gate-3A candidate feature construction, including DirectLiNGAM disagreement and training-fitted OOD score"
+  },
+  "evaluation": {
+    "coverages": [0.25, 0.5, 0.75, 1.0],
+    "bootstrap_resamples": 1000,
+    "bootstrap_seed": 20260918,
+    "relative_risk_reduction_at_50": "(risk_at_100 - risk_at_50) / risk_at_100"
+  },
+  "gate": {
+    "GO": "both family Spearman rho > 0.30, mean rho > 0.40, both risk@50 < full risk, and mean relative risk reduction@50 >= 0.15",
+    "BORDERLINE": "GO fails, STOP does not apply, and either mean rho is in [0.25, 0.40] inclusive or exactly one family rho > 0.30, while both families have risk@50 < full risk",
+    "STOP": "mean rho < 0.25, or risk@50 is not lower than full risk in both families; evaluated after GO and before BORDERLINE",
+    "confidence_caveat": "If GO holds but primary is clearly worse than confidence-only, retain GO for existence of risk signal and state that incremental composite-diagnostic value remains BORDERLINE."
+  },
+  "prohibitions": [
+    "no old-task CDFM inference",
+    "no hyperparameter search",
+    "no feature, model, alpha, threshold, or normalization changes after confirmatory results",
+    "no CDFM training or fine-tuning"
+  ],
+  "audited_source_sha256": {
+    "gate3a_risk_predictability/run_experiment.py": "f23bdcd7661d62b2a558c73cb2a4e195804641615f3c6b7e644ba48d16021739",
+    "gate3a_risk_predictability/results/REPORT.md": "78521dd2d2476e7b1c3e0ec58476541048a5073306a8f7b3b24ba85aef25bc29",
+    "gate3a_risk_predictability/results/fold_results.csv": "c2c0efd0587348702ccd893d5d7b1a8fa37778b574f615a844db5d6f1e177ad1",
+    "gate3a_risk_predictability/results/predictions.csv": "f83e51967f61450abbb0874d84eaccddda90d8afb0daedd17ee8e13ebd20d1bb"
+  }
+}

@@ -1,0 +1,32 @@
+{
+  "schema_version": "gate3a1_model_fit_receipt_v1",
+  "written_before_confirmatory_truth_was_loaded": true,
+  "protocol_sha256": "7df7b2f90cf48089180d4c4c165fc661e687869505dad6a7c03be3fd5f33b8c9",
+  "training_predictions_sha256": "f83e51967f61450abbb0874d84eaccddda90d8afb0daedd17ee8e13ebd20d1bb",
+  "confirmatory_feature_table_sha256": "971ddea5833fdc8300622e14fbc600d7480a78984bb21cad3183b69f71457383",
+  "n_train": 60,
+  "n_test": 50,
+  "scalers_fit_on_training_only": true,
+  "alpha": 1.0,
+  "primary_features": [
+    "cdfm_edge_density",
+    "cdfm_max_degree",
+    "cdfm_mean_entropy",
+    "cdfm_bootstrap_disagreement",
+    "cdfm_bootstrap_edge_jaccard"
+  ],
+  "secondary_features": [
+    "cdfm_edge_density",
+    "cdfm_max_degree",
+    "cdfm_mean_entropy",
+    "cdfm_bootstrap_disagreement",
+    "cdfm_bootstrap_edge_jaccard",
+    "cdfm_auto_threshold",
+    "cdfm_threshold_margin_mean",
+    "cdfm_threshold_margin_p10",
+    "cdfm_threshold_margin_p25",
+    "cdfm_threshold_near_frac_002",
+    "cdfm_threshold_near_frac_005"
+  ],
+  "test_results_used_for_model_selection": false
+}

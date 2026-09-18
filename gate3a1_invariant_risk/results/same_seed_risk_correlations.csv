@@ -1,0 +1,7 @@
+left_family,right_family,n_paired_graph_seeds,spearman
+interaction,linear,15,0.49507629508491074
+interaction,rff,15,0.23518888890710107
+interaction,tanh,15,0.89247311827957
+linear,rff,15,0.33722095155505105
+linear,tanh,15,0.3965981893718182
+rff,tanh,15,0.2728909245334303

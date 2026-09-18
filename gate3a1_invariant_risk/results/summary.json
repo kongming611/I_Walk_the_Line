@@ -1,0 +1,89 @@
+{
+  "schema_version": "gate3a1_summary_v1",
+  "protocol_sha256": "7df7b2f90cf48089180d4c4c165fc661e687869505dad6a7c03be3fd5f33b8c9",
+  "primary": {
+    "softsign": {
+      "spearman": 0.6648694838904766,
+      "risk_at_50": 0.13178749355219946,
+      "full_risk": 0.1975083346047975,
+      "relative_risk_reduction_at_50": 0.3327497099507297
+    },
+    "sine": {
+      "spearman": 0.23060645907143654,
+      "risk_at_50": 0.2705663567202029,
+      "full_risk": 0.3004456898548302,
+      "relative_risk_reduction_at_50": 0.09945003088266786
+    }
+  },
+  "mean_primary_spearman": 0.44773797148095656,
+  "mean_primary_relative_risk_reduction_at_50": 0.21609987041669879,
+  "confidence_only": {
+    "softsign": {
+      "spearman": 0.5962626617846766,
+      "risk_at_50": 0.14861217214158393,
+      "full_risk": 0.1975083346047975
+    },
+    "sine": {
+      "spearman": -0.1147257509236863,
+      "risk_at_50": 0.3031188005602722,
+      "full_risk": 0.3004456898548302
+    }
+  },
+  "threshold_aware_secondary": {
+    "softsign": {
+      "spearman": 0.5222597974907801,
+      "risk_at_50": 0.14513231866173043,
+      "full_risk": 0.1975083346047975
+    },
+    "sine": {
+      "spearman": 0.5366701234483848,
+      "risk_at_50": 0.24733548131541444,
+      "full_risk": 0.3004456898548302
+    }
+  },
+  "same_seed_risk_pairwise_spearman": [
+    {
+      "left_family": "interaction",
+      "right_family": "linear",
+      "n_paired_graph_seeds": 15,
+      "spearman": 0.4950762950849107
+    },
+    {
+      "left_family": "interaction",
+      "right_family": "rff",
+      "n_paired_graph_seeds": 15,
+      "spearman": 0.235188888907101
+    },
+    {
+      "left_family": "interaction",
+      "right_family": "tanh",
+      "n_paired_graph_seeds": 15,
+      "spearman": 0.89247311827957
+    },
+    {
+      "left_family": "linear",
+      "right_family": "rff",
+      "n_paired_graph_seeds": 15,
+      "spearman": 0.337220951555051
+    },
+    {
+      "left_family": "linear",
+      "right_family": "tanh",
+      "n_paired_graph_seeds": 15,
+      "spearman": 0.3965981893718182
+    },
+    {
+      "left_family": "rff",
+      "right_family": "tanh",
+      "n_paired_graph_seeds": 15,
+      "spearman": 0.2728909245334303
+    }
+  ],
+  "decision": "BORDERLINE",
+  "rationale": "confirmation retained signal but missed GO: mean rho=0.448",
+  "old_cdfm_tasks_rerun": 0,
+  "new_original_cdfm_inferences": 50,
+  "new_bootstrap_cdfm_inferences": 100,
+  "post_test_feature_model_hyperparameter_modifications": false,
+  "label_leakage_check": "ground-truth absent from feature builder and loaded only after model-fit receipt"
+}

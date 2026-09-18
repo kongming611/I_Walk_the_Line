@@ -1,0 +1,19 @@
+{
+  "schema_version": "gate3a1_prepare_receipt_v1",
+  "protocol_sha256": "7df7b2f90cf48089180d4c4c165fc661e687869505dad6a7c03be3fd5f33b8c9",
+  "old_predictions_sha256": "f83e51967f61450abbb0874d84eaccddda90d8afb0daedd17ee8e13ebd20d1bb",
+  "old_cache_count": 60,
+  "old_cdfm_inference_count": 0,
+  "new_task_count": 50,
+  "new_seed_ranges": {
+    "softsign": [
+      320000,
+      320024
+    ],
+    "sine": [
+      321000,
+      321024
+    ]
+  },
+  "primary_frozen": true
+}
