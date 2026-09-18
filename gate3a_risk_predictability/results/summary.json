@@ -1,0 +1,28 @@
+{
+  "schema_version": "gate3a_summary_v1",
+  "scientific_question": "Can observable signals predict frozen-CDFM true graph risk across an unseen mechanism family?",
+  "config": {
+    "mechanisms": [
+      "linear",
+      "tanh",
+      "rff",
+      "interaction"
+    ],
+    "n_seeds_per_mechanism": 15,
+    "N": 1000,
+    "D": 10,
+    "noise": "laplace",
+    "paired_design": true,
+    "bootstrap_cdfm_per_dataset": 2,
+    "bootstrap_ci_resamples": 1000,
+    "primary_candidate": "candidate_ridge"
+  },
+  "cdfm_inference_count": 180,
+  "confidence_available": true,
+  "mean_cdfm_runtime_sec": 2.086480833332947,
+  "mean_candidate_spearman": 0.20012691160736018,
+  "families_over_rho_0_30": 2,
+  "decision": "BORDERLINE",
+  "rationale": "primary Ridge passed 2/4 rho gates; mean rho=0.200",
+  "label_leakage_check": "passed"
+}
