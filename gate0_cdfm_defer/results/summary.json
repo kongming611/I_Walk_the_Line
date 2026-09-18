@@ -1,0 +1,252 @@
+{
+  "status": "complete",
+  "dataset_count": 150,
+  "base_seed_count": 30,
+  "data_generation": {
+    "n_samples": 1000,
+    "n_variables": 10,
+    "lambda_values": [
+      0.0,
+      0.25,
+      0.5,
+      0.75,
+      1.0
+    ],
+    "mean_edge_count": 10.1,
+    "mean_total_degree": 2.02
+  },
+  "best_single_solver": "CDFM",
+  "methods": {
+    "always_cdfm": {
+      "mean": 0.7613731090573782,
+      "ci95_lower": 0.740679101762126,
+      "ci95_upper": 0.7829552686425714
+    },
+    "always_lingam": {
+      "mean": 0.5803951468024092,
+      "ci95_lower": 0.5219912849826915,
+      "ci95_upper": 0.6416278909188221
+    },
+    "best_single": {
+      "mean": 0.7613731090573782,
+      "ci95_lower": 0.7395385799075408,
+      "ci95_upper": 0.7831117626205145
+    },
+    "hybrid_router": {
+      "mean": 0.8245461344158137,
+      "ci95_lower": 0.7987035536808373,
+      "ci95_upper": 0.8487933854450346
+    },
+    "oracle": {
+      "mean": 0.831286109585789,
+      "ci95_lower": 0.8073908931640104,
+      "ci95_upper": 0.8575171681284743
+    }
+  },
+  "per_lambda": {
+    "0.00": {
+      "n": 30,
+      "cdfm": {
+        "mean": 0.8103054801010964,
+        "ci95_lower": 0.7621564651844664,
+        "ci95_upper": 0.8575585512762242
+      },
+      "lingam": {
+        "mean": 0.9788563936773655,
+        "ci95_lower": 0.9585582367334283,
+        "ci95_upper": 0.9937983876027354
+      },
+      "mean_lingam_minus_cdfm": 0.16855091357626925
+    },
+    "0.25": {
+      "n": 30,
+      "cdfm": {
+        "mean": 0.8174559096591618,
+        "ci95_lower": 0.767341287388238,
+        "ci95_upper": 0.8620149297225813
+      },
+      "lingam": {
+        "mean": 0.9796411318150449,
+        "ci95_lower": 0.9575565044858523,
+        "ci95_upper": 0.9952380952380953
+      },
+      "mean_lingam_minus_cdfm": 0.1621852221558831
+    },
+    "0.50": {
+      "n": 30,
+      "cdfm": {
+        "mean": 0.7693877792404632,
+        "ci95_lower": 0.7278146954966429,
+        "ci95_upper": 0.8077287838869086
+      },
+      "lingam": {
+        "mean": 0.581048372145178,
+        "ci95_lower": 0.5156264889113066,
+        "ci95_upper": 0.6429106676931712
+      },
+      "mean_lingam_minus_cdfm": -0.18833940709528513
+    },
+    "0.75": {
+      "n": 30,
+      "cdfm": {
+        "mean": 0.6932232955442655,
+        "ci95_lower": 0.6460720150943196,
+        "ci95_upper": 0.7411883492686401
+      },
+      "lingam": {
+        "mean": 0.2151291294169777,
+        "ci95_lower": 0.17656213349293703,
+        "ci95_upper": 0.2546573140090597
+      },
+      "mean_lingam_minus_cdfm": -0.4780941661272877
+    },
+    "1.00": {
+      "n": 30,
+      "cdfm": {
+        "mean": 0.7164930807419043,
+        "ci95_lower": 0.6783198379862427,
+        "ci95_upper": 0.7554450247975052
+      },
+      "lingam": {
+        "mean": 0.14730070695748043,
+        "ci95_lower": 0.10425560850289073,
+        "ci95_upper": 0.19012940122257369
+      },
+      "mean_lingam_minus_cdfm": -0.5691923737844239
+    }
+  },
+  "bootstrap_differences": {
+    "oracle_minus_best_single": {
+      "mean": 0.06991300052841076,
+      "ci95_lower": 0.05187624884989077,
+      "ci95_upper": 0.09027163419992736
+    },
+    "hybrid_minus_best_single": {
+      "mean": 0.0631730253584355,
+      "ci95_lower": 0.04270105941433936,
+      "ci95_upper": 0.08541786006441424
+    },
+    "lingam_minus_cdfm_lambda0": {
+      "mean": 0.16855091357626925,
+      "ci95_lower": 0.1185425507336054,
+      "ci95_upper": 0.22392834356286218
+    },
+    "cdfm_minus_lingam_lambda1": {
+      "mean": 0.5691923737844239,
+      "ci95_lower": 0.5077016699168293,
+      "ci95_upper": 0.6255295157658536
+    }
+  },
+  "router": {
+    "features": [
+      "mean_abs_skewness",
+      "mean_abs_excess_kurtosis",
+      "mean_abs_pearson_correlation",
+      "mean_abs_spearman_correlation",
+      "nonlinearity_gain_median",
+      "nonlinearity_gain_mean",
+      "nonlinearity_gain_max"
+    ],
+    "target_definition": "lingam_f1 >= cdfm_f1 + 0.03",
+    "defer_rate": 0.36,
+    "predicted_defer_rate": 0.4,
+    "accuracy": 0.8933333333333333,
+    "balanced_accuracy": 0.896412037037037,
+    "roc_auc": 0.9386574074074074,
+    "captured_gap": 0.9035948232941837,
+    "group_kfold_splits": 5,
+    "degenerate_training_folds": []
+  },
+  "runtime": {
+    "mean_cdfm_sec": 1.9025184973324456,
+    "mean_lingam_sec": 0.21268991066608578,
+    "total_cdfm_sec": 285.3777745998668,
+    "total_lingam_sec": 31.903486599912867
+  },
+  "decision": {
+    "label": "GO",
+    "reason": "两个端点均存在至少 0.05 F1 的相反优势，oracle headroom 至少 0.03，且简单 Router 达到预设利用门槛。",
+    "criteria": {
+      "lambda0_lingam_minus_cdfm_gte_0_05": true,
+      "lambda1_cdfm_minus_lingam_gte_0_05": true,
+      "oracle_gap_gte_0_03": true,
+      "hybrid_improvement_gte_0_015_or_captured_gap_gte_0_50": true
+    }
+  },
+  "environment": {
+    "python": "3.11.14",
+    "platform": "Windows-10-10.0.22631-SP0",
+    "device": "cpu",
+    "cuda_available": false,
+    "cuda_version": null,
+    "packages": {
+      "cdfm-base": "0.1.0",
+      "causal-learn": "0.1.4.5",
+      "numpy": "2.4.4",
+      "pandas": "3.0.2",
+      "scipy": "1.17.0",
+      "scikit-learn": "1.8.0",
+      "torch": "2.7.1"
+    },
+    "cdfm_info": {
+      "architecture": "CDFM",
+      "parameters": 9662124,
+      "device": "cpu",
+      "threshold": null,
+      "config": {
+        "embed_dim": 128,
+        "p_dim": 64,
+        "nhead": 8,
+        "dim_feedforward": 512,
+        "num_inds": 128,
+        "num_of_experts": 16,
+        "num_layers": 20,
+        "num_blocks_of_embedding": 3,
+        "calibration_config": {
+          "type": "linear",
+          "coefficients": [
+            0.33267646101338766,
+            -8.561597875439013,
+            -5.6420445061231765,
+            0.10496176235327509,
+            0.42748426213984464,
+            1.5096967709632714,
+            0.6579849133570793,
+            0.2591098974196735,
+            4.62897198057523,
+            -0.15767788685985695,
+            3.2585565096628075
+          ],
+          "feature_names": [
+            "mean",
+            "std",
+            "p25",
+            "p50",
+            "p75",
+            "p90",
+            "logD",
+            "median_gap",
+            "max_gap",
+            "knee_T"
+          ]
+        }
+      },
+      "calibration": {
+        "type": "linear",
+        "n_features": 10
+      }
+    },
+    "lingam_embedded_version": "1.5.4",
+    "matrix_convention": "A[source,target]",
+    "cdfm_threshold_policy": "official auto calibration; model.predict(X) without override",
+    "direct_lingam": {
+      "measure": "pwling",
+      "nonzero_tolerance": 1e-08
+    }
+  },
+  "bootstrap": {
+    "resamples": 2000,
+    "unit": "dataset",
+    "seed": 20260916
+  }
+}
