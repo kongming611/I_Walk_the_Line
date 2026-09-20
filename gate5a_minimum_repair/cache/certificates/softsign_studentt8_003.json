@@ -1,0 +1,13 @@
+{
+  "schema_version": "gate5a_task_certificate_v1",
+  "task_id": "softsign_studentt8_003",
+  "domain": "softsign_studentt8",
+  "candidate_edges": 29,
+  "test_count": 26,
+  "witness_count": 5,
+  "rr_lower_bound": 2,
+  "rr_exact": true,
+  "searched_max_k": 2,
+  "dag_candidates_checked": 288,
+  "truth_loaded": false
+}

@@ -1,0 +1,22 @@
+{
+  "schema_version": "gate5a_final_truth_open_receipt_v1",
+  "truth_loaded_after": [
+    "certificate_predictions.csv",
+    "pre_truth_hashes.json"
+  ],
+  "task_count": 120,
+  "complete_count": 120,
+  "pretruth_hashes_unchanged": {
+    "checks": {
+      "protocol": true,
+      "manifest": true,
+      "inference_receipt": true,
+      "witness_receipt": true,
+      "witnesses": true,
+      "certificate_receipt": true,
+      "certificate_predictions": true
+    },
+    "all_match": true
+  },
+  "truth_used_for_witnesses_or_certificates": false
+}

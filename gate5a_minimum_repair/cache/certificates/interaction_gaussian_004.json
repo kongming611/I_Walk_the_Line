@@ -1,0 +1,13 @@
+{
+  "schema_version": "gate5a_task_certificate_v1",
+  "task_id": "interaction_gaussian_004",
+  "domain": "interaction_gaussian",
+  "candidate_edges": 15,
+  "test_count": 51,
+  "witness_count": 5,
+  "rr_lower_bound": 2,
+  "rr_exact": true,
+  "searched_max_k": 2,
+  "dag_candidates_checked": 697,
+  "truth_loaded": false
+}

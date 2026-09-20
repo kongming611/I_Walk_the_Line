@@ -1,0 +1,23 @@
+{
+  "schema_version": "gate5a_prepare_receipt_v1",
+  "protocol_sha256": "92e550375edbb0060b878c34e2065c974e2f0c93cc75ebb88821c3991709b2df",
+  "task_count": 120,
+  "domain_counts": {
+    "interaction_gaussian": 20,
+    "linear_gaussian": 20,
+    "rff_studentt3": 20,
+    "sine_exponential": 20,
+    "softsign_studentt8": 20,
+    "tanh_laplace": 20
+  },
+  "all_graph_seeds_unique": true,
+  "truth_graph_written_but_not_loaded": true,
+  "cdfm_input_keys": [
+    "X_discovery"
+  ],
+  "certificate_input_keys": [
+    "X_validation",
+    "candidate_adjacency",
+    "rejected_witnesses"
+  ]
+}

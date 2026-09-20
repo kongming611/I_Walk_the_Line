@@ -1,0 +1,13 @@
+{
+  "schema_version": "gate5a_task_certificate_v1",
+  "task_id": "sine_exponential_000",
+  "domain": "sine_exponential",
+  "candidate_edges": 9,
+  "test_count": 69,
+  "witness_count": 7,
+  "rr_lower_bound": 3,
+  "rr_exact": true,
+  "searched_max_k": 3,
+  "dag_candidates_checked": 73716,
+  "truth_loaded": false
+}

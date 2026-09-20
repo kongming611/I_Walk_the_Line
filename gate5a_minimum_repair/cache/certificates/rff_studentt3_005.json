@@ -1,0 +1,13 @@
+{
+  "schema_version": "gate5a_task_certificate_v1",
+  "task_id": "rff_studentt3_005",
+  "domain": "rff_studentt3",
+  "candidate_edges": 14,
+  "test_count": 61,
+  "witness_count": 3,
+  "rr_lower_bound": 1,
+  "rr_exact": true,
+  "searched_max_k": 1,
+  "dag_candidates_checked": 35,
+  "truth_loaded": false
+}

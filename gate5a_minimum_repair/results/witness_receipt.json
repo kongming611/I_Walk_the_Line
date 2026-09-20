@@ -1,0 +1,11 @@
+{
+  "schema_version": "gate5a_witness_receipt_v1",
+  "task_count": 120,
+  "completed": 120,
+  "error_count": 0,
+  "alpha": 0.05,
+  "multiple_testing": "Holm over all local-Markov tests within task",
+  "validation_only": true,
+  "truth_loaded": false,
+  "witnesses_sha256": "59cdc514e5bfe8d3a6dcba7c4a7cbb64e78ef8a1ad37eae4d6eed81f3eda548b"
+}

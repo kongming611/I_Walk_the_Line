@@ -1,0 +1,30 @@
+# Gate-5A result: **GATE5A_BORDERLINE**
+
+> Can held-out causal contradictions produce a non-vacuous ground-truth-free lower bound on CDFM graph error?
+
+The formal certificate is a minimum structural repair lower bound. CDFM sees only `X_discovery`; CI tests, Holm correction, and repair search use only `X_validation`; the true DAG is opened only in the final evaluation stage.
+
+## Pooled metrics
+
+| scope   | domain   |   n_attempted |   n_complete |   n_errors |   validity_count |   validity_rate |   validity_lower_95 |   bad_graph_count |   bad_graph_rr_ge_1_count |   bad_graph_nonzero_rate |   severe_graph_count |   severe_graph_rr_ge_2_count |   severe_graph_rr_ge_2_rate |   mean_tightness |   exact_radius_rate |   mean_witness_count |
+|:--------|:---------|--------------:|-------------:|-----------:|-----------------:|----------------:|--------------------:|------------------:|--------------------------:|-------------------------:|---------------------:|-----------------------------:|----------------------------:|-----------------:|--------------------:|---------------------:|
+| pooled  | ALL      |           120 |          120 |          0 |              120 |               1 |            0.969727 |               118 |                        75 |                 0.635593 |                  100 |                           35 |                        0.35 |         0.175427 |            0.991667 |              2.39167 |
+
+## Domain metrics
+
+| scope   | domain               |   n_attempted |   n_complete |   n_errors |   validity_count |   validity_rate |   validity_lower_95 |   bad_graph_count |   bad_graph_rr_ge_1_count |   bad_graph_nonzero_rate |   severe_graph_count |   severe_graph_rr_ge_2_count |   severe_graph_rr_ge_2_rate |   mean_tightness |   exact_radius_rate |   mean_witness_count |
+|:--------|:---------------------|--------------:|-------------:|-----------:|-----------------:|----------------:|--------------------:|------------------:|--------------------------:|-------------------------:|---------------------:|-----------------------------:|----------------------------:|-----------------:|--------------------:|---------------------:|
+| domain  | interaction_gaussian |            20 |           20 |          0 |               20 |               1 |            0.831567 |                20 |                         8 |                 0.4      |                   19 |                            3 |                    0.157895 |        0.0551129 |                1    |                 1.25 |
+| domain  | linear_gaussian      |            20 |           20 |          0 |               20 |               1 |            0.831567 |                20 |                        12 |                 0.6      |                   17 |                            6 |                    0.352941 |        0.150308  |                1    |                 2    |
+| domain  | rff_studentt3        |            20 |           20 |          0 |               20 |               1 |            0.831567 |                20 |                        11 |                 0.55     |                   18 |                            3 |                    0.166667 |        0.148395  |                1    |                 1.55 |
+| domain  | sine_exponential     |            20 |           20 |          0 |               20 |               1 |            0.831567 |                19 |                        14 |                 0.736842 |                   16 |                            8 |                    0.5      |        0.256015  |                0.95 |                 3.55 |
+| domain  | softsign_studentt8   |            20 |           20 |          0 |               20 |               1 |            0.831567 |                20 |                        15 |                 0.75     |                   19 |                            9 |                    0.473684 |        0.15092   |                1    |                 2.85 |
+| domain  | tanh_laplace         |            20 |           20 |          0 |               20 |               1 |            0.831567 |                19 |                        15 |                 0.789474 |                   11 |                            6 |                    0.545455 |        0.302176  |                1    |                 3.15 |
+
+## Gate interpretation
+
+`{"schema_version": "gate5a_summary_v1", "decision": "GATE5A_BORDERLINE", "validity_ok": true, "nonvacuity_ok": false, "technical_ok": true, "error_rate": 0.0, "pooled_metrics": {"scope": "pooled", "domain": "ALL", "n_attempted": 120, "n_complete": 120, "n_errors": 0, "validity_count": 120, "validity_rate": 1.0, "validity_lower_95": 0.9697270274225799, "bad_graph_count": 118, "bad_graph_rr_ge_1_count": 75, "bad_graph_nonzero_rate": 0.635593220338983, "severe_graph_count": 100, "severe_graph_rr_ge_2_count": 35, "severe_graph_rr_ge_2_rate": 0.35, "mean_tightness": 0.17542660964271134, "exact_radius_rate": 0.9916666666666667, "mean_witness_count": 2.3916666666666666}, "gate_thresholds": {"GO": {"validity_rate_min": 0.95, "bad_graph_nonzero_rate_min": 0.4, "severe_graph_rr_ge_2_rate_min": 0.5}, "BORDERLINE": "validity passes but one or more non-vacuity conditions fail", "STOP": "validity fails, including any frequent RR_lower_bound > true SHD pattern", "INCONCLUSIVE": "technical failure rate exceeds 10 percent or an evaluation denominator is empty"}, "truth_loaded_after_pretruth_hashes": true, "pretruth_hashes_unchanged": {"checks": {"protocol": true, "manifest": true, "inference_receipt": true, "witness_receipt": true, "witnesses": true, "certificate_receipt": true, "certificate_predictions": true}, "all_match": true}, "post_truth_certificate_changes": false}`
+
+`RR_lower_bound` is exact when `rr_exact=true`. A value of 4 with `rr_exact=false` means the search found no valid repair at k=0,1,2,3 and claims only `RR >= 4`.
+
+All pre-truth hashes and detailed task-level certificates are retained under `results/` and `cache/`.

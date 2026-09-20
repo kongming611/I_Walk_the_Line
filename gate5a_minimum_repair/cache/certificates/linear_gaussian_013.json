@@ -1,0 +1,13 @@
+{
+  "schema_version": "gate5a_task_certificate_v1",
+  "task_id": "linear_gaussian_013",
+  "domain": "linear_gaussian",
+  "candidate_edges": 18,
+  "test_count": 50,
+  "witness_count": 8,
+  "rr_lower_bound": 3,
+  "rr_exact": true,
+  "searched_max_k": 3,
+  "dag_candidates_checked": 6505,
+  "truth_loaded": false
+}

@@ -1,0 +1,35 @@
+{
+  "schema_version": "gate5a_pre_truth_hashes_v1",
+  "files": {
+    "protocol": {
+      "path": "gate5a_minimum_repair/results/frozen_protocol.json",
+      "sha256": "92e550375edbb0060b878c34e2065c974e2f0c93cc75ebb88821c3991709b2df"
+    },
+    "manifest": {
+      "path": "gate5a_minimum_repair/results/manifest.csv",
+      "sha256": "ad14e676b9a57396feaf04203e15857f51cc048c9ac4a461090c377a19b68209"
+    },
+    "inference_receipt": {
+      "path": "gate5a_minimum_repair/results/inference_receipt.json",
+      "sha256": "1df09e93e6b4692682963e0c894e88a47ce7292cf3795002559a428c962c3242"
+    },
+    "witness_receipt": {
+      "path": "gate5a_minimum_repair/results/witness_receipt.json",
+      "sha256": "73f39f69b177e32ef112eb0cdc93281e2c2cb8d8361a3d2156f9f571ff240d6e"
+    },
+    "witnesses": {
+      "path": "gate5a_minimum_repair/results/witnesses.csv",
+      "sha256": "59cdc514e5bfe8d3a6dcba7c4a7cbb64e78ef8a1ad37eae4d6eed81f3eda548b"
+    },
+    "certificate_receipt": {
+      "path": "gate5a_minimum_repair/results/certificate_receipt.json",
+      "sha256": "028e8d7b4e3b7503e72826ebf5079b15f55586a633bf8cdb8718ae95430a8381"
+    },
+    "certificate_predictions": {
+      "path": "gate5a_minimum_repair/results/certificate_predictions.csv",
+      "sha256": "5e7a3cb58361c98dfb887986163e0b09053b69a7d1cfab2d460cb85efa9f05c3"
+    }
+  },
+  "final_truth_loaded": false,
+  "hashes_sealed_before_truth": true
+}

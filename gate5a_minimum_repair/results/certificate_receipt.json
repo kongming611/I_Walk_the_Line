@@ -1,0 +1,10 @@
+{
+  "schema_version": "gate5a_certificate_receipt_v1",
+  "task_count": 120,
+  "completed": 120,
+  "error_count": 0,
+  "max_repair_k": 3,
+  "certificate_predictions_sha256": "5e7a3cb58361c98dfb887986163e0b09053b69a7d1cfab2d460cb85efa9f05c3",
+  "validation_only": true,
+  "truth_loaded": false
+}

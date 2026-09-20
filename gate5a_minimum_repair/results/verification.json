@@ -1,0 +1,36 @@
+{
+  "schema_version": "gate5a_verification_v1",
+  "required_artifacts": {
+    "gate5a_minimum_repair/results/frozen_protocol.json": true,
+    "gate5a_minimum_repair/results/manifest.csv": true,
+    "gate5a_minimum_repair/results/prepare_receipt.json": true,
+    "gate5a_minimum_repair/results/inference_receipt.json": true,
+    "gate5a_minimum_repair/results/witnesses.csv": true,
+    "gate5a_minimum_repair/results/witness_receipt.json": true,
+    "gate5a_minimum_repair/results/certificate_predictions.csv": true,
+    "gate5a_minimum_repair/results/certificate_receipt.json": true,
+    "gate5a_minimum_repair/results/pre_truth_hashes.json": true,
+    "gate5a_minimum_repair/results/final_predictions.csv": true,
+    "gate5a_minimum_repair/results/final_metrics.csv": true,
+    "gate5a_minimum_repair/results/final_summary.json": true,
+    "gate5a_minimum_repair/results/final_truth_open_receipt.json": true,
+    "gate5a_minimum_repair/results/REPORT.md": true
+  },
+  "all_required_artifacts": true,
+  "raw_predictions_complete": true,
+  "task_witnesses_complete": true,
+  "task_certificates_complete": true,
+  "pretruth_hashes_unchanged": {
+    "checks": {
+      "protocol": true,
+      "manifest": true,
+      "inference_receipt": true,
+      "witness_receipt": true,
+      "witnesses": true,
+      "certificate_receipt": true,
+      "certificate_predictions": true
+    },
+    "all_match": true
+  },
+  "truth_open_receipt_exists": true
+}

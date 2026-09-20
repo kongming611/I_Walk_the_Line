@@ -1,0 +1,51 @@
+{
+  "schema_version": "gate5a_summary_v1",
+  "decision": "GATE5A_BORDERLINE",
+  "validity_ok": true,
+  "nonvacuity_ok": false,
+  "technical_ok": true,
+  "error_rate": 0.0,
+  "pooled_metrics": {
+    "scope": "pooled",
+    "domain": "ALL",
+    "n_attempted": 120,
+    "n_complete": 120,
+    "n_errors": 0,
+    "validity_count": 120,
+    "validity_rate": 1.0,
+    "validity_lower_95": 0.9697270274225799,
+    "bad_graph_count": 118,
+    "bad_graph_rr_ge_1_count": 75,
+    "bad_graph_nonzero_rate": 0.635593220338983,
+    "severe_graph_count": 100,
+    "severe_graph_rr_ge_2_count": 35,
+    "severe_graph_rr_ge_2_rate": 0.35,
+    "mean_tightness": 0.17542660964271134,
+    "exact_radius_rate": 0.9916666666666667,
+    "mean_witness_count": 2.3916666666666666
+  },
+  "gate_thresholds": {
+    "GO": {
+      "validity_rate_min": 0.95,
+      "bad_graph_nonzero_rate_min": 0.4,
+      "severe_graph_rr_ge_2_rate_min": 0.5
+    },
+    "BORDERLINE": "validity passes but one or more non-vacuity conditions fail",
+    "STOP": "validity fails, including any frequent RR_lower_bound > true SHD pattern",
+    "INCONCLUSIVE": "technical failure rate exceeds 10 percent or an evaluation denominator is empty"
+  },
+  "truth_loaded_after_pretruth_hashes": true,
+  "pretruth_hashes_unchanged": {
+    "checks": {
+      "protocol": true,
+      "manifest": true,
+      "inference_receipt": true,
+      "witness_receipt": true,
+      "witnesses": true,
+      "certificate_receipt": true,
+      "certificate_predictions": true
+    },
+    "all_match": true
+  },
+  "post_truth_certificate_changes": false
+}

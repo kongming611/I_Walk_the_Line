@@ -1,0 +1,118 @@
+{
+  "schema_version": "gate5a_minimum_repair_protocol_v1",
+  "freeze_date": "2026-09-21",
+  "scientific_question": "Can held-out causal contradictions produce a non-vacuous ground-truth-free lower bound on CDFM graph error?",
+  "formal_target": "ground-truth-free minimum structural repair / graph-error lower-bound certificate",
+  "data": {
+    "domains": [
+      {
+        "domain": "linear_gaussian",
+        "generator_mechanism": "rff",
+        "noise": "gaussian",
+        "lambda": 0.0
+      },
+      {
+        "domain": "rff_studentt3",
+        "generator_mechanism": "rff",
+        "noise": "student_t3",
+        "lambda": 1.0
+      },
+      {
+        "domain": "tanh_laplace",
+        "generator_mechanism": "tanh",
+        "noise": "laplace",
+        "lambda": 1.0
+      },
+      {
+        "domain": "softsign_studentt8",
+        "generator_mechanism": "softsign",
+        "noise": "student_t8",
+        "lambda": 1.0
+      },
+      {
+        "domain": "interaction_gaussian",
+        "generator_mechanism": "interaction",
+        "noise": "gaussian",
+        "lambda": 1.0
+      },
+      {
+        "domain": "sine_exponential",
+        "generator_mechanism": "sine",
+        "noise": "exponential",
+        "lambda": 1.0
+      }
+    ],
+    "domain_count": 6,
+    "tasks_per_domain": 20,
+    "task_count": 120,
+    "D": 10,
+    "N_total": 1000,
+    "N_discovery": 500,
+    "N_validation": 500,
+    "split": "first 500 rows discovery, last 500 rows validation; standardization fit on discovery only",
+    "graph_seed_range": [
+      850000,
+      850119
+    ]
+  },
+  "cdfm": {
+    "model": "DMIRLAB/CDFM",
+    "input": "X_discovery only",
+    "training": false,
+    "fine_tuning": false,
+    "source_modification": false
+  },
+  "candidate_graph": {
+    "raw_output": "CDFM adjacency and edge probabilities from X_discovery",
+    "projection": "For each unordered pair retain the selected orientation with larger probability; sort retained edges by descending probability and greedily reject any edge that creates a directed cycle.",
+    "tie_break": "higher probability, then smaller source index, then smaller target index",
+    "candidate_is_dag": true,
+    "validation_or_truth_used": false
+  },
+  "witnesses": {
+    "statements": "For every candidate node Y, test Y independent of each non-descendant non-parent X given Pa_candidate(Y).",
+    "ci_test": "causal-learn RCIT",
+    "rcit_parameters": {
+      "approx": "lpd4",
+      "num_f": 100,
+      "num_f2": 5,
+      "rcit": true
+    },
+    "test_data": "X_validation only",
+    "multiple_testing": "Holm step-down over every local-Markov statement generated for one task",
+    "alpha": 0.05,
+    "witness": "a statement with Holm-adjusted rejection at alpha"
+  },
+  "repair": {
+    "distance": "directed pairwise SHD; add, delete, or reverse one unordered-pair state costs one",
+    "space": "DAGs on the same ten observed nodes",
+    "search": "exhaustive pair-state enumeration with DAG pruning for k=0,1,2,3",
+    "no_solution_by_max_k": "report RR_lower_bound=4 and rr_exact=false; claim only RR >= 4",
+    "witness_resolution": "a repaired DAG resolves a witness only when it does not d-separate the tested pair given the fixed candidate parent set"
+  },
+  "evaluation": {
+    "truth": "opened only after certificate predictions and pre_truth_hashes.json",
+    "true_error": "SHD(candidate_DAG, ground_truth_DAG)",
+    "validity": "RR_lower_bound <= true SHD",
+    "bad_graph": "true SHD >= 1",
+    "severe_bad_graph": "true SHD >= 4",
+    "tightness": "RR_lower_bound / true SHD for true SHD > 0"
+  },
+  "gate": {
+    "GO": {
+      "validity_rate_min": 0.95,
+      "bad_graph_nonzero_rate_min": 0.4,
+      "severe_graph_rr_ge_2_rate_min": 0.5
+    },
+    "BORDERLINE": "validity passes but one or more non-vacuity conditions fail",
+    "STOP": "validity fails, including any frequent RR_lower_bound > true SHD pattern",
+    "INCONCLUSIVE": "technical failure rate exceeds 10 percent or an evaluation denominator is empty"
+  },
+  "truth_isolation": {
+    "cdfm_input_is_discovery_only": true,
+    "witness_builder_accepts_truth": false,
+    "certificate_builder_accepts_truth": false,
+    "final_truth_loaded_before_certificate": false,
+    "final_truth_loader": "open_final_truth called only after pre_truth_hashes.json"
+  }
+}
