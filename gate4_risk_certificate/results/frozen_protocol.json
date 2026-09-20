@@ -1,0 +1,149 @@
+{
+  "schema_version": "gate4_risk_certificate_protocol_v1",
+  "freeze_date": "2026-09-19",
+  "scientific_question": "Ground-truth-free graph-risk certification for causal foundation models under mechanism shift",
+  "certificate": {
+    "target": "whole_graph_risk=1-directed_F1",
+    "primary_alpha": 0.1,
+    "secondary_alpha": 0.05,
+    "bad_risk_threshold": 0.3,
+    "upper_bound": "clip(predicted_mean_risk + finite_sample_calibration_quantile * predicted_scale, 0, 1)",
+    "calibration": "maximum of pooled, mechanism-family, and noise-family one-sided finite-sample quantiles",
+    "shift_claim": "empirical unseen-family stability; no exchangeability guarantee is claimed across mechanism shift"
+  },
+  "data": {
+    "train": {
+      "source": "Gate-3C train",
+      "mechanisms": [
+        "linear",
+        "tanh",
+        "rff",
+        "interaction"
+      ],
+      "noises": [
+        "laplace",
+        "gaussian",
+        "student_t8",
+        "student_t3"
+      ],
+      "task_count": 160
+    },
+    "calibration": {
+      "source": "Gate-3C dev",
+      "mechanisms": [
+        "softsign",
+        "sine"
+      ],
+      "noises": [
+        "laplace",
+        "gaussian",
+        "student_t8",
+        "student_t3"
+      ],
+      "task_count": 80
+    },
+    "dev": {
+      "source": "Gate-3C final used as development",
+      "mechanisms": [
+        "quadratic",
+        "piecewise"
+      ],
+      "noises": [
+        "gaussian",
+        "student_t3",
+        "exponential"
+      ],
+      "task_count": 120
+    },
+    "final": {
+      "mechanisms": [
+        "arctan",
+        "cubic"
+      ],
+      "noises": [
+        "gaussian",
+        "student_t3",
+        "centered_lognormal"
+      ],
+      "tasks_per_domain": 30,
+      "task_count": 180,
+      "graph_seed_range": [
+        700000,
+        700179
+      ],
+      "all_graph_seeds_disjoint": true
+    },
+    "N": 1000,
+    "D": 10,
+    "random_task_split": false
+  },
+  "cdfm": {
+    "model": "DMIRLAB/CDFM",
+    "full_call": "CDFM.from_pretrained('DMIRLAB/CDFM').predict(X)",
+    "subset_calls_per_task": 10,
+    "training": false,
+    "fine_tuning": false,
+    "source_modification": false
+  },
+  "baselines": {
+    "entropy": "mean CDFM Bernoulli entropy",
+    "ood": "robust Mahalanobis score on metadata, fitted on TRAIN only",
+    "self_compatibility": "graphical latent-projection incompatibility score",
+    "lovo": "graphical LOVO parent-adjustment error and identification coverage",
+    "ordinary_risk_regression": "Ridge on metadata and ordinary CDFM confidence summaries",
+    "threshold_aware": [
+      "cdfm_edge_density",
+      "cdfm_max_degree",
+      "cdfm_mean_entropy",
+      "cdfm_auto_threshold",
+      "cdfm_threshold_margin_mean",
+      "cdfm_threshold_margin_p10",
+      "cdfm_threshold_margin_p25",
+      "cdfm_threshold_near_frac_002",
+      "cdfm_threshold_near_frac_005"
+    ]
+  },
+  "proposed": {
+    "name": "Boundary-aware Latent Projection Consistency (BLPC)",
+    "features": [
+      "cdfm_edge_density",
+      "cdfm_max_degree",
+      "cdfm_mean_entropy",
+      "cdfm_auto_threshold",
+      "cdfm_threshold_margin_mean",
+      "cdfm_threshold_margin_p10",
+      "cdfm_threshold_margin_p25",
+      "cdfm_threshold_near_frac_002",
+      "cdfm_threshold_near_frac_005",
+      "blpc_weighted_contradiction",
+      "blpc_confident_contradiction_rate",
+      "blpc_direction_flip_rate",
+      "blpc_worst_delete_inconsistency"
+    ],
+    "model": "StandardScaler + Ridge(alpha=1.0)",
+    "no_search": true
+  },
+  "gate": {
+    "reliability": {
+      "pooled_exceedance_max": 0.1,
+      "macro_exceedance_max": 0.12,
+      "pooled_upper_95_max": 0.15,
+      "domains_exceedance_max": 0.2,
+      "max_domain_exceedance": 0.25,
+      "false_safe_rate_max": 0.1
+    },
+    "increment": {
+      "aurc_relative_improvement_min": 0.1,
+      "safe_coverage_absolute_gain_min": 0.1,
+      "bad_auroc_absolute_gain_min": 0.05,
+      "allowed_exceedance_loss_vs_threshold": 0.02
+    }
+  },
+  "truth_isolation": {
+    "feature_builder_accepts_truth": false,
+    "final_truth_used_for_feature_construction": false,
+    "final_truth_used_for_model_selection": false,
+    "final_truth_used_for_hyperparameter_choice": false,
+    "final_truth_loader": "called only after certificate_receipt.json and pre_truth_hashes.json"
+  }
+}

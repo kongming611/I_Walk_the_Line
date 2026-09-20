@@ -1,0 +1,72 @@
+{
+  "schema_version": "gate4_certificate_receipt_v1",
+  "protocol_sha256": "9c8b21222f0b43fe18a1cd75263be06cd393407d80e9a224472063fb7c5aee7d",
+  "feature_sha256": "1ac43f9d13283a63441208700e35cbf8a932ae6bc6b835c172037b603a95cd18",
+  "primary_alpha": 0.1,
+  "secondary_alpha": 0.05,
+  "calibration_quantiles": {
+    "constant": {
+      "pooled": 1.2692891128455026,
+      "max_mechanism": 1.434587448926483,
+      "max_noise": 1.5120710439644431,
+      "robust_max": 1.5120710439644431
+    },
+    "entropy": {
+      "pooled": 1.0024111053068732,
+      "max_mechanism": 1.0990412978357242,
+      "max_noise": 1.3026159801077666,
+      "robust_max": 1.3026159801077666
+    },
+    "ood": {
+      "pooled": 0.9881049451157861,
+      "max_mechanism": 1.1128623651088294,
+      "max_noise": 1.245338521972459,
+      "robust_max": 1.245338521972459
+    },
+    "self_compatibility": {
+      "pooled": 1.05094676867658,
+      "max_mechanism": 1.1216144940157091,
+      "max_noise": 1.1446401079593251,
+      "robust_max": 1.1446401079593251
+    },
+    "lovo": {
+      "pooled": 0.8870099729312354,
+      "max_mechanism": 1.0519042050647973,
+      "max_noise": 1.0519042050647973,
+      "robust_max": 1.0519042050647973
+    },
+    "ordinary_risk_regression": {
+      "pooled": 1.1535090581640155,
+      "max_mechanism": 1.291792246486507,
+      "max_noise": 1.3037177149621073,
+      "robust_max": 1.3037177149621073
+    },
+    "threshold_aware": {
+      "pooled": 1.1226844817359856,
+      "max_mechanism": 1.474510847365312,
+      "max_noise": 1.9327494290015519,
+      "robust_max": 1.9327494290015519
+    },
+    "proposed_blpc": {
+      "pooled": 0.9483882496492205,
+      "max_mechanism": 1.504144399811625,
+      "max_noise": 1.8275542191481398,
+      "robust_max": 1.8275542191481398
+    }
+  },
+  "methods": [
+    "constant",
+    "entropy",
+    "ood",
+    "self_compatibility",
+    "lovo",
+    "ordinary_risk_regression",
+    "threshold_aware",
+    "proposed_blpc"
+  ],
+  "fit_split": "TRAIN only",
+  "calibration_split": "CALIBRATION only",
+  "final_truth_loaded": false,
+  "final_predictions_sha256": "c9011ed231ef03007c8b62950b2a8385ba7f97ea51e2fa35e051d0981117ff12",
+  "final_task_count": 180
+}

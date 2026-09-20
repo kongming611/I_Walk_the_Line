@@ -1,0 +1,8 @@
+{
+  "schema_version": "gate4_final_truth_open_receipt_v1",
+  "final_truth_loaded_after_freeze_receipts": true,
+  "final_truth_used_for_feature_construction": false,
+  "final_truth_used_for_model_selection": false,
+  "pre_truth_hashes_verified": true,
+  "final_task_count": 180
+}

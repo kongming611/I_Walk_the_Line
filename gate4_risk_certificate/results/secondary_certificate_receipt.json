@@ -1,0 +1,59 @@
+{
+  "schema_version": "gate4_secondary_certificate_receipt_v1",
+  "secondary_alpha": 0.05,
+  "calibration_quantiles": {
+    "constant": {
+      "pooled": 1.5120710439644434,
+      "max_mechanism": 1.512071043964444,
+      "max_noise": 1.6577402026358086,
+      "robust_max": 1.6577402026358086
+    },
+    "entropy": {
+      "pooled": 1.302615980107768,
+      "max_mechanism": 1.3375575928238517,
+      "max_noise": 1.5336166604605106,
+      "robust_max": 1.5336166604605106
+    },
+    "ood": {
+      "pooled": 1.1703870181116642,
+      "max_mechanism": 1.1885601744118934,
+      "max_noise": 1.3036935130147271,
+      "robust_max": 1.3036935130147271
+    },
+    "self_compatibility": {
+      "pooled": 1.336543556044009,
+      "max_mechanism": 1.501418980525132,
+      "max_noise": 1.6856112826947136,
+      "robust_max": 1.6856112826947136
+    },
+    "lovo": {
+      "pooled": 1.2955700424734502,
+      "max_mechanism": 1.3705324021296927,
+      "max_noise": 1.6517304869264193,
+      "robust_max": 1.6517304869264193
+    },
+    "ordinary_risk_regression": {
+      "pooled": 1.3037177149621078,
+      "max_mechanism": 1.43488407760561,
+      "max_noise": 1.4654146550017055,
+      "robust_max": 1.4654146550017055
+    },
+    "threshold_aware": {
+      "pooled": 1.4745108473653126,
+      "max_mechanism": 1.9806516912309753,
+      "max_noise": 2.1395507867679666,
+      "robust_max": 2.1395507867679666
+    },
+    "proposed_blpc": {
+      "pooled": 1.5041443998116262,
+      "max_mechanism": 1.9516426649550158,
+      "max_noise": 2.004949184741145,
+      "robust_max": 2.004949184741145
+    }
+  },
+  "source_primary_predictions_sha256": "c9011ed231ef03007c8b62950b2a8385ba7f97ea51e2fa35e051d0981117ff12",
+  "source_calibration_predictions_sha256": "13cfb86845479ff7f39215f613beb62cad65f101a2af498edb7a5a15c3a81ecf",
+  "final_truth_used_for_fit_or_selection": false,
+  "metrics_path": "results\\final_certificate_metrics_95.csv",
+  "risk_coverage_path": "results\\final_risk_coverage.csv"
+}

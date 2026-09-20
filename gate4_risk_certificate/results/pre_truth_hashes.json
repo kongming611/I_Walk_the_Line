@@ -1,0 +1,10 @@
+{
+  "schema_version": "gate4_pre_truth_hashes_v1",
+  "final_truth_loaded": false,
+  "files": {
+    "frozen_protocol.json": "9c8b21222f0b43fe18a1cd75263be06cd393407d80e9a224472063fb7c5aee7d",
+    "features_ground_truth_free.csv": "1ac43f9d13283a63441208700e35cbf8a932ae6bc6b835c172037b603a95cd18",
+    "certificate_receipt.json": "144bbf9ced07b4814c14a0685a3e0a7bf3e2d7e76559205139e832a1c442aaf4",
+    "final_certificate_predictions.csv": "c9011ed231ef03007c8b62950b2a8385ba7f97ea51e2fa35e051d0981117ff12"
+  }
+}

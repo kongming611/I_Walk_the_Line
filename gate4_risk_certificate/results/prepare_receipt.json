@@ -1,0 +1,18 @@
+{
+  "schema_version": "gate4_prepare_receipt_v1",
+  "protocol_sha256": "9c8b21222f0b43fe18a1cd75263be06cd393407d80e9a224472063fb7c5aee7d",
+  "task_counts": {
+    "calibration": 80,
+    "dev": 120,
+    "final": 180,
+    "train": 160
+  },
+  "all_graph_seeds_unique": true,
+  "new_mechanisms": [
+    "arctan",
+    "cubic"
+  ],
+  "new_noise": "centered_lognormal",
+  "truth_graph_in_feature_set": false,
+  "final_truth_loaded": false
+}

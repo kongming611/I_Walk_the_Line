@@ -1,0 +1,25 @@
+{
+  "required_artifacts": {
+    "results\\frozen_protocol.json": true,
+    "results\\prepare_receipt.json": true,
+    "results\\inference_receipt.json": true,
+    "results\\features_receipt.json": true,
+    "results\\certificate_receipt.json": true,
+    "results\\pre_truth_hashes.json": true,
+    "results\\final_truth_open_receipt.json": true,
+    "results\\final_summary.json": true,
+    "results\\REPORT.md": true,
+    "results\\final_certificate_metrics_95.csv": true,
+    "results\\final_risk_coverage.csv": true,
+    "results\\risk_coverage_curve.png": true,
+    "results\\secondary_certificate_receipt.json": true
+  },
+  "historical_inputs_unchanged": {
+    "gate3c_final_topic_decision\\results\\train_manifest.csv": true,
+    "gate3c_final_topic_decision\\results\\dev_manifest.csv": true,
+    "gate3c_final_topic_decision\\results\\final_manifest.csv": true
+  },
+  "all_required_artifacts": true,
+  "all_historical_inputs_unchanged": true,
+  "git_diff_check": true
+}

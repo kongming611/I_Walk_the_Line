@@ -1,0 +1,9 @@
+{
+  "schema_version": "gate4_inference_receipt_v1",
+  "task_count": 540,
+  "subset_calls_per_task": 10,
+  "expected_call_count": 5940,
+  "completed_call_count": 5940,
+  "old_full_cache_reruns": 0,
+  "errors_path": null
+}
