@@ -1,0 +1,1129 @@
+{
+  "schema_version": "gate5b_anm_witnesses_v1",
+  "task_id": "sine_exponential_005",
+  "domain": "sine_exponential",
+  "candidate_edges": 8,
+  "validation_rows": 500,
+  "split": "deterministic 250/250 A/B",
+  "regressor": {
+    "class": "ExtraTreesRegressor",
+    "n_estimators": 300,
+    "min_samples_leaf": 5,
+    "max_features": 1.0,
+    "bootstrap": false,
+    "n_jobs": 1
+  },
+  "test_count": 82,
+  "rejected_witness_count": 12,
+  "truth_loaded": false,
+  "witnesses": [
+    {
+      "kind": "anm",
+      "y": 0,
+      "z": 1,
+      "candidate_parents": [],
+      "p_a_to_b": 0.3962273513788648,
+      "p_b_to_a": 0.5588543478598409,
+      "p_atom": 0.7924547027577296,
+      "holm_adjusted_p_value": 1.0,
+      "rejected": false,
+      "repair_signature_rule": "same candidate parents for Y and Z remains non-descendant"
+    },
+    {
+      "kind": "anm",
+      "y": 0,
+      "z": 2,
+      "candidate_parents": [],
+      "p_a_to_b": 0.27637706003944307,
+      "p_b_to_a": 0.3758014847525126,
+      "p_atom": 0.5527541200788861,
+      "holm_adjusted_p_value": 1.0,
+      "rejected": false,
+      "repair_signature_rule": "same candidate parents for Y and Z remains non-descendant"
+    },
+    {
+      "kind": "anm",
+      "y": 0,
+      "z": 3,
+      "candidate_parents": [],
+      "p_a_to_b": 0.21502149714587848,
+      "p_b_to_a": 0.0013573437425600243,
+      "p_atom": 0.0027146874851200486,
+      "holm_adjusted_p_value": 0.18188406150304326,
+      "rejected": false,
+      "repair_signature_rule": "same candidate parents for Y and Z remains non-descendant"
+    },
+    {
+      "kind": "anm",
+      "y": 0,
+      "z": 4,
+      "candidate_parents": [],
+      "p_a_to_b": 0.3602357293795895,
+      "p_b_to_a": 0.400832648333282,
+      "p_atom": 0.720471458759179,
+      "holm_adjusted_p_value": 1.0,
+      "rejected": false,
+      "repair_signature_rule": "same candidate parents for Y and Z remains non-descendant"
+    },
+    {
+      "kind": "anm",
+      "y": 0,
+      "z": 6,
+      "candidate_parents": [],
+      "p_a_to_b": 0.6007325890869917,
+      "p_b_to_a": 0.15773559413433857,
+      "p_atom": 0.31547118826867715,
+      "holm_adjusted_p_value": 1.0,
+      "rejected": false,
+      "repair_signature_rule": "same candidate parents for Y and Z remains non-descendant"
+    },
+    {
+      "kind": "anm",
+      "y": 0,
+      "z": 8,
+      "candidate_parents": [],
+      "p_a_to_b": 7.181356357000013e-05,
+      "p_b_to_a": 0.0004977634157242727,
+      "p_atom": 0.00014362712714000025,
+      "holm_adjusted_p_value": 0.010484780281220019,
+      "rejected": true,
+      "repair_signature_rule": "same candidate parents for Y and Z remains non-descendant"
+    },
+    {
+      "kind": "anm",
+      "y": 0,
+      "z": 9,
+      "candidate_parents": [],
+      "p_a_to_b": 0.31760458241919687,
+      "p_b_to_a": 0.29658008840281225,
+      "p_atom": 0.5931601768056245,
+      "holm_adjusted_p_value": 1.0,
+      "rejected": false,
+      "repair_signature_rule": "same candidate parents for Y and Z remains non-descendant"
+    },
+    {
+      "kind": "anm",
+      "y": 1,
+      "z": 0,
+      "candidate_parents": [
+        8
+      ],
+      "p_a_to_b": 0.6100875870266598,
+      "p_b_to_a": 0.857990159730502,
+      "p_atom": 1.0,
+      "holm_adjusted_p_value": 1.0,
+      "rejected": false,
+      "repair_signature_rule": "same candidate parents for Y and Z remains non-descendant"
+    },
+    {
+      "kind": "anm",
+      "y": 1,
+      "z": 2,
+      "candidate_parents": [
+        8
+      ],
+      "p_a_to_b": 1.4432899320127035e-14,
+      "p_b_to_a": 2.860855996544842e-11,
+      "p_atom": 2.886579864025407e-14,
+      "holm_adjusted_p_value": 2.3669954885008337e-12,
+      "rejected": true,
+      "repair_signature_rule": "same candidate parents for Y and Z remains non-descendant"
+    },
+    {
+      "kind": "anm",
+      "y": 1,
+      "z": 3,
+      "candidate_parents": [
+        8
+      ],
+      "p_a_to_b": 0.6306703007917387,
+      "p_b_to_a": 0.00866784335700943,
+      "p_atom": 0.01733568671401886,
+      "holm_adjusted_p_value": 1.0,
+      "rejected": false,
+      "repair_signature_rule": "same candidate parents for Y and Z remains non-descendant"
+    },
+    {
+      "kind": "anm",
+      "y": 1,
+      "z": 4,
+      "candidate_parents": [
+        8
+      ],
+      "p_a_to_b": 0.20451412075855502,
+      "p_b_to_a": 1.0,
+      "p_atom": 0.40902824151711004,
+      "holm_adjusted_p_value": 1.0,
+      "rejected": false,
+      "repair_signature_rule": "same candidate parents for Y and Z remains non-descendant"
+    },
+    {
+      "kind": "anm",
+      "y": 1,
+      "z": 5,
+      "candidate_parents": [
+        8
+      ],
+      "p_a_to_b": 0.44393765624593984,
+      "p_b_to_a": 0.3500171090792905,
+      "p_atom": 0.700034218158581,
+      "holm_adjusted_p_value": 1.0,
+      "rejected": false,
+      "repair_signature_rule": "same candidate parents for Y and Z remains non-descendant"
+    },
+    {
+      "kind": "anm",
+      "y": 1,
+      "z": 6,
+      "candidate_parents": [
+        8
+      ],
+      "p_a_to_b": 0.2707707109381424,
+      "p_b_to_a": 0.6177970287521897,
+      "p_atom": 0.5415414218762848,
+      "holm_adjusted_p_value": 1.0,
+      "rejected": false,
+      "repair_signature_rule": "same candidate parents for Y and Z remains non-descendant"
+    },
+    {
+      "kind": "anm",
+      "y": 1,
+      "z": 7,
+      "candidate_parents": [
+        8
+      ],
+      "p_a_to_b": 0.31159172010864333,
+      "p_b_to_a": 0.7761848120109827,
+      "p_atom": 0.6231834402172867,
+      "holm_adjusted_p_value": 1.0,
+      "rejected": false,
+      "repair_signature_rule": "same candidate parents for Y and Z remains non-descendant"
+    },
+    {
+      "kind": "anm",
+      "y": 1,
+      "z": 8,
+      "candidate_parents": [
+        8
+      ],
+      "p_a_to_b": 0.01587978808754109,
+      "p_b_to_a": 0.0003992245267874228,
+      "p_atom": 0.0007984490535748456,
+      "holm_adjusted_p_value": 0.055891433750239194,
+      "rejected": false,
+      "repair_signature_rule": "same candidate parents for Y and Z remains non-descendant"
+    },
+    {
+      "kind": "anm",
+      "y": 1,
+      "z": 9,
+      "candidate_parents": [
+        8
+      ],
+      "p_a_to_b": 0.6652043772490384,
+      "p_b_to_a": 0.4887834662524533,
+      "p_atom": 0.9775669325049066,
+      "holm_adjusted_p_value": 1.0,
+      "rejected": false,
+      "repair_signature_rule": "same candidate parents for Y and Z remains non-descendant"
+    },
+    {
+      "kind": "anm",
+      "y": 2,
+      "z": 0,
+      "candidate_parents": [
+        8
+      ],
+      "p_a_to_b": 0.8495831366588105,
+      "p_b_to_a": 0.2735767896787833,
+      "p_atom": 0.5471535793575666,
+      "holm_adjusted_p_value": 1.0,
+      "rejected": false,
+      "repair_signature_rule": "same candidate parents for Y and Z remains non-descendant"
+    },
+    {
+      "kind": "anm",
+      "y": 2,
+      "z": 1,
+      "candidate_parents": [
+        8
+      ],
+      "p_a_to_b": 1.39678378863195e-08,
+      "p_b_to_a": 5.827407445480048e-10,
+      "p_atom": 1.1654814890960097e-09,
+      "holm_adjusted_p_value": 9.207303763858476e-08,
+      "rejected": true,
+      "repair_signature_rule": "same candidate parents for Y and Z remains non-descendant"
+    },
+    {
+      "kind": "anm",
+      "y": 2,
+      "z": 3,
+      "candidate_parents": [
+        8
+      ],
+      "p_a_to_b": 2.6490840702164675e-06,
+      "p_b_to_a": 7.80336612770105e-05,
+      "p_atom": 5.298168140432935e-06,
+      "holm_adjusted_p_value": 0.00039736261053247013,
+      "rejected": true,
+      "repair_signature_rule": "same candidate parents for Y and Z remains non-descendant"
+    },
+    {
+      "kind": "anm",
+      "y": 2,
+      "z": 4,
+      "candidate_parents": [
+        8
+      ],
+      "p_a_to_b": 0.2928985250671554,
+      "p_b_to_a": 0.36300950838798207,
+      "p_atom": 0.5857970501343108,
+      "holm_adjusted_p_value": 1.0,
+      "rejected": false,
+      "repair_signature_rule": "same candidate parents for Y and Z remains non-descendant"
+    },
+    {
+      "kind": "anm",
+      "y": 2,
+      "z": 5,
+      "candidate_parents": [
+        8
+      ],
+      "p_a_to_b": 0.15477280653336,
+      "p_b_to_a": 0.5844543229432873,
+      "p_atom": 0.30954561306672,
+      "holm_adjusted_p_value": 1.0,
+      "rejected": false,
+      "repair_signature_rule": "same candidate parents for Y and Z remains non-descendant"
+    },
+    {
+      "kind": "anm",
+      "y": 2,
+      "z": 6,
+      "candidate_parents": [
+        8
+      ],
+      "p_a_to_b": 1.0,
+      "p_b_to_a": 0.9951990142534012,
+      "p_atom": 1.0,
+      "holm_adjusted_p_value": 1.0,
+      "rejected": false,
+      "repair_signature_rule": "same candidate parents for Y and Z remains non-descendant"
+    },
+    {
+      "kind": "anm",
+      "y": 2,
+      "z": 7,
+      "candidate_parents": [
+        8
+      ],
+      "p_a_to_b": 0.7867478776626511,
+      "p_b_to_a": 0.1974973954322281,
+      "p_atom": 0.3949947908644562,
+      "holm_adjusted_p_value": 1.0,
+      "rejected": false,
+      "repair_signature_rule": "same candidate parents for Y and Z remains non-descendant"
+    },
+    {
+      "kind": "anm",
+      "y": 2,
+      "z": 8,
+      "candidate_parents": [
+        8
+      ],
+      "p_a_to_b": 0.00653597934073169,
+      "p_b_to_a": 0.0225455308179775,
+      "p_atom": 0.01307195868146338,
+      "holm_adjusted_p_value": 0.8366053556136563,
+      "rejected": false,
+      "repair_signature_rule": "same candidate parents for Y and Z remains non-descendant"
+    },
+    {
+      "kind": "anm",
+      "y": 2,
+      "z": 9,
+      "candidate_parents": [
+        8
+      ],
+      "p_a_to_b": 0.04196179521546184,
+      "p_b_to_a": 0.3519007635267697,
+      "p_atom": 0.08392359043092368,
+      "holm_adjusted_p_value": 1.0,
+      "rejected": false,
+      "repair_signature_rule": "same candidate parents for Y and Z remains non-descendant"
+    },
+    {
+      "kind": "anm",
+      "y": 3,
+      "z": 0,
+      "candidate_parents": [
+        8
+      ],
+      "p_a_to_b": 0.7317899447391261,
+      "p_b_to_a": 0.19900265790778704,
+      "p_atom": 0.3980053158155741,
+      "holm_adjusted_p_value": 1.0,
+      "rejected": false,
+      "repair_signature_rule": "same candidate parents for Y and Z remains non-descendant"
+    },
+    {
+      "kind": "anm",
+      "y": 3,
+      "z": 1,
+      "candidate_parents": [
+        8
+      ],
+      "p_a_to_b": 0.9003207938896859,
+      "p_b_to_a": 0.008067911724022658,
+      "p_atom": 0.016135823448045317,
+      "holm_adjusted_p_value": 1.0,
+      "rejected": false,
+      "repair_signature_rule": "same candidate parents for Y and Z remains non-descendant"
+    },
+    {
+      "kind": "anm",
+      "y": 3,
+      "z": 2,
+      "candidate_parents": [
+        8
+      ],
+      "p_a_to_b": 0.025430181079789893,
+      "p_b_to_a": 3.326582898033337e-08,
+      "p_atom": 6.653165796066673e-08,
+      "holm_adjusted_p_value": 5.1229376629713386e-06,
+      "rejected": true,
+      "repair_signature_rule": "same candidate parents for Y and Z remains non-descendant"
+    },
+    {
+      "kind": "anm",
+      "y": 3,
+      "z": 4,
+      "candidate_parents": [
+        8
+      ],
+      "p_a_to_b": 0.5359123394477645,
+      "p_b_to_a": 0.017212182697177947,
+      "p_atom": 0.034424365394355894,
+      "holm_adjusted_p_value": 1.0,
+      "rejected": false,
+      "repair_signature_rule": "same candidate parents for Y and Z remains non-descendant"
+    },
+    {
+      "kind": "anm",
+      "y": 3,
+      "z": 5,
+      "candidate_parents": [
+        8
+      ],
+      "p_a_to_b": 0.1966038924257918,
+      "p_b_to_a": 0.2075818579545997,
+      "p_atom": 0.3932077848515836,
+      "holm_adjusted_p_value": 1.0,
+      "rejected": false,
+      "repair_signature_rule": "same candidate parents for Y and Z remains non-descendant"
+    },
+    {
+      "kind": "anm",
+      "y": 3,
+      "z": 6,
+      "candidate_parents": [
+        8
+      ],
+      "p_a_to_b": 0.7056498291058034,
+      "p_b_to_a": 0.7595666217741823,
+      "p_atom": 1.0,
+      "holm_adjusted_p_value": 1.0,
+      "rejected": false,
+      "repair_signature_rule": "same candidate parents for Y and Z remains non-descendant"
+    },
+    {
+      "kind": "anm",
+      "y": 3,
+      "z": 7,
+      "candidate_parents": [
+        8
+      ],
+      "p_a_to_b": 0.18692743219937136,
+      "p_b_to_a": 0.08970620261054507,
+      "p_atom": 0.17941240522109014,
+      "holm_adjusted_p_value": 1.0,
+      "rejected": false,
+      "repair_signature_rule": "same candidate parents for Y and Z remains non-descendant"
+    },
+    {
+      "kind": "anm",
+      "y": 3,
+      "z": 8,
+      "candidate_parents": [
+        8
+      ],
+      "p_a_to_b": 6.097560761864074e-07,
+      "p_b_to_a": 9.803269307440132e-14,
+      "p_atom": 1.9606538614880265e-13,
+      "holm_adjusted_p_value": 1.5881296278053014e-11,
+      "rejected": true,
+      "repair_signature_rule": "same candidate parents for Y and Z remains non-descendant"
+    },
+    {
+      "kind": "anm",
+      "y": 3,
+      "z": 9,
+      "candidate_parents": [
+        8
+      ],
+      "p_a_to_b": 0.5662819568004962,
+      "p_b_to_a": 0.634567351161255,
+      "p_atom": 1.0,
+      "holm_adjusted_p_value": 1.0,
+      "rejected": false,
+      "repair_signature_rule": "same candidate parents for Y and Z remains non-descendant"
+    },
+    {
+      "kind": "anm",
+      "y": 4,
+      "z": 0,
+      "candidate_parents": [
+        6,
+        9
+      ],
+      "p_a_to_b": 0.18834954684802518,
+      "p_b_to_a": 0.25102327119079537,
+      "p_atom": 0.37669909369605037,
+      "holm_adjusted_p_value": 1.0,
+      "rejected": false,
+      "repair_signature_rule": "same candidate parents for Y and Z remains non-descendant"
+    },
+    {
+      "kind": "anm",
+      "y": 4,
+      "z": 1,
+      "candidate_parents": [
+        6,
+        9
+      ],
+      "p_a_to_b": 0.18084007070159835,
+      "p_b_to_a": 0.8528653612458187,
+      "p_atom": 0.3616801414031967,
+      "holm_adjusted_p_value": 1.0,
+      "rejected": false,
+      "repair_signature_rule": "same candidate parents for Y and Z remains non-descendant"
+    },
+    {
+      "kind": "anm",
+      "y": 4,
+      "z": 2,
+      "candidate_parents": [
+        6,
+        9
+      ],
+      "p_a_to_b": 0.1305982607517815,
+      "p_b_to_a": 0.6378953352153878,
+      "p_atom": 0.261196521503563,
+      "holm_adjusted_p_value": 1.0,
+      "rejected": false,
+      "repair_signature_rule": "same candidate parents for Y and Z remains non-descendant"
+    },
+    {
+      "kind": "anm",
+      "y": 4,
+      "z": 3,
+      "candidate_parents": [
+        6,
+        9
+      ],
+      "p_a_to_b": 0.10437007160391942,
+      "p_b_to_a": 0.1273962679470413,
+      "p_atom": 0.20874014320783885,
+      "holm_adjusted_p_value": 1.0,
+      "rejected": false,
+      "repair_signature_rule": "same candidate parents for Y and Z remains non-descendant"
+    },
+    {
+      "kind": "anm",
+      "y": 4,
+      "z": 5,
+      "candidate_parents": [
+        6,
+        9
+      ],
+      "p_a_to_b": 0.21561587607601385,
+      "p_b_to_a": 0.6522860275514434,
+      "p_atom": 0.4312317521520277,
+      "holm_adjusted_p_value": 1.0,
+      "rejected": false,
+      "repair_signature_rule": "same candidate parents for Y and Z remains non-descendant"
+    },
+    {
+      "kind": "anm",
+      "y": 4,
+      "z": 6,
+      "candidate_parents": [
+        6,
+        9
+      ],
+      "p_a_to_b": 1.1796217702642053e-07,
+      "p_b_to_a": 0.00019624489053238214,
+      "p_atom": 2.3592435405284107e-07,
+      "holm_adjusted_p_value": 1.793025090801592e-05,
+      "rejected": true,
+      "repair_signature_rule": "same candidate parents for Y and Z remains non-descendant"
+    },
+    {
+      "kind": "anm",
+      "y": 4,
+      "z": 7,
+      "candidate_parents": [
+        6,
+        9
+      ],
+      "p_a_to_b": 0.13525592557875188,
+      "p_b_to_a": 1.0,
+      "p_atom": 0.27051185115750376,
+      "holm_adjusted_p_value": 1.0,
+      "rejected": false,
+      "repair_signature_rule": "same candidate parents for Y and Z remains non-descendant"
+    },
+    {
+      "kind": "anm",
+      "y": 4,
+      "z": 8,
+      "candidate_parents": [
+        6,
+        9
+      ],
+      "p_a_to_b": 0.056657649932259635,
+      "p_b_to_a": 0.01633583333625821,
+      "p_atom": 0.03267166667251642,
+      "holm_adjusted_p_value": 1.0,
+      "rejected": false,
+      "repair_signature_rule": "same candidate parents for Y and Z remains non-descendant"
+    },
+    {
+      "kind": "anm",
+      "y": 4,
+      "z": 9,
+      "candidate_parents": [
+        6,
+        9
+      ],
+      "p_a_to_b": 0.15592514926705137,
+      "p_b_to_a": 0.00494627499727307,
+      "p_atom": 0.00989254999454614,
+      "holm_adjusted_p_value": 0.6430157496454991,
+      "rejected": false,
+      "repair_signature_rule": "same candidate parents for Y and Z remains non-descendant"
+    },
+    {
+      "kind": "anm",
+      "y": 5,
+      "z": 0,
+      "candidate_parents": [
+        0
+      ],
+      "p_a_to_b": 3.748634735956102e-11,
+      "p_b_to_a": 7.884803920887862e-13,
+      "p_atom": 1.5769607841775724e-12,
+      "holm_adjusted_p_value": 1.261568627342058e-10,
+      "rejected": true,
+      "repair_signature_rule": "same candidate parents for Y and Z remains non-descendant"
+    },
+    {
+      "kind": "anm",
+      "y": 5,
+      "z": 1,
+      "candidate_parents": [
+        0
+      ],
+      "p_a_to_b": 0.04973318262087778,
+      "p_b_to_a": 1.0,
+      "p_atom": 0.09946636524175556,
+      "holm_adjusted_p_value": 1.0,
+      "rejected": false,
+      "repair_signature_rule": "same candidate parents for Y and Z remains non-descendant"
+    },
+    {
+      "kind": "anm",
+      "y": 5,
+      "z": 2,
+      "candidate_parents": [
+        0
+      ],
+      "p_a_to_b": 0.3381912820423625,
+      "p_b_to_a": 0.9993615899486594,
+      "p_atom": 0.676382564084725,
+      "holm_adjusted_p_value": 1.0,
+      "rejected": false,
+      "repair_signature_rule": "same candidate parents for Y and Z remains non-descendant"
+    },
+    {
+      "kind": "anm",
+      "y": 5,
+      "z": 3,
+      "candidate_parents": [
+        0
+      ],
+      "p_a_to_b": 0.0016045269667297468,
+      "p_b_to_a": 0.01400231411491637,
+      "p_atom": 0.0032090539334594936,
+      "holm_adjusted_p_value": 0.21179755960832658,
+      "rejected": false,
+      "repair_signature_rule": "same candidate parents for Y and Z remains non-descendant"
+    },
+    {
+      "kind": "anm",
+      "y": 5,
+      "z": 4,
+      "candidate_parents": [
+        0
+      ],
+      "p_a_to_b": 0.61899709337078,
+      "p_b_to_a": 0.7997598095310257,
+      "p_atom": 1.0,
+      "holm_adjusted_p_value": 1.0,
+      "rejected": false,
+      "repair_signature_rule": "same candidate parents for Y and Z remains non-descendant"
+    },
+    {
+      "kind": "anm",
+      "y": 5,
+      "z": 6,
+      "candidate_parents": [
+        0
+      ],
+      "p_a_to_b": 1.0,
+      "p_b_to_a": 0.9558952998950735,
+      "p_atom": 1.0,
+      "holm_adjusted_p_value": 1.0,
+      "rejected": false,
+      "repair_signature_rule": "same candidate parents for Y and Z remains non-descendant"
+    },
+    {
+      "kind": "anm",
+      "y": 5,
+      "z": 8,
+      "candidate_parents": [
+        0
+      ],
+      "p_a_to_b": 0.019446481542475635,
+      "p_b_to_a": 4.7825527220934916e-05,
+      "p_atom": 9.565105444186983e-05,
+      "holm_adjusted_p_value": 0.0070781780286983675,
+      "rejected": true,
+      "repair_signature_rule": "same candidate parents for Y and Z remains non-descendant"
+    },
+    {
+      "kind": "anm",
+      "y": 5,
+      "z": 9,
+      "candidate_parents": [
+        0
+      ],
+      "p_a_to_b": 0.534754929234398,
+      "p_b_to_a": 0.6439381399698425,
+      "p_atom": 1.0,
+      "holm_adjusted_p_value": 1.0,
+      "rejected": false,
+      "repair_signature_rule": "same candidate parents for Y and Z remains non-descendant"
+    },
+    {
+      "kind": "anm",
+      "y": 6,
+      "z": 0,
+      "candidate_parents": [],
+      "p_a_to_b": 0.40261474437852807,
+      "p_b_to_a": 0.7355300658862649,
+      "p_atom": 0.8052294887570561,
+      "holm_adjusted_p_value": 1.0,
+      "rejected": false,
+      "repair_signature_rule": "same candidate parents for Y and Z remains non-descendant"
+    },
+    {
+      "kind": "anm",
+      "y": 6,
+      "z": 1,
+      "candidate_parents": [],
+      "p_a_to_b": 0.10737003129891942,
+      "p_b_to_a": 0.7748353061324754,
+      "p_atom": 0.21474006259783884,
+      "holm_adjusted_p_value": 1.0,
+      "rejected": false,
+      "repair_signature_rule": "same candidate parents for Y and Z remains non-descendant"
+    },
+    {
+      "kind": "anm",
+      "y": 6,
+      "z": 2,
+      "candidate_parents": [],
+      "p_a_to_b": 0.8540124594847847,
+      "p_b_to_a": 0.738622368438161,
+      "p_atom": 1.0,
+      "holm_adjusted_p_value": 1.0,
+      "rejected": false,
+      "repair_signature_rule": "same candidate parents for Y and Z remains non-descendant"
+    },
+    {
+      "kind": "anm",
+      "y": 6,
+      "z": 3,
+      "candidate_parents": [],
+      "p_a_to_b": 0.3186384408153693,
+      "p_b_to_a": 0.4030676125643792,
+      "p_atom": 0.6372768816307386,
+      "holm_adjusted_p_value": 1.0,
+      "rejected": false,
+      "repair_signature_rule": "same candidate parents for Y and Z remains non-descendant"
+    },
+    {
+      "kind": "anm",
+      "y": 6,
+      "z": 5,
+      "candidate_parents": [],
+      "p_a_to_b": 0.4289095283260197,
+      "p_b_to_a": 0.8109943165787614,
+      "p_atom": 0.8578190566520394,
+      "holm_adjusted_p_value": 1.0,
+      "rejected": false,
+      "repair_signature_rule": "same candidate parents for Y and Z remains non-descendant"
+    },
+    {
+      "kind": "anm",
+      "y": 6,
+      "z": 7,
+      "candidate_parents": [],
+      "p_a_to_b": 0.3101586842338748,
+      "p_b_to_a": 0.14725734418621927,
+      "p_atom": 0.29451468837243855,
+      "holm_adjusted_p_value": 1.0,
+      "rejected": false,
+      "repair_signature_rule": "same candidate parents for Y and Z remains non-descendant"
+    },
+    {
+      "kind": "anm",
+      "y": 6,
+      "z": 8,
+      "candidate_parents": [],
+      "p_a_to_b": 0.16341607955340587,
+      "p_b_to_a": 0.649051962147489,
+      "p_atom": 0.32683215910681174,
+      "holm_adjusted_p_value": 1.0,
+      "rejected": false,
+      "repair_signature_rule": "same candidate parents for Y and Z remains non-descendant"
+    },
+    {
+      "kind": "anm",
+      "y": 6,
+      "z": 9,
+      "candidate_parents": [],
+      "p_a_to_b": 0.5751728843157213,
+      "p_b_to_a": 0.40893030968204047,
+      "p_atom": 0.8178606193640809,
+      "holm_adjusted_p_value": 1.0,
+      "rejected": false,
+      "repair_signature_rule": "same candidate parents for Y and Z remains non-descendant"
+    },
+    {
+      "kind": "anm",
+      "y": 7,
+      "z": 0,
+      "candidate_parents": [
+        0,
+        5
+      ],
+      "p_a_to_b": 0.059530271915265054,
+      "p_b_to_a": 0.60099377943815,
+      "p_atom": 0.11906054383053011,
+      "holm_adjusted_p_value": 1.0,
+      "rejected": false,
+      "repair_signature_rule": "same candidate parents for Y and Z remains non-descendant"
+    },
+    {
+      "kind": "anm",
+      "y": 7,
+      "z": 1,
+      "candidate_parents": [
+        0,
+        5
+      ],
+      "p_a_to_b": 0.37367521537842896,
+      "p_b_to_a": 0.9537499268185806,
+      "p_atom": 0.7473504307568579,
+      "holm_adjusted_p_value": 1.0,
+      "rejected": false,
+      "repair_signature_rule": "same candidate parents for Y and Z remains non-descendant"
+    },
+    {
+      "kind": "anm",
+      "y": 7,
+      "z": 2,
+      "candidate_parents": [
+        0,
+        5
+      ],
+      "p_a_to_b": 1.0,
+      "p_b_to_a": 0.03651410938659816,
+      "p_atom": 0.07302821877319632,
+      "holm_adjusted_p_value": 1.0,
+      "rejected": false,
+      "repair_signature_rule": "same candidate parents for Y and Z remains non-descendant"
+    },
+    {
+      "kind": "anm",
+      "y": 7,
+      "z": 3,
+      "candidate_parents": [
+        0,
+        5
+      ],
+      "p_a_to_b": 0.9916127684895005,
+      "p_b_to_a": 0.3926516124755526,
+      "p_atom": 0.7853032249511052,
+      "holm_adjusted_p_value": 1.0,
+      "rejected": false,
+      "repair_signature_rule": "same candidate parents for Y and Z remains non-descendant"
+    },
+    {
+      "kind": "anm",
+      "y": 7,
+      "z": 4,
+      "candidate_parents": [
+        0,
+        5
+      ],
+      "p_a_to_b": 0.21494521054533844,
+      "p_b_to_a": 0.9414694133516416,
+      "p_atom": 0.4298904210906769,
+      "holm_adjusted_p_value": 1.0,
+      "rejected": false,
+      "repair_signature_rule": "same candidate parents for Y and Z remains non-descendant"
+    },
+    {
+      "kind": "anm",
+      "y": 7,
+      "z": 5,
+      "candidate_parents": [
+        0,
+        5
+      ],
+      "p_a_to_b": 0.18849819735494777,
+      "p_b_to_a": 0.0006719221215992777,
+      "p_atom": 0.0013438442431985553,
+      "holm_adjusted_p_value": 0.09138140853750176,
+      "rejected": false,
+      "repair_signature_rule": "same candidate parents for Y and Z remains non-descendant"
+    },
+    {
+      "kind": "anm",
+      "y": 7,
+      "z": 6,
+      "candidate_parents": [
+        0,
+        5
+      ],
+      "p_a_to_b": 0.460553029519967,
+      "p_b_to_a": 0.023431175463278553,
+      "p_atom": 0.046862350926557106,
+      "holm_adjusted_p_value": 1.0,
+      "rejected": false,
+      "repair_signature_rule": "same candidate parents for Y and Z remains non-descendant"
+    },
+    {
+      "kind": "anm",
+      "y": 7,
+      "z": 8,
+      "candidate_parents": [
+        0,
+        5
+      ],
+      "p_a_to_b": 0.037074979647236384,
+      "p_b_to_a": 0.007283389655629913,
+      "p_atom": 0.014566779311259825,
+      "holm_adjusted_p_value": 0.917707096609369,
+      "rejected": false,
+      "repair_signature_rule": "same candidate parents for Y and Z remains non-descendant"
+    },
+    {
+      "kind": "anm",
+      "y": 7,
+      "z": 9,
+      "candidate_parents": [
+        0,
+        5
+      ],
+      "p_a_to_b": 0.32049236087259947,
+      "p_b_to_a": 0.45757814936767793,
+      "p_atom": 0.6409847217451989,
+      "holm_adjusted_p_value": 1.0,
+      "rejected": false,
+      "repair_signature_rule": "same candidate parents for Y and Z remains non-descendant"
+    },
+    {
+      "kind": "anm",
+      "y": 8,
+      "z": 0,
+      "candidate_parents": [],
+      "p_a_to_b": 0.00036882139634608624,
+      "p_b_to_a": 0.00015111179619475834,
+      "p_atom": 0.0003022235923895167,
+      "holm_adjusted_p_value": 0.0217600986520452,
+      "rejected": true,
+      "repair_signature_rule": "same candidate parents for Y and Z remains non-descendant"
+    },
+    {
+      "kind": "anm",
+      "y": 8,
+      "z": 4,
+      "candidate_parents": [],
+      "p_a_to_b": 0.05822726250631649,
+      "p_b_to_a": 0.00016192402168746511,
+      "p_atom": 0.00032384804337493023,
+      "holm_adjusted_p_value": 0.022993211079620046,
+      "rejected": true,
+      "repair_signature_rule": "same candidate parents for Y and Z remains non-descendant"
+    },
+    {
+      "kind": "anm",
+      "y": 8,
+      "z": 5,
+      "candidate_parents": [],
+      "p_a_to_b": 0.0006670920225623211,
+      "p_b_to_a": 0.0004061654904614631,
+      "p_atom": 0.0008123309809229262,
+      "holm_adjusted_p_value": 0.05605083768368191,
+      "rejected": false,
+      "repair_signature_rule": "same candidate parents for Y and Z remains non-descendant"
+    },
+    {
+      "kind": "anm",
+      "y": 8,
+      "z": 6,
+      "candidate_parents": [],
+      "p_a_to_b": 0.3271437692545731,
+      "p_b_to_a": 0.3933874582822121,
+      "p_atom": 0.6542875385091462,
+      "holm_adjusted_p_value": 1.0,
+      "rejected": false,
+      "repair_signature_rule": "same candidate parents for Y and Z remains non-descendant"
+    },
+    {
+      "kind": "anm",
+      "y": 8,
+      "z": 7,
+      "candidate_parents": [],
+      "p_a_to_b": 2.944337743615577e-07,
+      "p_b_to_a": 8.567797582514913e-09,
+      "p_atom": 1.7135595165029827e-08,
+      "holm_adjusted_p_value": 1.3365764228723265e-06,
+      "rejected": true,
+      "repair_signature_rule": "same candidate parents for Y and Z remains non-descendant"
+    },
+    {
+      "kind": "anm",
+      "y": 8,
+      "z": 9,
+      "candidate_parents": [],
+      "p_a_to_b": 0.03269606869981523,
+      "p_b_to_a": 0.5094394929056447,
+      "p_atom": 0.06539213739963046,
+      "holm_adjusted_p_value": 1.0,
+      "rejected": false,
+      "repair_signature_rule": "same candidate parents for Y and Z remains non-descendant"
+    },
+    {
+      "kind": "anm",
+      "y": 9,
+      "z": 0,
+      "candidate_parents": [],
+      "p_a_to_b": 0.8199288482977061,
+      "p_b_to_a": 0.6583639112963333,
+      "p_atom": 1.0,
+      "holm_adjusted_p_value": 1.0,
+      "rejected": false,
+      "repair_signature_rule": "same candidate parents for Y and Z remains non-descendant"
+    },
+    {
+      "kind": "anm",
+      "y": 9,
+      "z": 1,
+      "candidate_parents": [],
+      "p_a_to_b": 0.2595195055698982,
+      "p_b_to_a": 0.9126288293160666,
+      "p_atom": 0.5190390111397964,
+      "holm_adjusted_p_value": 1.0,
+      "rejected": false,
+      "repair_signature_rule": "same candidate parents for Y and Z remains non-descendant"
+    },
+    {
+      "kind": "anm",
+      "y": 9,
+      "z": 2,
+      "candidate_parents": [],
+      "p_a_to_b": 0.20638513980140993,
+      "p_b_to_a": 0.2669778154048459,
+      "p_atom": 0.41277027960281987,
+      "holm_adjusted_p_value": 1.0,
+      "rejected": false,
+      "repair_signature_rule": "same candidate parents for Y and Z remains non-descendant"
+    },
+    {
+      "kind": "anm",
+      "y": 9,
+      "z": 3,
+      "candidate_parents": [],
+      "p_a_to_b": 0.5536602770110737,
+      "p_b_to_a": 0.981512866063112,
+      "p_atom": 1.0,
+      "holm_adjusted_p_value": 1.0,
+      "rejected": false,
+      "repair_signature_rule": "same candidate parents for Y and Z remains non-descendant"
+    },
+    {
+      "kind": "anm",
+      "y": 9,
+      "z": 5,
+      "candidate_parents": [],
+      "p_a_to_b": 0.8358648652966278,
+      "p_b_to_a": 0.7646553553660622,
+      "p_atom": 1.0,
+      "holm_adjusted_p_value": 1.0,
+      "rejected": false,
+      "repair_signature_rule": "same candidate parents for Y and Z remains non-descendant"
+    },
+    {
+      "kind": "anm",
+      "y": 9,
+      "z": 6,
+      "candidate_parents": [],
+      "p_a_to_b": 0.3082433709742136,
+      "p_b_to_a": 0.6344848394830972,
+      "p_atom": 0.6164867419484272,
+      "holm_adjusted_p_value": 1.0,
+      "rejected": false,
+      "repair_signature_rule": "same candidate parents for Y and Z remains non-descendant"
+    },
+    {
+      "kind": "anm",
+      "y": 9,
+      "z": 7,
+      "candidate_parents": [],
+      "p_a_to_b": 0.3664542579521324,
+      "p_b_to_a": 0.18573101037108863,
+      "p_atom": 0.37146202074217727,
+      "holm_adjusted_p_value": 1.0,
+      "rejected": false,
+      "repair_signature_rule": "same candidate parents for Y and Z remains non-descendant"
+    },
+    {
+      "kind": "anm",
+      "y": 9,
+      "z": 8,
+      "candidate_parents": [],
+      "p_a_to_b": 0.05616846712624535,
+      "p_b_to_a": 0.11284351325846675,
+      "p_atom": 0.1123369342524907,
+      "holm_adjusted_p_value": 1.0,
+      "rejected": false,
+      "repair_signature_rule": "same candidate parents for Y and Z remains non-descendant"
+    }
+  ]
+}

@@ -1,0 +1,10 @@
+{
+  "schema_version": "gate5b_certificate_receipt_v1",
+  "phase": "dev",
+  "task_count": 120,
+  "completed": 120,
+  "error_count": 0,
+  "rr_ci_and_rr_anm_separate": true,
+  "validation_only": true,
+  "truth_loaded": false
+}

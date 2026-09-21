@@ -1,0 +1,9 @@
+{
+  "schema_version": "gate5b_anm_receipt_v1",
+  "phase": "dev",
+  "task_count": 120,
+  "completed": 120,
+  "error_count": 0,
+  "validation_only": true,
+  "truth_loaded": false
+}

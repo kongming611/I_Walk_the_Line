@@ -1,0 +1,135 @@
+{
+  "schema_version": "gate5b_independent_repair_witnesses_v1",
+  "freeze_date": "2026-09-21",
+  "phase": "dev",
+  "scientific_question": "Can held-out causal contradictions produce a non-vacuous ground-truth-free lower bound on CDFM graph error?",
+  "formal_target": "ground-truth-free minimum structural repair / graph-error lower-bound certification",
+  "data": {
+    "domains": [
+      {
+        "domain": "linear_gaussian",
+        "generator_mechanism": "rff",
+        "noise": "gaussian",
+        "lambda": 0.0
+      },
+      {
+        "domain": "rff_studentt3",
+        "generator_mechanism": "rff",
+        "noise": "student_t3",
+        "lambda": 1.0
+      },
+      {
+        "domain": "tanh_laplace",
+        "generator_mechanism": "tanh",
+        "noise": "laplace",
+        "lambda": 1.0
+      },
+      {
+        "domain": "softsign_studentt8",
+        "generator_mechanism": "softsign",
+        "noise": "student_t8",
+        "lambda": 1.0
+      },
+      {
+        "domain": "interaction_gaussian",
+        "generator_mechanism": "interaction",
+        "noise": "gaussian",
+        "lambda": 1.0
+      },
+      {
+        "domain": "sine_exponential",
+        "generator_mechanism": "sine",
+        "noise": "exponential",
+        "lambda": 1.0
+      }
+    ],
+    "domain_count": 6,
+    "tasks_per_domain": 20,
+    "task_count": 120,
+    "D": 10,
+    "N_total": 1000,
+    "N_discovery": 500,
+    "N_validation": 500,
+    "split": "first 500 rows discovery, last 500 rows validation; standardization fit on discovery only",
+    "dev_source": "Gate-5A manifest, raw CDFM predictions and validation data, all read-only",
+    "final_graph_seed_range": [
+      860000,
+      860119
+    ]
+  },
+  "cdfm": {
+    "model": "DMIRLAB/CDFM",
+    "input": "X_discovery only",
+    "training": false,
+    "fine_tuning": false,
+    "source_modification": false
+  },
+  "certificates": {
+    "rr_ci": {
+      "role": "paired Gate-5A pure Markov/CI baseline",
+      "statements": "local Markov statements for every candidate node",
+      "ci_test": "causal-learn RCIT",
+      "multiple_testing": "Holm over all local-Markov statements per task",
+      "alpha": 0.05,
+      "test_data": "X_validation only"
+    },
+    "rr_anm": {
+      "role": "additive independent-noise mechanism certificate",
+      "assumption": "Y=f(Pa_candidate(Y))+epsilon with epsilon independent of candidate non-descendants when the parent set is correct",
+      "parent_set": "Pa_candidate(Y)",
+      "tested_variables": "all candidate non-descendants other than Y, including candidate parents",
+      "regressor": {
+        "class": "sklearn.ensemble.ExtraTreesRegressor",
+        "n_estimators": 300,
+        "min_samples_leaf": 5,
+        "max_features": 1.0,
+        "bootstrap": false,
+        "n_jobs": 1
+      },
+      "validation_split": "deterministic 250/250 A/B split from graph seed",
+      "residual_test": "RCIT residual versus one tested non-descendant, unconditional",
+      "fold_p_value": "min(1, 2*min(p_A_to_B, p_B_to_A))",
+      "multiple_testing": "Holm over all atomic (Y,Z,Pa_candidate(Y)) witnesses per task",
+      "alpha": 0.05,
+      "test_data": "X_validation only",
+      "ground_truth_used": false
+    }
+  },
+  "repair": {
+    "distance": "directed pairwise SHD; add, delete, or reverse one unordered-pair state costs one",
+    "space": "DAGs on the same ten observed nodes",
+    "search": "exhaustive pair-state enumeration with DAG pruning for k=0,1,2,3",
+    "no_solution_by_max_k": "report lower bound 4 and exact=false",
+    "ci_witness_persists": "repaired DAG d-separates the tested pair given the fixed candidate conditioning set",
+    "anm_witness_persists": "repaired DAG has the same candidate parent set for Y and Z remains a non-descendant of Y",
+    "certificates_separate": true
+  },
+  "evaluation": {
+    "truth": "opened only after phase pre-truth hashes",
+    "true_error": "SHD(candidate_DAG, ground_truth_DAG)",
+    "validity": "RR_CI and RR_ANM lower bounds do not exceed true SHD",
+    "bad_graph": "true SHD >= 1",
+    "severe_bad_graph": "true SHD >= 4",
+    "tightness": "RR / true SHD for true SHD > 0",
+    "primary": "RR_ANM severe-graph RR>=2 rate",
+    "paired_gain": "RR_ANM severe RR>=2 rate minus RR_CI severe RR>=2 rate"
+  },
+  "gate": {
+    "validity_rate_min": 0.95,
+    "bad_graph_nonzero_rate_min": 0.4,
+    "severe_graph_rr_ge_2_rate_min": 0.5,
+    "paired_severe_gain_min": 0.1,
+    "technical_error_rate_max": 0.1,
+    "dev_failure": "any DEV condition fails: stop before independent FINAL",
+    "stop": "validity fails",
+    "borderline": "validity passes but an efficacy condition fails",
+    "inconclusive": "technical failure rate exceeds 10 percent or an evaluation denominator is empty"
+  },
+  "truth_isolation": {
+    "cdfm_input_is_discovery_only": true,
+    "witness_builder_accepts_truth": false,
+    "certificate_builder_accepts_truth": false,
+    "final_truth_loaded_before_certificate": false,
+    "final_truth_loader": "open-final-truth only after pre_truth_hashes.json"
+  }
+}

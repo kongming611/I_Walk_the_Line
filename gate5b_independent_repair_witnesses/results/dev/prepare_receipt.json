@@ -1,0 +1,16 @@
+{
+  "schema_version": "gate5b_prepare_dev_receipt_v1",
+  "task_count": 120,
+  "domain_counts": {
+    "interaction_gaussian": 20,
+    "linear_gaussian": 20,
+    "rff_studentt3": 20,
+    "sine_exponential": 20,
+    "softsign_studentt8": 20,
+    "tanh_laplace": 20
+  },
+  "source_manifest": "gate5a_minimum_repair/results/manifest.csv",
+  "cdfm_reused_read_only": true,
+  "truth_loaded": false,
+  "gate5a_snapshot": "gate5b_independent_repair_witnesses/results/dev/gate5a_read_only_snapshot.json"
+}

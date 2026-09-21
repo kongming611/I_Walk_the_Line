@@ -1,0 +1,20 @@
+{
+  "schema_version": "gate5b_dev_truth_open_receipt_v1",
+  "truth_source": "gate5a_minimum_repair/results/final_predictions.csv",
+  "truth_loaded_after": [
+    "dev_certificate_predictions.csv",
+    "dev_pre_truth_hashes.json"
+  ],
+  "truth_used_for_witnesses_or_certificates": false,
+  "pretruth_hashes_unchanged": {
+    "checks": {
+      "protocol": true,
+      "manifest": true,
+      "anm_receipt": true,
+      "anm_predictions": true,
+      "certificate_receipt": true,
+      "certificate_predictions": true
+    },
+    "all_match": true
+  }
+}

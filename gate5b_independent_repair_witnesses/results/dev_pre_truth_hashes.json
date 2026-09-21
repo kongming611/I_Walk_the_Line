@@ -1,0 +1,32 @@
+{
+  "schema_version": "gate5b_pre_truth_hashes_v1",
+  "phase": "dev",
+  "files": {
+    "protocol": {
+      "path": "gate5b_independent_repair_witnesses/results/dev/dev_protocol.json",
+      "sha256": "8b9cc242ff27be6661f234cced91351a1cf2d75b61c2cad575590d81d9cfc6d4"
+    },
+    "manifest": {
+      "path": "gate5b_independent_repair_witnesses/results/dev/manifest.csv",
+      "sha256": "bbe8760a58d995c4291a1d8df79f739bbd4f4724d2d5aafe2556243e84889f12"
+    },
+    "anm_receipt": {
+      "path": "gate5b_independent_repair_witnesses/results/dev_anm_receipt.json",
+      "sha256": "07639ddd0e1d9d1cebc5fde9674c60273645700bfa0e4ee5bdb1f8516dde0c96"
+    },
+    "anm_predictions": {
+      "path": "gate5b_independent_repair_witnesses/results/dev_anm_predictions.csv",
+      "sha256": "4ca01e5b78287e4f6e62e7d7f85ffddf82a209df80880bb2507c4e481af82296"
+    },
+    "certificate_receipt": {
+      "path": "gate5b_independent_repair_witnesses/results/dev_certificate_receipt.json",
+      "sha256": "8d6b02aa06e1c11a76fda2962f7055981dc60e453789c4f9da437c512e269ed0"
+    },
+    "certificate_predictions": {
+      "path": "gate5b_independent_repair_witnesses/results/dev_certificate_predictions.csv",
+      "sha256": "4c774835d06b7a88b0724ead00516d92a3b67c4f8ccdd79a39b71558e29e67e5"
+    }
+  },
+  "final_truth_loaded": false,
+  "hashes_sealed_before_truth": true
+}

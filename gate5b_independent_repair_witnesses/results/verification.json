@@ -1,0 +1,23 @@
+{
+  "schema_version": "gate5b_verification_v1",
+  "scope": "dev_stop",
+  "gate5a_unchanged": {
+    "all_match": true,
+    "file_count": 499,
+    "mismatches": []
+  },
+  "required_artifacts": {
+    "gate5b_independent_repair_witnesses/results/dev/dev_protocol.json": true,
+    "gate5b_independent_repair_witnesses/results/dev/manifest.csv": true,
+    "gate5b_independent_repair_witnesses/results/dev/prepare_receipt.json": true,
+    "gate5b_independent_repair_witnesses/results/dev_anm_predictions.csv": true,
+    "gate5b_independent_repair_witnesses/results/dev_certificate_predictions.csv": true,
+    "gate5b_independent_repair_witnesses/results/dev_pre_truth_hashes.json": true,
+    "gate5b_independent_repair_witnesses/results/dev/dev_final_predictions.csv": true,
+    "gate5b_independent_repair_witnesses/results/dev/dev_metrics.csv": true,
+    "gate5b_independent_repair_witnesses/results/dev/dev_summary.json": true,
+    "gate5b_independent_repair_witnesses/results/dev/dev_truth_open_receipt.json": true
+  },
+  "all_required_artifacts": true,
+  "dev_decision": "GATE5B_DEV_STOP"
+}
