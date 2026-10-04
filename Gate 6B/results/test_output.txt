@@ -1,0 +1,22 @@
+test_bad_probabilities (test_experiment.Contracts.test_bad_probabilities) ... ok
+test_bad_score (test_experiment.Contracts.test_bad_score) ... ok
+test_bad_version (test_experiment.Contracts.test_bad_version) ... ok
+test_budget_blocks_network (test_experiment.Contracts.test_budget_blocks_network) ... ok
+test_cache_no_network_or_credentials (test_experiment.Contracts.test_cache_no_network_or_credentials) ... ok
+test_clip (test_experiment.Contracts.test_clip) ... ok
+test_constant (test_experiment.Contracts.test_constant) ... ok
+test_forbidden_model (test_experiment.Contracts.test_forbidden_model) ... ok
+test_freeze_blocks_new_request (test_experiment.Contracts.test_freeze_blocks_new_request) ... ok
+test_group_splits (test_experiment.Contracts.test_group_splits) ... ok
+test_heldout_label_invariance (test_experiment.Contracts.test_heldout_label_invariance) ... ok
+test_metrics (test_experiment.Contracts.test_metrics) ... ok
+test_negative_slope_permitted (test_experiment.Contracts.test_negative_slope_permitted) ... ok
+test_ols_exact (test_experiment.Contracts.test_ols_exact) ... ok
+test_ties (test_experiment.Contracts.test_ties) ... ok
+test_valid_score (test_experiment.Contracts.test_valid_score) ... ok
+test_whitelist (test_experiment.Contracts.test_whitelist) ... ok
+
+----------------------------------------------------------------------
+Ran 17 tests in 0.018s
+
+OK

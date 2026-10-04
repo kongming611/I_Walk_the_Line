@@ -1,0 +1,1168 @@
+{
+  "gate": "Gate 6B",
+  "original_directory": "experiments/sachs_shd_calibration",
+  "copied_files": {
+    "api.py": {
+      "source": "experiments/sachs_shd_calibration/api.py",
+      "sha256": "518270ac227fdb9987b83737627235988621e137e1de3133f98c4be94651c954"
+    },
+    "audit.py": {
+      "source": "experiments/sachs_shd_calibration/audit.py",
+      "sha256": "cd20e4cbb232e03db3e08025a43b550991622160d3d85267b52152e365a2a8e5"
+    },
+    "core.py": {
+      "source": "experiments/sachs_shd_calibration/core.py",
+      "sha256": "bbebe3b42e4794d522402fa70bd6507cc70c0d935bc45bcde21ec824d5d460ea"
+    },
+    "deliver.py": {
+      "source": "experiments/sachs_shd_calibration/deliver.py",
+      "sha256": "2fd10cb300838b3fd05d238aee90134aa78ec92ef33da851177d044815dac795"
+    },
+    "prompts.json": {
+      "source": "experiments/sachs_shd_calibration/prompts.json",
+      "sha256": "33c37da9016c3832f5f513b95e108a798fbc43c167b96170dac3d56e4a75551f"
+    },
+    "protocol.json": {
+      "source": "experiments/sachs_shd_calibration/protocol.json",
+      "sha256": "578fe7fe20d577ce409d24ad5256c0465b2bd327e821d897b486d504a31f044e"
+    },
+    "README.md": {
+      "source": "experiments/sachs_shd_calibration/README.md",
+      "sha256": "bc1ee454918479cd65d10d5fef8067a98cb6e731a878b562613726cdd35795de"
+    },
+    "run.py": {
+      "source": "experiments/sachs_shd_calibration/run.py",
+      "sha256": "914d270a3485dea40e0419128021e67725e18d1bae5fd46546f5073840d7d45b"
+    },
+    "test_experiment.py": {
+      "source": "experiments/sachs_shd_calibration/test_experiment.py",
+      "sha256": "d21c9b86bfe36af3d14c17ae349f49d439a80ef97c32d20e9f6b9c7b61138d36"
+    },
+    "protocol_history/csv_bom_fix/amendment.json": {
+      "source": "experiments/sachs_shd_calibration/protocol_history/csv_bom_fix/amendment.json",
+      "sha256": "8e1727b4a2c64e587fbffc05fb90fa3caa769d99df16797cca7a412ed4b6cd05"
+    },
+    "protocol_history/csv_bom_fix/encoding_regression_check.json": {
+      "source": "experiments/sachs_shd_calibration/protocol_history/csv_bom_fix/encoding_regression_check.json",
+      "sha256": "499cb3bbc126bba234e447042014135e65efc706578ff3f0b2a53b3b029dc0d1"
+    },
+    "protocol_history/csv_bom_fix/protocol.json": {
+      "source": "experiments/sachs_shd_calibration/protocol_history/csv_bom_fix/protocol.json",
+      "sha256": "89414e9bc8ae90255084ae312efbc433e0ae723f6d95c3a5a5eea747e6f4eb54"
+    },
+    "protocol_history/csv_bom_fix/run.py": {
+      "source": "experiments/sachs_shd_calibration/protocol_history/csv_bom_fix/run.py",
+      "sha256": "177b5df7c36ad729f921f80c8afdc5f2ff4dbeb14017c634064b668161b3bb94"
+    },
+    "protocol_history/csv_bom_fix/score_freeze.json": {
+      "source": "experiments/sachs_shd_calibration/protocol_history/csv_bom_fix/score_freeze.json",
+      "sha256": "04137434b6ac08806d4cb90c9258bccd9ce532526372b1b83c59caf912ee6aa3"
+    },
+    "results/api_ledger.json": {
+      "source": "experiments/sachs_shd_calibration/results/api_ledger.json",
+      "sha256": "b09c358e1ed88619eaa023bf0c935b393623076b52eb8b04be20c912c86f09b5"
+    },
+    "results/audit.json": {
+      "source": "experiments/sachs_shd_calibration/results/audit.json",
+      "sha256": "02c46611e7b9eb5dd8918645cf755b9bc69bfb9aa331594493b4be5d4f8f28ad"
+    },
+    "results/delivery_receipt.json": {
+      "source": "experiments/sachs_shd_calibration/results/delivery_receipt.json",
+      "sha256": "92fc245a586a0cb60931369e01a02e4ae4c65d7fa51761185cf440df0317e078"
+    },
+    "results/evaluation.json": {
+      "source": "experiments/sachs_shd_calibration/results/evaluation.json",
+      "sha256": "cc02adca7c8c99e4782685409eefd6939734d9a4fc6dbbc62938e3d21a1b6c7a"
+    },
+    "results/fold_models.json": {
+      "source": "experiments/sachs_shd_calibration/results/fold_models.json",
+      "sha256": "cd4c73d09f9dca22e7a985fabb328604bf58925d9285bef307c516d8c628678a"
+    },
+    "results/last_failure.json": {
+      "source": "experiments/sachs_shd_calibration/results/last_failure.json",
+      "sha256": "86355b6b3ffb8827c4b38d14616927ebf655c64f07d1b2ac08934befd8f67fca"
+    },
+    "results/paired_errors.png": {
+      "source": "experiments/sachs_shd_calibration/results/paired_errors.png",
+      "sha256": "25a028174448b19b75162598250a572cd54b23ce71528e0dc299b2e1502ad900"
+    },
+    "results/per_graph_predictions.csv": {
+      "source": "experiments/sachs_shd_calibration/results/per_graph_predictions.csv",
+      "sha256": "cee538a5d42d2e60a7fdf462de0dc075b093ca9008c96fd72eb1a7d7bbaacb87"
+    },
+    "results/per_group_errors.csv": {
+      "source": "experiments/sachs_shd_calibration/results/per_group_errors.csv",
+      "sha256": "2e3272cc2f757d302ee00f963444c9c1f4cb3a6a3896a6089e1aa2a3143113a7"
+    },
+    "results/predicted_vs_true.png": {
+      "source": "experiments/sachs_shd_calibration/results/predicted_vs_true.png",
+      "sha256": "dc3bf6529697b1e8d9134a1013416654da0cad8604d13fece75f7ea2b2a9e12a"
+    },
+    "results/REPORT.md": {
+      "source": "experiments/sachs_shd_calibration/results/REPORT.md",
+      "sha256": "d439ea315a9ea491f0d8d64993baf5ab48553e5216697cf4e32211d3052af429"
+    },
+    "results/score_freeze.json": {
+      "source": "experiments/sachs_shd_calibration/results/score_freeze.json",
+      "sha256": "6bdd4f26a17a3715caf67c2fb14860755a0285b51e3effaed37df6ea893cc919"
+    },
+    "results/supplementary_verification.json": {
+      "source": "experiments/sachs_shd_calibration/results/supplementary_verification.json",
+      "sha256": "cee44c25b73e77a930fc646d104fb10afe2c1f43bcd1d7401d5dc605c692d1dc"
+    },
+    "results/test_output.txt": {
+      "source": "experiments/sachs_shd_calibration/results/test_output.txt",
+      "sha256": "c4bf9bb451c7c9e5d6c10dd80d0b7d5026a4bc25da3dfda3371f53c7dde715e3"
+    },
+    "results/truth_open_receipt.json": {
+      "source": "experiments/sachs_shd_calibration/results/truth_open_receipt.json",
+      "sha256": "fbe8a760a4421a91d38d4cfa62b3caf872c3a1504ab26a319f6abe4b2fde35a9"
+    },
+    "results/api/1ce71e22c5d3fa408f108e2b0f60e16e9c87c1280265d21d7abe7728e658073e.json": {
+      "source": "experiments/sachs_shd_calibration/results/api/1ce71e22c5d3fa408f108e2b0f60e16e9c87c1280265d21d7abe7728e658073e.json",
+      "sha256": "ba7e2db8a90a8c0d305cd0b4e4bb24aaf610e97a5eb134baaf0063b38091d670"
+    },
+    "results/api/1ce71e22c5d3fa408f108e2b0f60e16e9c87c1280265d21d7abe7728e658073e.raw": {
+      "source": "experiments/sachs_shd_calibration/results/api/1ce71e22c5d3fa408f108e2b0f60e16e9c87c1280265d21d7abe7728e658073e.raw",
+      "sha256": "c078b82f1f7806b9fe98b7c05da7c92e4b5575fbd9608adb122871fda248f969"
+    },
+    "results/api/210e07752e33f13d52746b9e5fdb537e4dbe51389b2daf38fb6dffe7f9658e2b.json": {
+      "source": "experiments/sachs_shd_calibration/results/api/210e07752e33f13d52746b9e5fdb537e4dbe51389b2daf38fb6dffe7f9658e2b.json",
+      "sha256": "e55c835ee131e21e0741cb09052ae6bb1ba039f57c1f9b96c37a157cef5bc03e"
+    },
+    "results/api/210e07752e33f13d52746b9e5fdb537e4dbe51389b2daf38fb6dffe7f9658e2b.raw": {
+      "source": "experiments/sachs_shd_calibration/results/api/210e07752e33f13d52746b9e5fdb537e4dbe51389b2daf38fb6dffe7f9658e2b.raw",
+      "sha256": "97e76a3704fc4c9fc24fb12bb8d095a0d2acc9e23ef2ec92c7bb6bde0647a396"
+    },
+    "results/api/2a21e98aa4bdc286d916db92d9867901f82f2defdb3aaf6dfd326d7be39d82ba.json": {
+      "source": "experiments/sachs_shd_calibration/results/api/2a21e98aa4bdc286d916db92d9867901f82f2defdb3aaf6dfd326d7be39d82ba.json",
+      "sha256": "45e54f062fb188b9bd84e7371e165e3e07f8575b32302216aa8bc1d855b867f5"
+    },
+    "results/api/2a21e98aa4bdc286d916db92d9867901f82f2defdb3aaf6dfd326d7be39d82ba.raw": {
+      "source": "experiments/sachs_shd_calibration/results/api/2a21e98aa4bdc286d916db92d9867901f82f2defdb3aaf6dfd326d7be39d82ba.raw",
+      "sha256": "013f12827ff9d239e13df5d6f14a19dcb8bdd75e43ef7ce7d7c6dd9ee80fcfc4"
+    },
+    "results/api/2b0d17eaeeb3972e23296de620cded1feb690fecdcebd797ff4c278f0318ab28.json": {
+      "source": "experiments/sachs_shd_calibration/results/api/2b0d17eaeeb3972e23296de620cded1feb690fecdcebd797ff4c278f0318ab28.json",
+      "sha256": "3b088514f97fe344ec76f06a24c64f8e021b708e2ca339bb2b40789e832b4439"
+    },
+    "results/api/2b0d17eaeeb3972e23296de620cded1feb690fecdcebd797ff4c278f0318ab28.raw": {
+      "source": "experiments/sachs_shd_calibration/results/api/2b0d17eaeeb3972e23296de620cded1feb690fecdcebd797ff4c278f0318ab28.raw",
+      "sha256": "5e6b36568667603d4529f9ed06c0ad7084b01054582c728ff62d9f334c3efe58"
+    },
+    "results/api/33b2652cbfe54925ccfa678576081f2f78d33821418bc11f591c7febefca3f39.json": {
+      "source": "experiments/sachs_shd_calibration/results/api/33b2652cbfe54925ccfa678576081f2f78d33821418bc11f591c7febefca3f39.json",
+      "sha256": "7577a575d2895afe2ec3260138257975f55dcf3548e8080bd2ebf5f53044c679"
+    },
+    "results/api/33b2652cbfe54925ccfa678576081f2f78d33821418bc11f591c7febefca3f39.raw": {
+      "source": "experiments/sachs_shd_calibration/results/api/33b2652cbfe54925ccfa678576081f2f78d33821418bc11f591c7febefca3f39.raw",
+      "sha256": "a3f0eeca6d26ac60039bf1acf33b405897bdc6ce9f3ea0def4ec830a47c2af16"
+    },
+    "results/api/39431fc2ad7b378e002f6c2e05a68424a70aebab69ee13af86a7fac4d1ed7c88.json": {
+      "source": "experiments/sachs_shd_calibration/results/api/39431fc2ad7b378e002f6c2e05a68424a70aebab69ee13af86a7fac4d1ed7c88.json",
+      "sha256": "d94914ec821485472ac9787223053a36be915a065816facd32a7f1b985f24161"
+    },
+    "results/api/39431fc2ad7b378e002f6c2e05a68424a70aebab69ee13af86a7fac4d1ed7c88.raw": {
+      "source": "experiments/sachs_shd_calibration/results/api/39431fc2ad7b378e002f6c2e05a68424a70aebab69ee13af86a7fac4d1ed7c88.raw",
+      "sha256": "3d41a295d16142bddac3f73b277f3090b175ba502e6c1a100ec370d024575b51"
+    },
+    "results/api/44e534bdc6d351240abb369767b45f4ff57a34f46558e0ea049e777d511474ba.json": {
+      "source": "experiments/sachs_shd_calibration/results/api/44e534bdc6d351240abb369767b45f4ff57a34f46558e0ea049e777d511474ba.json",
+      "sha256": "49e2e324d6e7801bfcfe12cd172b372110187087253eea2cd17b4e711e26fefc"
+    },
+    "results/api/44e534bdc6d351240abb369767b45f4ff57a34f46558e0ea049e777d511474ba.raw": {
+      "source": "experiments/sachs_shd_calibration/results/api/44e534bdc6d351240abb369767b45f4ff57a34f46558e0ea049e777d511474ba.raw",
+      "sha256": "ef2ca344f49ce01d27cf98c1d21cb18cbc36bdf764218e75300ba1e36220fa37"
+    },
+    "results/api/4ed993cf1aeacf9599ace5302b5496115963f826f5f7e38ea07771c83fc97d83.json": {
+      "source": "experiments/sachs_shd_calibration/results/api/4ed993cf1aeacf9599ace5302b5496115963f826f5f7e38ea07771c83fc97d83.json",
+      "sha256": "fe3536dba8c60a364a91b30295a72d08dd3aa27d5c969e3974557d53196f1a41"
+    },
+    "results/api/4ed993cf1aeacf9599ace5302b5496115963f826f5f7e38ea07771c83fc97d83.raw": {
+      "source": "experiments/sachs_shd_calibration/results/api/4ed993cf1aeacf9599ace5302b5496115963f826f5f7e38ea07771c83fc97d83.raw",
+      "sha256": "5b8897c3ac2c4c8ae62d51ed227b99a33513425795342ebb2cf60bbebdd478da"
+    },
+    "results/api/51704a6d5b5d146a830392f9379860689fe58c3c1e9093cf6ef9f07f53a1c70a.json": {
+      "source": "experiments/sachs_shd_calibration/results/api/51704a6d5b5d146a830392f9379860689fe58c3c1e9093cf6ef9f07f53a1c70a.json",
+      "sha256": "fdcc734154e7172217354064477f551f222b22f1e283fee888c99be8c50dd58a"
+    },
+    "results/api/51704a6d5b5d146a830392f9379860689fe58c3c1e9093cf6ef9f07f53a1c70a.raw": {
+      "source": "experiments/sachs_shd_calibration/results/api/51704a6d5b5d146a830392f9379860689fe58c3c1e9093cf6ef9f07f53a1c70a.raw",
+      "sha256": "76ecbdb46c26606927c9f7db4f58b958dec62bca9048f150bd06be7dce6f540a"
+    },
+    "results/api/5208ac05da1f79a7ce608da63fbd2fb0a3d5808c9d0fb953b5eaa00caeb21c96.json": {
+      "source": "experiments/sachs_shd_calibration/results/api/5208ac05da1f79a7ce608da63fbd2fb0a3d5808c9d0fb953b5eaa00caeb21c96.json",
+      "sha256": "ffaae919d7032146d50d99989cf6a22b638233bf57bb47f926784c66489a78b8"
+    },
+    "results/api/5208ac05da1f79a7ce608da63fbd2fb0a3d5808c9d0fb953b5eaa00caeb21c96.raw": {
+      "source": "experiments/sachs_shd_calibration/results/api/5208ac05da1f79a7ce608da63fbd2fb0a3d5808c9d0fb953b5eaa00caeb21c96.raw",
+      "sha256": "3c472215c8502a0e91ad13ea18b920334d8aea35ab178452f0c3119d0c847c9d"
+    },
+    "results/api/5261c407c0549818c3d8b2a7a45b2ef7b67941632f87b369c0d3077a1cace1b1.json": {
+      "source": "experiments/sachs_shd_calibration/results/api/5261c407c0549818c3d8b2a7a45b2ef7b67941632f87b369c0d3077a1cace1b1.json",
+      "sha256": "f3d0a2c1dbd12a5d99faf542a1f95e28b76dc34591393f1b7d24956d143e691a"
+    },
+    "results/api/5261c407c0549818c3d8b2a7a45b2ef7b67941632f87b369c0d3077a1cace1b1.raw": {
+      "source": "experiments/sachs_shd_calibration/results/api/5261c407c0549818c3d8b2a7a45b2ef7b67941632f87b369c0d3077a1cace1b1.raw",
+      "sha256": "f1f82618d3fffb8429f970d0e54a24452809315ade3ffdd6365bab10428e955f"
+    },
+    "results/api/528600c9713c478c229d540a9e11575839b61dedc64080903d58a0b3aacb73f7.json": {
+      "source": "experiments/sachs_shd_calibration/results/api/528600c9713c478c229d540a9e11575839b61dedc64080903d58a0b3aacb73f7.json",
+      "sha256": "dc53c5c476083a1bd36243e3a527b34fba8827e4e48857f83ecc754151497072"
+    },
+    "results/api/528600c9713c478c229d540a9e11575839b61dedc64080903d58a0b3aacb73f7.raw": {
+      "source": "experiments/sachs_shd_calibration/results/api/528600c9713c478c229d540a9e11575839b61dedc64080903d58a0b3aacb73f7.raw",
+      "sha256": "09735a9dca5a5aff7ce938f6de8de41e195dd2002ad621935464032f0d36b437"
+    },
+    "results/api/5543a90388d3323416b68020a2f29fcef198afa82a16f13de84e9a45939bc977.json": {
+      "source": "experiments/sachs_shd_calibration/results/api/5543a90388d3323416b68020a2f29fcef198afa82a16f13de84e9a45939bc977.json",
+      "sha256": "9ef03b2716e1e0f52f09cfd60ac1c122c689fc9188bb74d956589a396c4790ba"
+    },
+    "results/api/5543a90388d3323416b68020a2f29fcef198afa82a16f13de84e9a45939bc977.raw": {
+      "source": "experiments/sachs_shd_calibration/results/api/5543a90388d3323416b68020a2f29fcef198afa82a16f13de84e9a45939bc977.raw",
+      "sha256": "bf46737edfbef9d17d44e18072e8746d61e3dc20226425f6aa38b47d400ab571"
+    },
+    "results/api/593c6523be726c5b20f212f1f6c60862e4f60c8237f432cc539e821b0678107c.json": {
+      "source": "experiments/sachs_shd_calibration/results/api/593c6523be726c5b20f212f1f6c60862e4f60c8237f432cc539e821b0678107c.json",
+      "sha256": "d9a72ad8479e4c034071b83175fbc46f11e6c037746103a38aab524a48d687f5"
+    },
+    "results/api/593c6523be726c5b20f212f1f6c60862e4f60c8237f432cc539e821b0678107c.raw": {
+      "source": "experiments/sachs_shd_calibration/results/api/593c6523be726c5b20f212f1f6c60862e4f60c8237f432cc539e821b0678107c.raw",
+      "sha256": "4adb24eb6e1af508e79c5296006e3c23031156892920ee814dd0c971e2e05781"
+    },
+    "results/api/6423de74e45dafd68a90b68b1ce4ae5808c83ab86cc6c20a8945c738ab2b562b.json": {
+      "source": "experiments/sachs_shd_calibration/results/api/6423de74e45dafd68a90b68b1ce4ae5808c83ab86cc6c20a8945c738ab2b562b.json",
+      "sha256": "e3b71abdc109449e7bc592300372c84458adaa8cf4f81d99ac553e85425cfb6e"
+    },
+    "results/api/6423de74e45dafd68a90b68b1ce4ae5808c83ab86cc6c20a8945c738ab2b562b.raw": {
+      "source": "experiments/sachs_shd_calibration/results/api/6423de74e45dafd68a90b68b1ce4ae5808c83ab86cc6c20a8945c738ab2b562b.raw",
+      "sha256": "d3dfb06aff314afe38d77af7e1c3ca20fd643ab38eb0021fd541f361d73c4e43"
+    },
+    "results/api/6ffb40f4d85df848c8d1344a11dbc369e5d39b034a5203a3c2497cab1373ed0f.json": {
+      "source": "experiments/sachs_shd_calibration/results/api/6ffb40f4d85df848c8d1344a11dbc369e5d39b034a5203a3c2497cab1373ed0f.json",
+      "sha256": "930b9394858ecb6d6a081adb4356b6038845c4243e49b5455410c8440401fc3e"
+    },
+    "results/api/6ffb40f4d85df848c8d1344a11dbc369e5d39b034a5203a3c2497cab1373ed0f.raw": {
+      "source": "experiments/sachs_shd_calibration/results/api/6ffb40f4d85df848c8d1344a11dbc369e5d39b034a5203a3c2497cab1373ed0f.raw",
+      "sha256": "f778166bbb93097fab46c052649b5661d82e3f15e4e88400df0046beda748386"
+    },
+    "results/api/74a8d4bda096170a1ac267ce17211b727645070487d7933db58d689237b0e6d9.json": {
+      "source": "experiments/sachs_shd_calibration/results/api/74a8d4bda096170a1ac267ce17211b727645070487d7933db58d689237b0e6d9.json",
+      "sha256": "2c8e81ff96124f74fdbe017c5c95645fdbd3b4167349da54c0441e18588a3285"
+    },
+    "results/api/74a8d4bda096170a1ac267ce17211b727645070487d7933db58d689237b0e6d9.raw": {
+      "source": "experiments/sachs_shd_calibration/results/api/74a8d4bda096170a1ac267ce17211b727645070487d7933db58d689237b0e6d9.raw",
+      "sha256": "b856c5904330b1687321e0236c0cc127a9f89c62a1a943027677b27e8cc83a6b"
+    },
+    "results/api/78749647ff1b3e2df29fae340bdae0cfc4395fef6e21b189f7472a28d6a7da78.json": {
+      "source": "experiments/sachs_shd_calibration/results/api/78749647ff1b3e2df29fae340bdae0cfc4395fef6e21b189f7472a28d6a7da78.json",
+      "sha256": "c6b6bf5c08f8f29b91d7d87b0ca5f17c261239083fa3d0e2256a0b32b9bfca9a"
+    },
+    "results/api/78749647ff1b3e2df29fae340bdae0cfc4395fef6e21b189f7472a28d6a7da78.raw": {
+      "source": "experiments/sachs_shd_calibration/results/api/78749647ff1b3e2df29fae340bdae0cfc4395fef6e21b189f7472a28d6a7da78.raw",
+      "sha256": "3bbc03ab4b22fc950b51dad384270e2aba16233800347196bcfbb5894ce40bbf"
+    },
+    "results/api/79bf779c3b65d4d6a6bfc987d52b9d58a62e1deb24c8bf5755b375feb7992585.json": {
+      "source": "experiments/sachs_shd_calibration/results/api/79bf779c3b65d4d6a6bfc987d52b9d58a62e1deb24c8bf5755b375feb7992585.json",
+      "sha256": "99ba87856a433d45ccd52c2d98c2041b337d2f5a17c92b96db4ed7c880f8e484"
+    },
+    "results/api/79bf779c3b65d4d6a6bfc987d52b9d58a62e1deb24c8bf5755b375feb7992585.raw": {
+      "source": "experiments/sachs_shd_calibration/results/api/79bf779c3b65d4d6a6bfc987d52b9d58a62e1deb24c8bf5755b375feb7992585.raw",
+      "sha256": "d80debf8c7bccb5610ed40b1d05d1208d51e211a4afd976f0d736250d173ec83"
+    },
+    "results/api/88f4e596ad374d8364d28701ba49490622150364c70491ccefe12f8ce065169c.json": {
+      "source": "experiments/sachs_shd_calibration/results/api/88f4e596ad374d8364d28701ba49490622150364c70491ccefe12f8ce065169c.json",
+      "sha256": "784d0431f4943e14bc564f6c242f60796cf953c2eb660a3e6ddb742c811bd1e9"
+    },
+    "results/api/88f4e596ad374d8364d28701ba49490622150364c70491ccefe12f8ce065169c.raw": {
+      "source": "experiments/sachs_shd_calibration/results/api/88f4e596ad374d8364d28701ba49490622150364c70491ccefe12f8ce065169c.raw",
+      "sha256": "b1c716e200c0711bc20eaee3bf367c8e65de445048d46f1f061a135a90efebfd"
+    },
+    "results/api/8fed9d4ad4bf46d8b9a542d098282c25f18c057a1501cb77c5a2d597ff236869.json": {
+      "source": "experiments/sachs_shd_calibration/results/api/8fed9d4ad4bf46d8b9a542d098282c25f18c057a1501cb77c5a2d597ff236869.json",
+      "sha256": "b02128600c5c3dd67ccfc76614cea40fd1052a1b5930be318cc83a8cd5e42943"
+    },
+    "results/api/8fed9d4ad4bf46d8b9a542d098282c25f18c057a1501cb77c5a2d597ff236869.raw": {
+      "source": "experiments/sachs_shd_calibration/results/api/8fed9d4ad4bf46d8b9a542d098282c25f18c057a1501cb77c5a2d597ff236869.raw",
+      "sha256": "75002e4682618d5197da3a4c3684d79038964b63adae556c5f1859b639f37c38"
+    },
+    "results/api/959d8548293d56f6d3185bd60a3931d3613432e211662abb25633710090fa164.json": {
+      "source": "experiments/sachs_shd_calibration/results/api/959d8548293d56f6d3185bd60a3931d3613432e211662abb25633710090fa164.json",
+      "sha256": "4e31f0051908cad0fe0a5ef6c058ab4d2629ec9569751d64125ac055445be4be"
+    },
+    "results/api/959d8548293d56f6d3185bd60a3931d3613432e211662abb25633710090fa164.raw": {
+      "source": "experiments/sachs_shd_calibration/results/api/959d8548293d56f6d3185bd60a3931d3613432e211662abb25633710090fa164.raw",
+      "sha256": "618686e8db29ef283a46b74253ec4f2be1244e341a5a42c5eb9eadc90f09461d"
+    },
+    "results/api/97f0d6daa18687d800b903d35ee452d0578a286d4b98e18c8adca18e5c2971b6.json": {
+      "source": "experiments/sachs_shd_calibration/results/api/97f0d6daa18687d800b903d35ee452d0578a286d4b98e18c8adca18e5c2971b6.json",
+      "sha256": "aa8df9a9f609c1f1fe2a5ed8aa98184960991f7acc46ef435c247807f86b74a3"
+    },
+    "results/api/97f0d6daa18687d800b903d35ee452d0578a286d4b98e18c8adca18e5c2971b6.raw": {
+      "source": "experiments/sachs_shd_calibration/results/api/97f0d6daa18687d800b903d35ee452d0578a286d4b98e18c8adca18e5c2971b6.raw",
+      "sha256": "ea0671e17c24fae6aeb39c4ebf47402949182d61a87eae4c792f760cd629dd0c"
+    },
+    "results/api/b3eba7156918a6e76adf7af5c51d24d94db0e9d6c5fd60be95d096bf7fdbb3ef.json": {
+      "source": "experiments/sachs_shd_calibration/results/api/b3eba7156918a6e76adf7af5c51d24d94db0e9d6c5fd60be95d096bf7fdbb3ef.json",
+      "sha256": "0c1f4f8758e91ac6382c3873a38600ff9eeca9ac674c7224e999f9a4a612a9f0"
+    },
+    "results/api/b3eba7156918a6e76adf7af5c51d24d94db0e9d6c5fd60be95d096bf7fdbb3ef.raw": {
+      "source": "experiments/sachs_shd_calibration/results/api/b3eba7156918a6e76adf7af5c51d24d94db0e9d6c5fd60be95d096bf7fdbb3ef.raw",
+      "sha256": "b2592babcb3ba6c180b32af05d576f02e0085e37dd00819eca579afe0a2f677a"
+    },
+    "results/api/b8e21db05ae40420d8c579c3c9cecd7d10fbe611757bdd9a16a7f8b1c204d5de.json": {
+      "source": "experiments/sachs_shd_calibration/results/api/b8e21db05ae40420d8c579c3c9cecd7d10fbe611757bdd9a16a7f8b1c204d5de.json",
+      "sha256": "338ddecb8c4373559357d09d355b21ac79b3462f6e03d8fe0f66bdbf73524e6a"
+    },
+    "results/api/b8e21db05ae40420d8c579c3c9cecd7d10fbe611757bdd9a16a7f8b1c204d5de.raw": {
+      "source": "experiments/sachs_shd_calibration/results/api/b8e21db05ae40420d8c579c3c9cecd7d10fbe611757bdd9a16a7f8b1c204d5de.raw",
+      "sha256": "94959624c0fac64c002ea7df8a0283686760f04a5288d7b2f0175e5c2809b918"
+    },
+    "results/api/bc43d2534fe353dd75507c4e16afcc817a471739f6c2c688f6153b3eb52e2c8c.json": {
+      "source": "experiments/sachs_shd_calibration/results/api/bc43d2534fe353dd75507c4e16afcc817a471739f6c2c688f6153b3eb52e2c8c.json",
+      "sha256": "da82addc2aa6308baadaf58f0a304e875a8150cab1f065e222920a91c83f4d3f"
+    },
+    "results/api/bc43d2534fe353dd75507c4e16afcc817a471739f6c2c688f6153b3eb52e2c8c.raw": {
+      "source": "experiments/sachs_shd_calibration/results/api/bc43d2534fe353dd75507c4e16afcc817a471739f6c2c688f6153b3eb52e2c8c.raw",
+      "sha256": "99405142d652d9feab6ab26cf70dcf3a2149dd87cb95f8bb79e5919c49375bda"
+    },
+    "results/api/c78ba97dc3eef2d3d8db99c5760962041276b8066487491c9caf78ae3db1dd16.json": {
+      "source": "experiments/sachs_shd_calibration/results/api/c78ba97dc3eef2d3d8db99c5760962041276b8066487491c9caf78ae3db1dd16.json",
+      "sha256": "97bc3b3316668a272f7abbfe6a1ed38549c1c08d0e02c17a3679d774afb31fcd"
+    },
+    "results/api/c78ba97dc3eef2d3d8db99c5760962041276b8066487491c9caf78ae3db1dd16.raw": {
+      "source": "experiments/sachs_shd_calibration/results/api/c78ba97dc3eef2d3d8db99c5760962041276b8066487491c9caf78ae3db1dd16.raw",
+      "sha256": "80e9dd9c42b9191a516dfed23b1caab86dee7a74fb1365c2c561076f55e67d63"
+    },
+    "results/api/cc420e97e378029464b2f95bbbedd08ccd7e805d4cb3487e4d470944a79180f3.json": {
+      "source": "experiments/sachs_shd_calibration/results/api/cc420e97e378029464b2f95bbbedd08ccd7e805d4cb3487e4d470944a79180f3.json",
+      "sha256": "37dafc32ab38e4eee73a7a71827b04a51df9fe34822b56ed7333568bf95dc6a9"
+    },
+    "results/api/cc420e97e378029464b2f95bbbedd08ccd7e805d4cb3487e4d470944a79180f3.raw": {
+      "source": "experiments/sachs_shd_calibration/results/api/cc420e97e378029464b2f95bbbedd08ccd7e805d4cb3487e4d470944a79180f3.raw",
+      "sha256": "8f2b332930527b2bb3cea01f03958507f765b6325869e4bce027971087ef8735"
+    },
+    "results/api/ce90c5fbb6b8e29750f3ea7a075693dffb9843113c8fd5ed08f32469dbf04cab.json": {
+      "source": "experiments/sachs_shd_calibration/results/api/ce90c5fbb6b8e29750f3ea7a075693dffb9843113c8fd5ed08f32469dbf04cab.json",
+      "sha256": "4e0d3ddaa62f8e6cdf80641505edb86165831711b3ee6aa7cdbc58d425c5b293"
+    },
+    "results/api/ce90c5fbb6b8e29750f3ea7a075693dffb9843113c8fd5ed08f32469dbf04cab.raw": {
+      "source": "experiments/sachs_shd_calibration/results/api/ce90c5fbb6b8e29750f3ea7a075693dffb9843113c8fd5ed08f32469dbf04cab.raw",
+      "sha256": "98ef15d1c08b848e4bb863207b28c3f7c82c96a50ef236a6269ee542567c1b01"
+    },
+    "results/api/cef986db8db8edf6af25213ad654ad4322d42db2ec2813b613bf290624fd1187.json": {
+      "source": "experiments/sachs_shd_calibration/results/api/cef986db8db8edf6af25213ad654ad4322d42db2ec2813b613bf290624fd1187.json",
+      "sha256": "32fd03e2a219361bc1e2b629dc98f96fc363dbd3d07e87db498169f1def2f8df"
+    },
+    "results/api/cef986db8db8edf6af25213ad654ad4322d42db2ec2813b613bf290624fd1187.raw": {
+      "source": "experiments/sachs_shd_calibration/results/api/cef986db8db8edf6af25213ad654ad4322d42db2ec2813b613bf290624fd1187.raw",
+      "sha256": "314617c593a97a5e8ff3bab3ec5107dbd2a302c53932b49cf50c79bd8e48d203"
+    },
+    "results/api/d2a2ddc300c5343fee0d4df429b34d06164dfdbd87e330d62fe47b80a84c047f.json": {
+      "source": "experiments/sachs_shd_calibration/results/api/d2a2ddc300c5343fee0d4df429b34d06164dfdbd87e330d62fe47b80a84c047f.json",
+      "sha256": "6e82c543b78967a2df3ba3cd23e389132acb43c199b1912832ba6ef28f7878ab"
+    },
+    "results/api/d2a2ddc300c5343fee0d4df429b34d06164dfdbd87e330d62fe47b80a84c047f.raw": {
+      "source": "experiments/sachs_shd_calibration/results/api/d2a2ddc300c5343fee0d4df429b34d06164dfdbd87e330d62fe47b80a84c047f.raw",
+      "sha256": "cca033fbe90700f2ced49b1c73a11ee9769e6a76116556aa813fcd129c881cec"
+    },
+    "results/api/d4fdf3f4a1968ef8acd2a98d58fad1870063be99d356fe70b5158d7f116dc6d6.json": {
+      "source": "experiments/sachs_shd_calibration/results/api/d4fdf3f4a1968ef8acd2a98d58fad1870063be99d356fe70b5158d7f116dc6d6.json",
+      "sha256": "4c3100fe3dd27b0d74bd80b2ef9bb3923cc3d160a50a8cf87242eb03c376c4ab"
+    },
+    "results/api/d4fdf3f4a1968ef8acd2a98d58fad1870063be99d356fe70b5158d7f116dc6d6.raw": {
+      "source": "experiments/sachs_shd_calibration/results/api/d4fdf3f4a1968ef8acd2a98d58fad1870063be99d356fe70b5158d7f116dc6d6.raw",
+      "sha256": "f83a637aca56247a99d59b8b223982045025a44067b541bf3b2da4368147f9ce"
+    },
+    "results/api/d810956623c4432fd332122b6ce4394e204fb2f28224938950b603951d3f0cc7.json": {
+      "source": "experiments/sachs_shd_calibration/results/api/d810956623c4432fd332122b6ce4394e204fb2f28224938950b603951d3f0cc7.json",
+      "sha256": "024b071a10dd819b08648bb8f276f0b2fac9316a0af84dc5e85957e632ec28d0"
+    },
+    "results/api/d810956623c4432fd332122b6ce4394e204fb2f28224938950b603951d3f0cc7.raw": {
+      "source": "experiments/sachs_shd_calibration/results/api/d810956623c4432fd332122b6ce4394e204fb2f28224938950b603951d3f0cc7.raw",
+      "sha256": "44852ac8ce9c9e93dec263867ede48a83e3ef2a51adbdb8e0af0fd278ed12c92"
+    },
+    "results/api/da9cbe5ccc0a547ead8383c6953ff64b5c3c8f68c0e3151a35410b25d294b8a6.json": {
+      "source": "experiments/sachs_shd_calibration/results/api/da9cbe5ccc0a547ead8383c6953ff64b5c3c8f68c0e3151a35410b25d294b8a6.json",
+      "sha256": "8b18f26c1aa00f24003476cf5c746145cad9f3f852d40414ce96156967904e01"
+    },
+    "results/api/da9cbe5ccc0a547ead8383c6953ff64b5c3c8f68c0e3151a35410b25d294b8a6.raw": {
+      "source": "experiments/sachs_shd_calibration/results/api/da9cbe5ccc0a547ead8383c6953ff64b5c3c8f68c0e3151a35410b25d294b8a6.raw",
+      "sha256": "508cedbcd143b544b4274e37f9e030ec33202ff88d28cb71ec9879d747ad66d6"
+    },
+    "results/api/e3387f6091edcc51e9b407d2bc58a5515dd02a90c9c15062d348e4263c75773b.json": {
+      "source": "experiments/sachs_shd_calibration/results/api/e3387f6091edcc51e9b407d2bc58a5515dd02a90c9c15062d348e4263c75773b.json",
+      "sha256": "d43b5ffed4982c821fa1f2d434dea7861c32196694e9e5a7dc25ed41cb4f6b35"
+    },
+    "results/api/e3387f6091edcc51e9b407d2bc58a5515dd02a90c9c15062d348e4263c75773b.raw": {
+      "source": "experiments/sachs_shd_calibration/results/api/e3387f6091edcc51e9b407d2bc58a5515dd02a90c9c15062d348e4263c75773b.raw",
+      "sha256": "72d08d9ecf3c7929040d4d5c99946e61853c604681a1b68dffb98be5d4e9551e"
+    },
+    "results/api/e8cebf4d650014e7b7fa3cac13a4eb3b74036564608ad00432886ceff8cba25f.json": {
+      "source": "experiments/sachs_shd_calibration/results/api/e8cebf4d650014e7b7fa3cac13a4eb3b74036564608ad00432886ceff8cba25f.json",
+      "sha256": "718abb877a026b1d83a6683b1b2897b65a53d6e7bc50bb3adb706c84c5ef9516"
+    },
+    "results/api/e8cebf4d650014e7b7fa3cac13a4eb3b74036564608ad00432886ceff8cba25f.raw": {
+      "source": "experiments/sachs_shd_calibration/results/api/e8cebf4d650014e7b7fa3cac13a4eb3b74036564608ad00432886ceff8cba25f.raw",
+      "sha256": "43491cd3a29ee30485fad9439ee80e04690981e894bf4d64af9830f91fa5c56b"
+    },
+    "results/api/e931a055ebef0c2a1c3d6c67c496e9e43c72b3cb6c1906679a3eacfb3d9b2167.json": {
+      "source": "experiments/sachs_shd_calibration/results/api/e931a055ebef0c2a1c3d6c67c496e9e43c72b3cb6c1906679a3eacfb3d9b2167.json",
+      "sha256": "e23af1291899a0071b0ee559327152bcd803112a37598bbacd5715d5ccbed725"
+    },
+    "results/api/e931a055ebef0c2a1c3d6c67c496e9e43c72b3cb6c1906679a3eacfb3d9b2167.raw": {
+      "source": "experiments/sachs_shd_calibration/results/api/e931a055ebef0c2a1c3d6c67c496e9e43c72b3cb6c1906679a3eacfb3d9b2167.raw",
+      "sha256": "726ce75c248ad871082a274e6df6fee086e247104d47012b4f155335a8a054ef"
+    },
+    "results/api/eb402da80d9cdd2e36c3ee6a0e9e683ffb8c7f69c5b4969ee9b811b2abf66c5f.json": {
+      "source": "experiments/sachs_shd_calibration/results/api/eb402da80d9cdd2e36c3ee6a0e9e683ffb8c7f69c5b4969ee9b811b2abf66c5f.json",
+      "sha256": "cdb9e0739f9280671c964f82bbf2287509a014e0779a1b9328bc5d360e24819a"
+    },
+    "results/api/eb402da80d9cdd2e36c3ee6a0e9e683ffb8c7f69c5b4969ee9b811b2abf66c5f.raw": {
+      "source": "experiments/sachs_shd_calibration/results/api/eb402da80d9cdd2e36c3ee6a0e9e683ffb8c7f69c5b4969ee9b811b2abf66c5f.raw",
+      "sha256": "67ce3db21ac194c5346a40224e6d12f16685e41e582684e26e83b59bdbdec7bc"
+    },
+    "results/api/f37ed239ed1f6e1ce1eb0237b627cd162214f40ce94ab23130dc5d774dc2edea.json": {
+      "source": "experiments/sachs_shd_calibration/results/api/f37ed239ed1f6e1ce1eb0237b627cd162214f40ce94ab23130dc5d774dc2edea.json",
+      "sha256": "d815116dd6cc526f161feafd97b1097281da7d0cb3dd7d26d9142afb250520ae"
+    },
+    "results/api/f37ed239ed1f6e1ce1eb0237b627cd162214f40ce94ab23130dc5d774dc2edea.raw": {
+      "source": "experiments/sachs_shd_calibration/results/api/f37ed239ed1f6e1ce1eb0237b627cd162214f40ce94ab23130dc5d774dc2edea.raw",
+      "sha256": "59bb00db4869269c40151e8c46d692868ccd0471b101e830706da811dec41f61"
+    },
+    "results/api/f4aaa357f90a419e0cb9a5da8f0996d2c785005ff2810d7457e34750d16b22a3.json": {
+      "source": "experiments/sachs_shd_calibration/results/api/f4aaa357f90a419e0cb9a5da8f0996d2c785005ff2810d7457e34750d16b22a3.json",
+      "sha256": "311ea88de4d98ccf8852d80cb36fb7d2fda00345925837cfb0e583769f73d218"
+    },
+    "results/api/f4aaa357f90a419e0cb9a5da8f0996d2c785005ff2810d7457e34750d16b22a3.raw": {
+      "source": "experiments/sachs_shd_calibration/results/api/f4aaa357f90a419e0cb9a5da8f0996d2c785005ff2810d7457e34750d16b22a3.raw",
+      "sha256": "da56e862957ca3b7a79237237e8c745a474d4fb6fc881ff478f46f1275b58da0"
+    },
+    "results/api/f6df928fb59da4f78117cd502a65dd81c4e0cdf915b119bac68002fb4e8dd740.json": {
+      "source": "experiments/sachs_shd_calibration/results/api/f6df928fb59da4f78117cd502a65dd81c4e0cdf915b119bac68002fb4e8dd740.json",
+      "sha256": "7dd342e432f0e7937b0d909060e8f2dc8ea316e1ba5a77e1aaefcfe033520172"
+    },
+    "results/api/f6df928fb59da4f78117cd502a65dd81c4e0cdf915b119bac68002fb4e8dd740.raw": {
+      "source": "experiments/sachs_shd_calibration/results/api/f6df928fb59da4f78117cd502a65dd81c4e0cdf915b119bac68002fb4e8dd740.raw",
+      "sha256": "f799d0638fd66e34c33020f3431e30e18d16c25e9f49ff1e527d8bf81a52db23"
+    },
+    "results/api/fd8b6d1b6432b06fe8500cbfc104c921fac6b87d2bf91eeb7eb60ca94bc1c07c.json": {
+      "source": "experiments/sachs_shd_calibration/results/api/fd8b6d1b6432b06fe8500cbfc104c921fac6b87d2bf91eeb7eb60ca94bc1c07c.json",
+      "sha256": "10f6d926e50254e9057e8590b6f4670f14fd1ce1996482f93b45c277adb1ab2b"
+    },
+    "results/api/fd8b6d1b6432b06fe8500cbfc104c921fac6b87d2bf91eeb7eb60ca94bc1c07c.raw": {
+      "source": "experiments/sachs_shd_calibration/results/api/fd8b6d1b6432b06fe8500cbfc104c921fac6b87d2bf91eeb7eb60ca94bc1c07c.raw",
+      "sha256": "554d7037f10cf21e7bc916cc2e3ddbedc0a2b9b7cb16e97f54a3248ea9599056"
+    },
+    "results/requests/1ce71e22c5d3fa408f108e2b0f60e16e9c87c1280265d21d7abe7728e658073e.json": {
+      "source": "experiments/sachs_shd_calibration/results/requests/1ce71e22c5d3fa408f108e2b0f60e16e9c87c1280265d21d7abe7728e658073e.json",
+      "sha256": "1ce71e22c5d3fa408f108e2b0f60e16e9c87c1280265d21d7abe7728e658073e"
+    },
+    "results/requests/210e07752e33f13d52746b9e5fdb537e4dbe51389b2daf38fb6dffe7f9658e2b.json": {
+      "source": "experiments/sachs_shd_calibration/results/requests/210e07752e33f13d52746b9e5fdb537e4dbe51389b2daf38fb6dffe7f9658e2b.json",
+      "sha256": "210e07752e33f13d52746b9e5fdb537e4dbe51389b2daf38fb6dffe7f9658e2b"
+    },
+    "results/requests/2a21e98aa4bdc286d916db92d9867901f82f2defdb3aaf6dfd326d7be39d82ba.json": {
+      "source": "experiments/sachs_shd_calibration/results/requests/2a21e98aa4bdc286d916db92d9867901f82f2defdb3aaf6dfd326d7be39d82ba.json",
+      "sha256": "2a21e98aa4bdc286d916db92d9867901f82f2defdb3aaf6dfd326d7be39d82ba"
+    },
+    "results/requests/2b0d17eaeeb3972e23296de620cded1feb690fecdcebd797ff4c278f0318ab28.json": {
+      "source": "experiments/sachs_shd_calibration/results/requests/2b0d17eaeeb3972e23296de620cded1feb690fecdcebd797ff4c278f0318ab28.json",
+      "sha256": "2b0d17eaeeb3972e23296de620cded1feb690fecdcebd797ff4c278f0318ab28"
+    },
+    "results/requests/33b2652cbfe54925ccfa678576081f2f78d33821418bc11f591c7febefca3f39.json": {
+      "source": "experiments/sachs_shd_calibration/results/requests/33b2652cbfe54925ccfa678576081f2f78d33821418bc11f591c7febefca3f39.json",
+      "sha256": "33b2652cbfe54925ccfa678576081f2f78d33821418bc11f591c7febefca3f39"
+    },
+    "results/requests/39431fc2ad7b378e002f6c2e05a68424a70aebab69ee13af86a7fac4d1ed7c88.json": {
+      "source": "experiments/sachs_shd_calibration/results/requests/39431fc2ad7b378e002f6c2e05a68424a70aebab69ee13af86a7fac4d1ed7c88.json",
+      "sha256": "39431fc2ad7b378e002f6c2e05a68424a70aebab69ee13af86a7fac4d1ed7c88"
+    },
+    "results/requests/44e534bdc6d351240abb369767b45f4ff57a34f46558e0ea049e777d511474ba.json": {
+      "source": "experiments/sachs_shd_calibration/results/requests/44e534bdc6d351240abb369767b45f4ff57a34f46558e0ea049e777d511474ba.json",
+      "sha256": "44e534bdc6d351240abb369767b45f4ff57a34f46558e0ea049e777d511474ba"
+    },
+    "results/requests/4ed993cf1aeacf9599ace5302b5496115963f826f5f7e38ea07771c83fc97d83.json": {
+      "source": "experiments/sachs_shd_calibration/results/requests/4ed993cf1aeacf9599ace5302b5496115963f826f5f7e38ea07771c83fc97d83.json",
+      "sha256": "4ed993cf1aeacf9599ace5302b5496115963f826f5f7e38ea07771c83fc97d83"
+    },
+    "results/requests/51704a6d5b5d146a830392f9379860689fe58c3c1e9093cf6ef9f07f53a1c70a.json": {
+      "source": "experiments/sachs_shd_calibration/results/requests/51704a6d5b5d146a830392f9379860689fe58c3c1e9093cf6ef9f07f53a1c70a.json",
+      "sha256": "51704a6d5b5d146a830392f9379860689fe58c3c1e9093cf6ef9f07f53a1c70a"
+    },
+    "results/requests/5208ac05da1f79a7ce608da63fbd2fb0a3d5808c9d0fb953b5eaa00caeb21c96.json": {
+      "source": "experiments/sachs_shd_calibration/results/requests/5208ac05da1f79a7ce608da63fbd2fb0a3d5808c9d0fb953b5eaa00caeb21c96.json",
+      "sha256": "5208ac05da1f79a7ce608da63fbd2fb0a3d5808c9d0fb953b5eaa00caeb21c96"
+    },
+    "results/requests/5261c407c0549818c3d8b2a7a45b2ef7b67941632f87b369c0d3077a1cace1b1.json": {
+      "source": "experiments/sachs_shd_calibration/results/requests/5261c407c0549818c3d8b2a7a45b2ef7b67941632f87b369c0d3077a1cace1b1.json",
+      "sha256": "5261c407c0549818c3d8b2a7a45b2ef7b67941632f87b369c0d3077a1cace1b1"
+    },
+    "results/requests/528600c9713c478c229d540a9e11575839b61dedc64080903d58a0b3aacb73f7.json": {
+      "source": "experiments/sachs_shd_calibration/results/requests/528600c9713c478c229d540a9e11575839b61dedc64080903d58a0b3aacb73f7.json",
+      "sha256": "528600c9713c478c229d540a9e11575839b61dedc64080903d58a0b3aacb73f7"
+    },
+    "results/requests/5543a90388d3323416b68020a2f29fcef198afa82a16f13de84e9a45939bc977.json": {
+      "source": "experiments/sachs_shd_calibration/results/requests/5543a90388d3323416b68020a2f29fcef198afa82a16f13de84e9a45939bc977.json",
+      "sha256": "5543a90388d3323416b68020a2f29fcef198afa82a16f13de84e9a45939bc977"
+    },
+    "results/requests/593c6523be726c5b20f212f1f6c60862e4f60c8237f432cc539e821b0678107c.json": {
+      "source": "experiments/sachs_shd_calibration/results/requests/593c6523be726c5b20f212f1f6c60862e4f60c8237f432cc539e821b0678107c.json",
+      "sha256": "593c6523be726c5b20f212f1f6c60862e4f60c8237f432cc539e821b0678107c"
+    },
+    "results/requests/6423de74e45dafd68a90b68b1ce4ae5808c83ab86cc6c20a8945c738ab2b562b.json": {
+      "source": "experiments/sachs_shd_calibration/results/requests/6423de74e45dafd68a90b68b1ce4ae5808c83ab86cc6c20a8945c738ab2b562b.json",
+      "sha256": "6423de74e45dafd68a90b68b1ce4ae5808c83ab86cc6c20a8945c738ab2b562b"
+    },
+    "results/requests/6ffb40f4d85df848c8d1344a11dbc369e5d39b034a5203a3c2497cab1373ed0f.json": {
+      "source": "experiments/sachs_shd_calibration/results/requests/6ffb40f4d85df848c8d1344a11dbc369e5d39b034a5203a3c2497cab1373ed0f.json",
+      "sha256": "6ffb40f4d85df848c8d1344a11dbc369e5d39b034a5203a3c2497cab1373ed0f"
+    },
+    "results/requests/74a8d4bda096170a1ac267ce17211b727645070487d7933db58d689237b0e6d9.json": {
+      "source": "experiments/sachs_shd_calibration/results/requests/74a8d4bda096170a1ac267ce17211b727645070487d7933db58d689237b0e6d9.json",
+      "sha256": "74a8d4bda096170a1ac267ce17211b727645070487d7933db58d689237b0e6d9"
+    },
+    "results/requests/78749647ff1b3e2df29fae340bdae0cfc4395fef6e21b189f7472a28d6a7da78.json": {
+      "source": "experiments/sachs_shd_calibration/results/requests/78749647ff1b3e2df29fae340bdae0cfc4395fef6e21b189f7472a28d6a7da78.json",
+      "sha256": "78749647ff1b3e2df29fae340bdae0cfc4395fef6e21b189f7472a28d6a7da78"
+    },
+    "results/requests/79bf779c3b65d4d6a6bfc987d52b9d58a62e1deb24c8bf5755b375feb7992585.json": {
+      "source": "experiments/sachs_shd_calibration/results/requests/79bf779c3b65d4d6a6bfc987d52b9d58a62e1deb24c8bf5755b375feb7992585.json",
+      "sha256": "79bf779c3b65d4d6a6bfc987d52b9d58a62e1deb24c8bf5755b375feb7992585"
+    },
+    "results/requests/88f4e596ad374d8364d28701ba49490622150364c70491ccefe12f8ce065169c.json": {
+      "source": "experiments/sachs_shd_calibration/results/requests/88f4e596ad374d8364d28701ba49490622150364c70491ccefe12f8ce065169c.json",
+      "sha256": "88f4e596ad374d8364d28701ba49490622150364c70491ccefe12f8ce065169c"
+    },
+    "results/requests/8fed9d4ad4bf46d8b9a542d098282c25f18c057a1501cb77c5a2d597ff236869.json": {
+      "source": "experiments/sachs_shd_calibration/results/requests/8fed9d4ad4bf46d8b9a542d098282c25f18c057a1501cb77c5a2d597ff236869.json",
+      "sha256": "8fed9d4ad4bf46d8b9a542d098282c25f18c057a1501cb77c5a2d597ff236869"
+    },
+    "results/requests/959d8548293d56f6d3185bd60a3931d3613432e211662abb25633710090fa164.json": {
+      "source": "experiments/sachs_shd_calibration/results/requests/959d8548293d56f6d3185bd60a3931d3613432e211662abb25633710090fa164.json",
+      "sha256": "959d8548293d56f6d3185bd60a3931d3613432e211662abb25633710090fa164"
+    },
+    "results/requests/97f0d6daa18687d800b903d35ee452d0578a286d4b98e18c8adca18e5c2971b6.json": {
+      "source": "experiments/sachs_shd_calibration/results/requests/97f0d6daa18687d800b903d35ee452d0578a286d4b98e18c8adca18e5c2971b6.json",
+      "sha256": "97f0d6daa18687d800b903d35ee452d0578a286d4b98e18c8adca18e5c2971b6"
+    },
+    "results/requests/b3eba7156918a6e76adf7af5c51d24d94db0e9d6c5fd60be95d096bf7fdbb3ef.json": {
+      "source": "experiments/sachs_shd_calibration/results/requests/b3eba7156918a6e76adf7af5c51d24d94db0e9d6c5fd60be95d096bf7fdbb3ef.json",
+      "sha256": "b3eba7156918a6e76adf7af5c51d24d94db0e9d6c5fd60be95d096bf7fdbb3ef"
+    },
+    "results/requests/b8e21db05ae40420d8c579c3c9cecd7d10fbe611757bdd9a16a7f8b1c204d5de.json": {
+      "source": "experiments/sachs_shd_calibration/results/requests/b8e21db05ae40420d8c579c3c9cecd7d10fbe611757bdd9a16a7f8b1c204d5de.json",
+      "sha256": "b8e21db05ae40420d8c579c3c9cecd7d10fbe611757bdd9a16a7f8b1c204d5de"
+    },
+    "results/requests/bc43d2534fe353dd75507c4e16afcc817a471739f6c2c688f6153b3eb52e2c8c.json": {
+      "source": "experiments/sachs_shd_calibration/results/requests/bc43d2534fe353dd75507c4e16afcc817a471739f6c2c688f6153b3eb52e2c8c.json",
+      "sha256": "bc43d2534fe353dd75507c4e16afcc817a471739f6c2c688f6153b3eb52e2c8c"
+    },
+    "results/requests/c78ba97dc3eef2d3d8db99c5760962041276b8066487491c9caf78ae3db1dd16.json": {
+      "source": "experiments/sachs_shd_calibration/results/requests/c78ba97dc3eef2d3d8db99c5760962041276b8066487491c9caf78ae3db1dd16.json",
+      "sha256": "c78ba97dc3eef2d3d8db99c5760962041276b8066487491c9caf78ae3db1dd16"
+    },
+    "results/requests/cc420e97e378029464b2f95bbbedd08ccd7e805d4cb3487e4d470944a79180f3.json": {
+      "source": "experiments/sachs_shd_calibration/results/requests/cc420e97e378029464b2f95bbbedd08ccd7e805d4cb3487e4d470944a79180f3.json",
+      "sha256": "cc420e97e378029464b2f95bbbedd08ccd7e805d4cb3487e4d470944a79180f3"
+    },
+    "results/requests/ce90c5fbb6b8e29750f3ea7a075693dffb9843113c8fd5ed08f32469dbf04cab.json": {
+      "source": "experiments/sachs_shd_calibration/results/requests/ce90c5fbb6b8e29750f3ea7a075693dffb9843113c8fd5ed08f32469dbf04cab.json",
+      "sha256": "ce90c5fbb6b8e29750f3ea7a075693dffb9843113c8fd5ed08f32469dbf04cab"
+    },
+    "results/requests/cef986db8db8edf6af25213ad654ad4322d42db2ec2813b613bf290624fd1187.json": {
+      "source": "experiments/sachs_shd_calibration/results/requests/cef986db8db8edf6af25213ad654ad4322d42db2ec2813b613bf290624fd1187.json",
+      "sha256": "cef986db8db8edf6af25213ad654ad4322d42db2ec2813b613bf290624fd1187"
+    },
+    "results/requests/d2a2ddc300c5343fee0d4df429b34d06164dfdbd87e330d62fe47b80a84c047f.json": {
+      "source": "experiments/sachs_shd_calibration/results/requests/d2a2ddc300c5343fee0d4df429b34d06164dfdbd87e330d62fe47b80a84c047f.json",
+      "sha256": "d2a2ddc300c5343fee0d4df429b34d06164dfdbd87e330d62fe47b80a84c047f"
+    },
+    "results/requests/d4fdf3f4a1968ef8acd2a98d58fad1870063be99d356fe70b5158d7f116dc6d6.json": {
+      "source": "experiments/sachs_shd_calibration/results/requests/d4fdf3f4a1968ef8acd2a98d58fad1870063be99d356fe70b5158d7f116dc6d6.json",
+      "sha256": "d4fdf3f4a1968ef8acd2a98d58fad1870063be99d356fe70b5158d7f116dc6d6"
+    },
+    "results/requests/d810956623c4432fd332122b6ce4394e204fb2f28224938950b603951d3f0cc7.json": {
+      "source": "experiments/sachs_shd_calibration/results/requests/d810956623c4432fd332122b6ce4394e204fb2f28224938950b603951d3f0cc7.json",
+      "sha256": "d810956623c4432fd332122b6ce4394e204fb2f28224938950b603951d3f0cc7"
+    },
+    "results/requests/da9cbe5ccc0a547ead8383c6953ff64b5c3c8f68c0e3151a35410b25d294b8a6.json": {
+      "source": "experiments/sachs_shd_calibration/results/requests/da9cbe5ccc0a547ead8383c6953ff64b5c3c8f68c0e3151a35410b25d294b8a6.json",
+      "sha256": "da9cbe5ccc0a547ead8383c6953ff64b5c3c8f68c0e3151a35410b25d294b8a6"
+    },
+    "results/requests/e3387f6091edcc51e9b407d2bc58a5515dd02a90c9c15062d348e4263c75773b.json": {
+      "source": "experiments/sachs_shd_calibration/results/requests/e3387f6091edcc51e9b407d2bc58a5515dd02a90c9c15062d348e4263c75773b.json",
+      "sha256": "e3387f6091edcc51e9b407d2bc58a5515dd02a90c9c15062d348e4263c75773b"
+    },
+    "results/requests/e8cebf4d650014e7b7fa3cac13a4eb3b74036564608ad00432886ceff8cba25f.json": {
+      "source": "experiments/sachs_shd_calibration/results/requests/e8cebf4d650014e7b7fa3cac13a4eb3b74036564608ad00432886ceff8cba25f.json",
+      "sha256": "e8cebf4d650014e7b7fa3cac13a4eb3b74036564608ad00432886ceff8cba25f"
+    },
+    "results/requests/e931a055ebef0c2a1c3d6c67c496e9e43c72b3cb6c1906679a3eacfb3d9b2167.json": {
+      "source": "experiments/sachs_shd_calibration/results/requests/e931a055ebef0c2a1c3d6c67c496e9e43c72b3cb6c1906679a3eacfb3d9b2167.json",
+      "sha256": "e931a055ebef0c2a1c3d6c67c496e9e43c72b3cb6c1906679a3eacfb3d9b2167"
+    },
+    "results/requests/eb402da80d9cdd2e36c3ee6a0e9e683ffb8c7f69c5b4969ee9b811b2abf66c5f.json": {
+      "source": "experiments/sachs_shd_calibration/results/requests/eb402da80d9cdd2e36c3ee6a0e9e683ffb8c7f69c5b4969ee9b811b2abf66c5f.json",
+      "sha256": "eb402da80d9cdd2e36c3ee6a0e9e683ffb8c7f69c5b4969ee9b811b2abf66c5f"
+    },
+    "results/requests/f37ed239ed1f6e1ce1eb0237b627cd162214f40ce94ab23130dc5d774dc2edea.json": {
+      "source": "experiments/sachs_shd_calibration/results/requests/f37ed239ed1f6e1ce1eb0237b627cd162214f40ce94ab23130dc5d774dc2edea.json",
+      "sha256": "f37ed239ed1f6e1ce1eb0237b627cd162214f40ce94ab23130dc5d774dc2edea"
+    },
+    "results/requests/f4aaa357f90a419e0cb9a5da8f0996d2c785005ff2810d7457e34750d16b22a3.json": {
+      "source": "experiments/sachs_shd_calibration/results/requests/f4aaa357f90a419e0cb9a5da8f0996d2c785005ff2810d7457e34750d16b22a3.json",
+      "sha256": "f4aaa357f90a419e0cb9a5da8f0996d2c785005ff2810d7457e34750d16b22a3"
+    },
+    "results/requests/f6df928fb59da4f78117cd502a65dd81c4e0cdf915b119bac68002fb4e8dd740.json": {
+      "source": "experiments/sachs_shd_calibration/results/requests/f6df928fb59da4f78117cd502a65dd81c4e0cdf915b119bac68002fb4e8dd740.json",
+      "sha256": "f6df928fb59da4f78117cd502a65dd81c4e0cdf915b119bac68002fb4e8dd740"
+    },
+    "results/requests/fd8b6d1b6432b06fe8500cbfc104c921fac6b87d2bf91eeb7eb60ca94bc1c07c.json": {
+      "source": "experiments/sachs_shd_calibration/results/requests/fd8b6d1b6432b06fe8500cbfc104c921fac6b87d2bf91eeb7eb60ca94bc1c07c.json",
+      "sha256": "fd8b6d1b6432b06fe8500cbfc104c921fac6b87d2bf91eeb7eb60ca94bc1c07c"
+    },
+    "results/scores/full_0.json": {
+      "source": "experiments/sachs_shd_calibration/results/scores/full_0.json",
+      "sha256": "a8ed71df5e36330d89ab4f45eb4debb8acf5fe59da10e812d3d8369ed067c020"
+    },
+    "results/scores/full_1.json": {
+      "source": "experiments/sachs_shd_calibration/results/scores/full_1.json",
+      "sha256": "09d0f777a1f3fca672084e1b889ad4cf48811006b764bea463447a67759f999f"
+    },
+    "results/scores/repeat_00_0.json": {
+      "source": "experiments/sachs_shd_calibration/results/scores/repeat_00_0.json",
+      "sha256": "82f41c167d7ddbb4f58a02b8c517544f0105f04c0fc808d1503673cb3a611ad8"
+    },
+    "results/scores/repeat_00_1.json": {
+      "source": "experiments/sachs_shd_calibration/results/scores/repeat_00_1.json",
+      "sha256": "60c256745c3a3f567e13f18e1acc31549b6b4e9e7e1c1cbcd9237c3ef76ed660"
+    },
+    "results/scores/repeat_01_0.json": {
+      "source": "experiments/sachs_shd_calibration/results/scores/repeat_01_0.json",
+      "sha256": "a508db97fbfeda67920ce6143eedeb6f3a73fd285bec2b5d9b8cfe078678d0c4"
+    },
+    "results/scores/repeat_01_1.json": {
+      "source": "experiments/sachs_shd_calibration/results/scores/repeat_01_1.json",
+      "sha256": "957b14e3b3697523bb3d10a9173d5b9bac2c08591078ce1496ef3aa1bd1c5f31"
+    },
+    "results/scores/repeat_02_0.json": {
+      "source": "experiments/sachs_shd_calibration/results/scores/repeat_02_0.json",
+      "sha256": "bdd9e47e83535ca9724fa2d71ea12139789a5590a4ddd708c8bd1dba28282437"
+    },
+    "results/scores/repeat_02_1.json": {
+      "source": "experiments/sachs_shd_calibration/results/scores/repeat_02_1.json",
+      "sha256": "6569910c7571569199b8bd153bd3a4defc69cf97e6f425ce0b86ed7c51fd6f69"
+    },
+    "results/scores/repeat_03_0.json": {
+      "source": "experiments/sachs_shd_calibration/results/scores/repeat_03_0.json",
+      "sha256": "543c142e823c5d9fa3271e80c45f68579a22089a464aa1f396190c63a885566f"
+    },
+    "results/scores/repeat_03_1.json": {
+      "source": "experiments/sachs_shd_calibration/results/scores/repeat_03_1.json",
+      "sha256": "a889f4ad7bb0da825b005c94e977742bd52503c529b01955090381a9ea9ebc52"
+    },
+    "results/scores/repeat_04_0.json": {
+      "source": "experiments/sachs_shd_calibration/results/scores/repeat_04_0.json",
+      "sha256": "67447229f4f7e4d080d31b1f1180de27f5c497bae660d8b659a33c33a9fd9b18"
+    },
+    "results/scores/repeat_04_1.json": {
+      "source": "experiments/sachs_shd_calibration/results/scores/repeat_04_1.json",
+      "sha256": "9eccfd8e849bbf2fe3db8e1847f9ac6afe5621e78cd94170e60d1ef7a7062ee8"
+    },
+    "results/scores/repeat_05_0.json": {
+      "source": "experiments/sachs_shd_calibration/results/scores/repeat_05_0.json",
+      "sha256": "83d4aec4719db8791e70756a360cb3a081327bf71c0eca5cae9b9449ca547d04"
+    },
+    "results/scores/repeat_05_1.json": {
+      "source": "experiments/sachs_shd_calibration/results/scores/repeat_05_1.json",
+      "sha256": "a72f54bfde528862dcf7508c9d6ee9b895a1b7efa165009017d54cf7632153ac"
+    },
+    "results/scores/repeat_06_0.json": {
+      "source": "experiments/sachs_shd_calibration/results/scores/repeat_06_0.json",
+      "sha256": "efb82120267788b5a26a7badc7976a5bc19d67025f402bb1a173784d3ea37ee4"
+    },
+    "results/scores/repeat_06_1.json": {
+      "source": "experiments/sachs_shd_calibration/results/scores/repeat_06_1.json",
+      "sha256": "d20508b89e104a4186fa3fe6364e63e3d7af875dc2d2d0573b46b5289c068031"
+    },
+    "results/scores/repeat_07_0.json": {
+      "source": "experiments/sachs_shd_calibration/results/scores/repeat_07_0.json",
+      "sha256": "cc17ffb969f138bae3089e64fcbb2e92296656e77c7889115fbe1f650484480e"
+    },
+    "results/scores/repeat_07_1.json": {
+      "source": "experiments/sachs_shd_calibration/results/scores/repeat_07_1.json",
+      "sha256": "caf50a87b4c60fbb4aec6a8b0649228e92ec25ad6cf13c4d5ca1b77cb091705a"
+    },
+    "results/scores/repeat_08_0.json": {
+      "source": "experiments/sachs_shd_calibration/results/scores/repeat_08_0.json",
+      "sha256": "27f8d63f353dbeeaf3a336a5f7305730422eeb9c3591ec727287f6583351a46b"
+    },
+    "results/scores/repeat_08_1.json": {
+      "source": "experiments/sachs_shd_calibration/results/scores/repeat_08_1.json",
+      "sha256": "14ac31e77e2c0b7373a1e7b1babf060b3610be0db69a0d3340e6baa7d6ff0e5b"
+    },
+    "results/scores/repeat_09_0.json": {
+      "source": "experiments/sachs_shd_calibration/results/scores/repeat_09_0.json",
+      "sha256": "29f2b6362d54b779d2357d14eddb543f076009e9439570c323cdc043fd9c35de"
+    },
+    "results/scores/repeat_09_1.json": {
+      "source": "experiments/sachs_shd_calibration/results/scores/repeat_09_1.json",
+      "sha256": "e69dc6198be894dfdf335b3792f20428002848143e9d9a158dfa4362a3467298"
+    },
+    "results/scores/repeat_10_0.json": {
+      "source": "experiments/sachs_shd_calibration/results/scores/repeat_10_0.json",
+      "sha256": "7f1343d0676e8ba423bdecb3ae1d15a426b0928e9c2b584a9d240230e0e6e625"
+    },
+    "results/scores/repeat_10_1.json": {
+      "source": "experiments/sachs_shd_calibration/results/scores/repeat_10_1.json",
+      "sha256": "a149ca566587e3a8938049d3ce3c8453e79bb262fa6faddb214a00fa0d6e6a84"
+    },
+    "results/scores/repeat_11_0.json": {
+      "source": "experiments/sachs_shd_calibration/results/scores/repeat_11_0.json",
+      "sha256": "7c079cf53a85777fff039db78f57c7d947363f1de7826de53cffe85256f0858d"
+    },
+    "results/scores/repeat_11_1.json": {
+      "source": "experiments/sachs_shd_calibration/results/scores/repeat_11_1.json",
+      "sha256": "6e7449256c17dd09010fc1c22a8ec515eb2922850befe7e7c1db7a74e7b004ab"
+    },
+    "results/scores/repeat_12_0.json": {
+      "source": "experiments/sachs_shd_calibration/results/scores/repeat_12_0.json",
+      "sha256": "0a36de9ccb00012c635faf863e5902329aeb6a0ea0f397103ed8ed2ccae670e3"
+    },
+    "results/scores/repeat_12_1.json": {
+      "source": "experiments/sachs_shd_calibration/results/scores/repeat_12_1.json",
+      "sha256": "f3ed86b8afcbcf4f4e6afec5dbdb69d835887da3630da16d2343ad51290c6fe9"
+    },
+    "results/scores/repeat_13_0.json": {
+      "source": "experiments/sachs_shd_calibration/results/scores/repeat_13_0.json",
+      "sha256": "6408fd9a2fa57636cddbef9531bd086aa1584d58a594dac48e51cdb067bfa54d"
+    },
+    "results/scores/repeat_13_1.json": {
+      "source": "experiments/sachs_shd_calibration/results/scores/repeat_13_1.json",
+      "sha256": "77bd2158a933bfa43088bbde5030dc03841204fbec2fe9bb4d432e4c0c20fc8b"
+    },
+    "results/scores/repeat_14_0.json": {
+      "source": "experiments/sachs_shd_calibration/results/scores/repeat_14_0.json",
+      "sha256": "24e8d35c28e2554112f0f71e7d331f4de9875c0aecfdb2ae12e10d9f368416f0"
+    },
+    "results/scores/repeat_14_1.json": {
+      "source": "experiments/sachs_shd_calibration/results/scores/repeat_14_1.json",
+      "sha256": "a32e682f68eba3befabdd15caee88871aca213eb5f12d2696194ba06ff9142cb"
+    },
+    "results/scores/repeat_15_0.json": {
+      "source": "experiments/sachs_shd_calibration/results/scores/repeat_15_0.json",
+      "sha256": "740525e806433eadddc162bb00c3924b34b50e1daaa976c8b6c9400091b5b15b"
+    },
+    "results/scores/repeat_15_1.json": {
+      "source": "experiments/sachs_shd_calibration/results/scores/repeat_15_1.json",
+      "sha256": "913d5cc668e5564dd37539fedc2ec93de12573e333721f085c8537f135af7f7a"
+    },
+    "results/scores/repeat_16_0.json": {
+      "source": "experiments/sachs_shd_calibration/results/scores/repeat_16_0.json",
+      "sha256": "a699547e8c73383833ecd72c9da5a57951ce670968670fbed189528fdb7b3b6c"
+    },
+    "results/scores/repeat_16_1.json": {
+      "source": "experiments/sachs_shd_calibration/results/scores/repeat_16_1.json",
+      "sha256": "900c55599964094b7d276ea1c4d6678304f825e3d98d24d4b60a431751387ad5"
+    },
+    "results/scores/repeat_17_0.json": {
+      "source": "experiments/sachs_shd_calibration/results/scores/repeat_17_0.json",
+      "sha256": "6c19d0209a086d55323cb7506a67c38461a0f893e3855af8c2c2272aa43c803c"
+    },
+    "results/scores/repeat_17_1.json": {
+      "source": "experiments/sachs_shd_calibration/results/scores/repeat_17_1.json",
+      "sha256": "abd4cca9cd746c2c604cb4063bd73c8bcdd7bac3ae8f4869c99d04f684e07f3d"
+    },
+    "results/scores/repeat_18_0.json": {
+      "source": "experiments/sachs_shd_calibration/results/scores/repeat_18_0.json",
+      "sha256": "8cd1095b188dfaada1a381010e275520e3c6e6dc7c600bd7d4cd9e66f639c4e2"
+    },
+    "results/scores/repeat_18_1.json": {
+      "source": "experiments/sachs_shd_calibration/results/scores/repeat_18_1.json",
+      "sha256": "87c83b82db4513a4bbc2bdb1c28d65a2bc10a7271e679ac5e4acf4c582d0672c"
+    },
+    "results/scores/repeat_19_0.json": {
+      "source": "experiments/sachs_shd_calibration/results/scores/repeat_19_0.json",
+      "sha256": "ea00c6ee71764f1ce52915063ff501fdf181d8c039a76bb430fcc928f257b622"
+    },
+    "results/scores/repeat_19_1.json": {
+      "source": "experiments/sachs_shd_calibration/results/scores/repeat_19_1.json",
+      "sha256": "6f8da0600616cfd6f2d0aa2052270e79cb8b5b07a8bea13a21f185f7e4b98302"
+    },
+    "data/cyto_full_data.csv": {
+      "source": "experiments/sachs_selfcompat_jev/data/cyto_full_data.csv",
+      "sha256": "fc331dcd0bc1d8765986b88cd1d23dd5a3f52e4ffc299fdf96de9d522ddf01aa"
+    },
+    "data/cyto_full_target.csv": {
+      "source": "experiments/sachs_selfcompat_jev/data/cyto_full_target.csv",
+      "sha256": "398bc137b2669432ef12e0c57d3783fa876c1c7e2377577d3e75410f085485f6"
+    },
+    "data/provenance.json": {
+      "source": "experiments/sachs_selfcompat_jev/data/provenance.json",
+      "sha256": "894230ded2c462d9995f51d6de7cb5f93992a51d4abeda05f5b72d8b2f74911f"
+    },
+    "data/candidates/full/full.npz": {
+      "source": "experiments/sachs_selfcompat_jev/results/inference/full/full.npz",
+      "sha256": "fb3a369760008ca8ce28abe2a0702e28301212a1cd49504ef85344ae100c5b18"
+    },
+    "data/candidates/full/evidence.json": {
+      "source": "experiments/sachs_selfcompat_jev/results/inference/full/evidence.json",
+      "sha256": "aa0119c1681ebeca103b8d7ad7075926b3b8b3a282b694ec8d61456bd7532190"
+    },
+    "data/candidates/full/sc_size6.json": {
+      "source": "experiments/sachs_selfcompat_jev/results/inference/full/sc_size6.json",
+      "sha256": "56eeb0d62bf5b8733b72cbf794ef257761187cc61ed54f923e117a8822ea80f4"
+    },
+    "data/candidates/full/sc_size5.json": {
+      "source": "experiments/sachs_selfcompat_jev/results/inference/full/sc_size5.json",
+      "sha256": "5ea77fed63cbfa7225fe54ed41f094919772d7cc518a5d252789a086c25b3e58"
+    },
+    "data/candidates/repeat_00/full.npz": {
+      "source": "experiments/sachs_selfcompat_jev/results/inference/repeat_00/full.npz",
+      "sha256": "c0bec2eee5c4332d4eaaded1f9698a3c4c6906b5f2c5eb97c28522b4af33387f"
+    },
+    "data/candidates/repeat_00/evidence.json": {
+      "source": "experiments/sachs_selfcompat_jev/results/inference/repeat_00/evidence.json",
+      "sha256": "d2f62be35c2ea469efbc6880a060da9702f9867f3d0f92f353c4d66cc25c25da"
+    },
+    "data/candidates/repeat_00/sc_size6.json": {
+      "source": "experiments/sachs_selfcompat_jev/results/inference/repeat_00/sc_size6.json",
+      "sha256": "6e4182dd01f4e5f2efe9eed73f7861b5ca687e7a8f90b40ccdf6af8ea3a37a40"
+    },
+    "data/candidates/repeat_00/sc_size5.json": {
+      "source": "experiments/sachs_selfcompat_jev/results/inference/repeat_00/sc_size5.json",
+      "sha256": "8f4e9467301d0e141e48a6fc60587a0829a802d92e9e622424c2c540efc61127"
+    },
+    "data/candidates/repeat_01/full.npz": {
+      "source": "experiments/sachs_selfcompat_jev/results/inference/repeat_01/full.npz",
+      "sha256": "4dded6d133c091ff98f8b0ec03d457942da80aba25d06e06d7fe35ea5d1f2237"
+    },
+    "data/candidates/repeat_01/evidence.json": {
+      "source": "experiments/sachs_selfcompat_jev/results/inference/repeat_01/evidence.json",
+      "sha256": "bc99b1960cd577f1d293eda271369d09b1b32da04063b63816a7b964dfaa0303"
+    },
+    "data/candidates/repeat_01/sc_size6.json": {
+      "source": "experiments/sachs_selfcompat_jev/results/inference/repeat_01/sc_size6.json",
+      "sha256": "782b64f54bf71d36f067b4ecfda56e2cd9b1c87ad286f8cc4fee44ac7026033f"
+    },
+    "data/candidates/repeat_01/sc_size5.json": {
+      "source": "experiments/sachs_selfcompat_jev/results/inference/repeat_01/sc_size5.json",
+      "sha256": "1064e71d74132069054d5258d454482ca6140bf119771d2ab3f33399b4fd3bd2"
+    },
+    "data/candidates/repeat_02/full.npz": {
+      "source": "experiments/sachs_selfcompat_jev/results/inference/repeat_02/full.npz",
+      "sha256": "986fa0e466e8b48575477d07d7446155d1db8d9e44018b85293ee1eac285775c"
+    },
+    "data/candidates/repeat_02/evidence.json": {
+      "source": "experiments/sachs_selfcompat_jev/results/inference/repeat_02/evidence.json",
+      "sha256": "48c13ba00e6990564897e556347cd35f58e6276b5d3b1d698ed3620c16b37c0e"
+    },
+    "data/candidates/repeat_02/sc_size6.json": {
+      "source": "experiments/sachs_selfcompat_jev/results/inference/repeat_02/sc_size6.json",
+      "sha256": "90c65ad7c1ae3446a9781b3ba5c9be037ed62f0dcee7b7f96f87d4ff929db0a8"
+    },
+    "data/candidates/repeat_02/sc_size5.json": {
+      "source": "experiments/sachs_selfcompat_jev/results/inference/repeat_02/sc_size5.json",
+      "sha256": "af4f089f13a4436b1903d36015677fd0422af4ce2da600d529812af4fef9fe18"
+    },
+    "data/candidates/repeat_03/full.npz": {
+      "source": "experiments/sachs_selfcompat_jev/results/inference/repeat_03/full.npz",
+      "sha256": "7bd591ed137b9fbec5c369598fd41caee2e4a8064c8c042369fbe8fa12c7e19e"
+    },
+    "data/candidates/repeat_03/evidence.json": {
+      "source": "experiments/sachs_selfcompat_jev/results/inference/repeat_03/evidence.json",
+      "sha256": "81213250a32162ff3ec9b0ff358f2c54517ed34f2d89abd3f0d00be003d55a5f"
+    },
+    "data/candidates/repeat_03/sc_size6.json": {
+      "source": "experiments/sachs_selfcompat_jev/results/inference/repeat_03/sc_size6.json",
+      "sha256": "84038cdceb5a8c05065cc235720f42d3b76c3b28249ebdfe02a82336c109a1cd"
+    },
+    "data/candidates/repeat_03/sc_size5.json": {
+      "source": "experiments/sachs_selfcompat_jev/results/inference/repeat_03/sc_size5.json",
+      "sha256": "1cbf18c8d9c8126726926fb80753ecfe238e3466ec1ca1b00257fc2c88d9df57"
+    },
+    "data/candidates/repeat_04/full.npz": {
+      "source": "experiments/sachs_selfcompat_jev/results/inference/repeat_04/full.npz",
+      "sha256": "0b9a4437c5f381047e3381455e91e0287b82f18bdb43c2419f4c887d95e50b40"
+    },
+    "data/candidates/repeat_04/evidence.json": {
+      "source": "experiments/sachs_selfcompat_jev/results/inference/repeat_04/evidence.json",
+      "sha256": "a8c1cd6a09932f9e1b3a57bd8a4515d544887bbd0733eddfaf9e934fe0d63098"
+    },
+    "data/candidates/repeat_04/sc_size6.json": {
+      "source": "experiments/sachs_selfcompat_jev/results/inference/repeat_04/sc_size6.json",
+      "sha256": "c2c1929a9162526d474712a6a4f35bc6e1213115c1010d7b35a055dc75c94096"
+    },
+    "data/candidates/repeat_04/sc_size5.json": {
+      "source": "experiments/sachs_selfcompat_jev/results/inference/repeat_04/sc_size5.json",
+      "sha256": "8514fd0b409c1a110dacda2c7ced78458c02e4b31a67736542b0305cb1feb560"
+    },
+    "data/candidates/repeat_05/full.npz": {
+      "source": "experiments/sachs_selfcompat_jev/results/inference/repeat_05/full.npz",
+      "sha256": "5a153fc20d22ead809144de08305d50f81b404e662f379424395ee603cbda274"
+    },
+    "data/candidates/repeat_05/evidence.json": {
+      "source": "experiments/sachs_selfcompat_jev/results/inference/repeat_05/evidence.json",
+      "sha256": "5d351d193a7df1bef33e544162d54514beb38ad3f4714f8d71e954c89f39d805"
+    },
+    "data/candidates/repeat_05/sc_size6.json": {
+      "source": "experiments/sachs_selfcompat_jev/results/inference/repeat_05/sc_size6.json",
+      "sha256": "9f7638d7716ad3aa5083be34ed57df92306306688d618c3d29704b88ae246225"
+    },
+    "data/candidates/repeat_05/sc_size5.json": {
+      "source": "experiments/sachs_selfcompat_jev/results/inference/repeat_05/sc_size5.json",
+      "sha256": "6277ba38ebb1cef2d7a77381c90ae62588a26db55f4bf978b030b0ea71def3ea"
+    },
+    "data/candidates/repeat_06/full.npz": {
+      "source": "experiments/sachs_selfcompat_jev/results/inference/repeat_06/full.npz",
+      "sha256": "65e4989c843f233d714aacd3639c7ae319624bcaf0f225dbae4502b0781ce5a1"
+    },
+    "data/candidates/repeat_06/evidence.json": {
+      "source": "experiments/sachs_selfcompat_jev/results/inference/repeat_06/evidence.json",
+      "sha256": "2d24c292c18aaac9dbecc94bcdaaacc4b5700cb0e053b6bbc9a1389f3935fb22"
+    },
+    "data/candidates/repeat_06/sc_size6.json": {
+      "source": "experiments/sachs_selfcompat_jev/results/inference/repeat_06/sc_size6.json",
+      "sha256": "a260f888127682e0ec6f42eed60f985270dec98b12fbb76951c6a6fd218665fb"
+    },
+    "data/candidates/repeat_06/sc_size5.json": {
+      "source": "experiments/sachs_selfcompat_jev/results/inference/repeat_06/sc_size5.json",
+      "sha256": "6b126253ddd8c439058640afc0cbf0185ae0a7342c4ff10be61cfbdc8a2131ff"
+    },
+    "data/candidates/repeat_07/full.npz": {
+      "source": "experiments/sachs_selfcompat_jev/results/inference/repeat_07/full.npz",
+      "sha256": "08ccb9dce826587c23ed21cd6e5e8d9601b1deca304f056c4ee17c07f5d444ff"
+    },
+    "data/candidates/repeat_07/evidence.json": {
+      "source": "experiments/sachs_selfcompat_jev/results/inference/repeat_07/evidence.json",
+      "sha256": "f4da7fb5b131a8ff1f45436f68cfa1ad686f9792a1865da92eab5f788e5102f9"
+    },
+    "data/candidates/repeat_07/sc_size6.json": {
+      "source": "experiments/sachs_selfcompat_jev/results/inference/repeat_07/sc_size6.json",
+      "sha256": "c15826817815a0d9fe463ce0ab098f7bc9ed4f3715b3448c1f356d9650e25e2d"
+    },
+    "data/candidates/repeat_07/sc_size5.json": {
+      "source": "experiments/sachs_selfcompat_jev/results/inference/repeat_07/sc_size5.json",
+      "sha256": "56ea7ad4e741be4c2db622f95b35ce6625b7d11713ee8e0130c7897007c4451c"
+    },
+    "data/candidates/repeat_08/full.npz": {
+      "source": "experiments/sachs_selfcompat_jev/results/inference/repeat_08/full.npz",
+      "sha256": "5a58c78775a06ffae6206997be65c5f1aefcc3dfd8753a92ba696237f69dbc4a"
+    },
+    "data/candidates/repeat_08/evidence.json": {
+      "source": "experiments/sachs_selfcompat_jev/results/inference/repeat_08/evidence.json",
+      "sha256": "950f45c3d18562a202a5439b47a5a5ee41be16f9ea73a1864f4667795605a9cd"
+    },
+    "data/candidates/repeat_08/sc_size6.json": {
+      "source": "experiments/sachs_selfcompat_jev/results/inference/repeat_08/sc_size6.json",
+      "sha256": "e1b812365fde1f1ec1fdc31a2cfd037ddb6b028bb71c3cd8eb5c480250a38f4f"
+    },
+    "data/candidates/repeat_08/sc_size5.json": {
+      "source": "experiments/sachs_selfcompat_jev/results/inference/repeat_08/sc_size5.json",
+      "sha256": "5e53febb601f9cfbd581166267c08ec768963f5e0388eb85254cc09cc2594b88"
+    },
+    "data/candidates/repeat_09/full.npz": {
+      "source": "experiments/sachs_selfcompat_jev/results/inference/repeat_09/full.npz",
+      "sha256": "d0499998143225b8d6a36ae43966de301ee470add7470288660b457ce83108ae"
+    },
+    "data/candidates/repeat_09/evidence.json": {
+      "source": "experiments/sachs_selfcompat_jev/results/inference/repeat_09/evidence.json",
+      "sha256": "a1b126f368704fde95fe3f75014927d62a686619a3ee216faa65a90711ab5d8c"
+    },
+    "data/candidates/repeat_09/sc_size6.json": {
+      "source": "experiments/sachs_selfcompat_jev/results/inference/repeat_09/sc_size6.json",
+      "sha256": "163640822a01527aa75f3d33eb52c54d5294fc4b0baffdb950f9a791600e5449"
+    },
+    "data/candidates/repeat_09/sc_size5.json": {
+      "source": "experiments/sachs_selfcompat_jev/results/inference/repeat_09/sc_size5.json",
+      "sha256": "2e56b78b830ecd30fe62d0d93ee2c74147239ca1c20c44cef9fc0e6c6c9c1a08"
+    },
+    "data/candidates/repeat_10/full.npz": {
+      "source": "experiments/sachs_selfcompat_jev/results/inference/repeat_10/full.npz",
+      "sha256": "66de2d86878f1b094357079649a4e26128d3328ed6cc8a7187c20313445c7225"
+    },
+    "data/candidates/repeat_10/evidence.json": {
+      "source": "experiments/sachs_selfcompat_jev/results/inference/repeat_10/evidence.json",
+      "sha256": "744f46cc1df695b0dc7bb0e5866af83086b04ee477a5b457cc3d015c4fadb2ca"
+    },
+    "data/candidates/repeat_10/sc_size6.json": {
+      "source": "experiments/sachs_selfcompat_jev/results/inference/repeat_10/sc_size6.json",
+      "sha256": "16e9e2561d864bdf85e6028653605dd832a8152bd142e19a93658da0d9eca84b"
+    },
+    "data/candidates/repeat_10/sc_size5.json": {
+      "source": "experiments/sachs_selfcompat_jev/results/inference/repeat_10/sc_size5.json",
+      "sha256": "d1390f648e460f8a1a62d5e7e0c18f134d38811a6d027c646dae520c6b6e87c8"
+    },
+    "data/candidates/repeat_11/full.npz": {
+      "source": "experiments/sachs_selfcompat_jev/results/inference/repeat_11/full.npz",
+      "sha256": "b0775213ceae065f668bba082f0647ac92ae971987450989b6bd64fcfc9ae4b5"
+    },
+    "data/candidates/repeat_11/evidence.json": {
+      "source": "experiments/sachs_selfcompat_jev/results/inference/repeat_11/evidence.json",
+      "sha256": "87e0ec581f31b5d582f9ebb8fb485ae93eb2925b66e56615baeb736ff4c14569"
+    },
+    "data/candidates/repeat_11/sc_size6.json": {
+      "source": "experiments/sachs_selfcompat_jev/results/inference/repeat_11/sc_size6.json",
+      "sha256": "025488e14f049634a6fd83242ec92e65cb3318e82e44edfa358fba38f83e6caf"
+    },
+    "data/candidates/repeat_11/sc_size5.json": {
+      "source": "experiments/sachs_selfcompat_jev/results/inference/repeat_11/sc_size5.json",
+      "sha256": "76b04fa3a5373793d584e6ba5acf08bacf9a2f8c39d966a4296e1fb28ff6ff7f"
+    },
+    "data/candidates/repeat_12/full.npz": {
+      "source": "experiments/sachs_selfcompat_jev/results/inference/repeat_12/full.npz",
+      "sha256": "952653c94c8fcc313e635bc8c652c34d8ac020c0e9a5eb1bac8a8c0c8ad48e9c"
+    },
+    "data/candidates/repeat_12/evidence.json": {
+      "source": "experiments/sachs_selfcompat_jev/results/inference/repeat_12/evidence.json",
+      "sha256": "12ec42aed1a8b41dfb8f38d9ce6e7de92410f45c1c34d8bef69eb47938bbb104"
+    },
+    "data/candidates/repeat_12/sc_size6.json": {
+      "source": "experiments/sachs_selfcompat_jev/results/inference/repeat_12/sc_size6.json",
+      "sha256": "4eafd555c63f56f897741d183f53033a7c3ad9b5febb4e8af915a0e15b72d432"
+    },
+    "data/candidates/repeat_12/sc_size5.json": {
+      "source": "experiments/sachs_selfcompat_jev/results/inference/repeat_12/sc_size5.json",
+      "sha256": "f1b8db7af06751ebc7c7de9fa56c5989c263b67981969729d51fb8d45cc8cd08"
+    },
+    "data/candidates/repeat_13/full.npz": {
+      "source": "experiments/sachs_selfcompat_jev/results/inference/repeat_13/full.npz",
+      "sha256": "71780c24cb0a18b9aa493e4096c0e02f75127fe6859d967af0aa96d6c93c9544"
+    },
+    "data/candidates/repeat_13/evidence.json": {
+      "source": "experiments/sachs_selfcompat_jev/results/inference/repeat_13/evidence.json",
+      "sha256": "ac8c767c1c3888e2940b80cee1f754ab9a27ed92dcd8352836dfdba327615987"
+    },
+    "data/candidates/repeat_13/sc_size6.json": {
+      "source": "experiments/sachs_selfcompat_jev/results/inference/repeat_13/sc_size6.json",
+      "sha256": "766fde93dcf1fa6002544bc62cbd278230a0ea7fa04264f22ccab95c88aed2bc"
+    },
+    "data/candidates/repeat_13/sc_size5.json": {
+      "source": "experiments/sachs_selfcompat_jev/results/inference/repeat_13/sc_size5.json",
+      "sha256": "c20879207fa442d6db82740c0cf13bc80695fd6b356aef242aa663b4590253cf"
+    },
+    "data/candidates/repeat_14/full.npz": {
+      "source": "experiments/sachs_selfcompat_jev/results/inference/repeat_14/full.npz",
+      "sha256": "04f67bd01db677fd51a6b334e9d93458159e04439caeb54c75595f1e8ea0c65f"
+    },
+    "data/candidates/repeat_14/evidence.json": {
+      "source": "experiments/sachs_selfcompat_jev/results/inference/repeat_14/evidence.json",
+      "sha256": "fb341404316979c7b4115c1e8dbbca186c9771667bca9c0fb81f5aafe3fcded8"
+    },
+    "data/candidates/repeat_14/sc_size6.json": {
+      "source": "experiments/sachs_selfcompat_jev/results/inference/repeat_14/sc_size6.json",
+      "sha256": "5788d99d2cda90262aea7c5e0cba8d3ce019c000766a579295d4fe89981659e7"
+    },
+    "data/candidates/repeat_14/sc_size5.json": {
+      "source": "experiments/sachs_selfcompat_jev/results/inference/repeat_14/sc_size5.json",
+      "sha256": "39233b5067e9763b77d552dd1af10a39af08b42710c418193bba1f16ce47db80"
+    },
+    "data/candidates/repeat_15/full.npz": {
+      "source": "experiments/sachs_selfcompat_jev/results/inference/repeat_15/full.npz",
+      "sha256": "167ea4127b7e5f5ef6bd177010e40cff86e3904e79fb3200f8b8e79460554b84"
+    },
+    "data/candidates/repeat_15/evidence.json": {
+      "source": "experiments/sachs_selfcompat_jev/results/inference/repeat_15/evidence.json",
+      "sha256": "3f851180a868c71f0c6abc774b1033ada9f01b3a461c73ab6d1f38aaefdc3988"
+    },
+    "data/candidates/repeat_15/sc_size6.json": {
+      "source": "experiments/sachs_selfcompat_jev/results/inference/repeat_15/sc_size6.json",
+      "sha256": "6cad01b4f65983b37aa6c15c3d0a7dfdac74cc88f6d7319caf81a1781507f840"
+    },
+    "data/candidates/repeat_15/sc_size5.json": {
+      "source": "experiments/sachs_selfcompat_jev/results/inference/repeat_15/sc_size5.json",
+      "sha256": "314e1c7e1354613d01add7c44fa5d8abb2875131a9accb12f201ea3478fb64d0"
+    },
+    "data/candidates/repeat_16/full.npz": {
+      "source": "experiments/sachs_selfcompat_jev/results/inference/repeat_16/full.npz",
+      "sha256": "06cadbb4be1767fcd8a76aa671d9f8c6529819f9f4b5b3acf496a31466ca5a5f"
+    },
+    "data/candidates/repeat_16/evidence.json": {
+      "source": "experiments/sachs_selfcompat_jev/results/inference/repeat_16/evidence.json",
+      "sha256": "045f032e281b8f7d88bf4e791662e5794525854ae5f0e9af59af34a11942626c"
+    },
+    "data/candidates/repeat_16/sc_size6.json": {
+      "source": "experiments/sachs_selfcompat_jev/results/inference/repeat_16/sc_size6.json",
+      "sha256": "88ef15229235820ed1443bb5e54507fc7dcfe52ab9190f31427cf37227315fd5"
+    },
+    "data/candidates/repeat_16/sc_size5.json": {
+      "source": "experiments/sachs_selfcompat_jev/results/inference/repeat_16/sc_size5.json",
+      "sha256": "f95712bbed1bae9c8c71f4386731648c8a919a7316b14c8705edb30d61241a92"
+    },
+    "data/candidates/repeat_17/full.npz": {
+      "source": "experiments/sachs_selfcompat_jev/results/inference/repeat_17/full.npz",
+      "sha256": "9651d722bd101e6f11a73199cc7967f4b8f48b109472b890d2667bc10aac3713"
+    },
+    "data/candidates/repeat_17/evidence.json": {
+      "source": "experiments/sachs_selfcompat_jev/results/inference/repeat_17/evidence.json",
+      "sha256": "81ab7d51c3a161975ea052b96a2786735adf379df3d230927ef3f88c3341d098"
+    },
+    "data/candidates/repeat_17/sc_size6.json": {
+      "source": "experiments/sachs_selfcompat_jev/results/inference/repeat_17/sc_size6.json",
+      "sha256": "d4f9b5aaa73528b5f29bafd3c98191ac48a838680ccc5f3e4c014bf8b141ea7a"
+    },
+    "data/candidates/repeat_17/sc_size5.json": {
+      "source": "experiments/sachs_selfcompat_jev/results/inference/repeat_17/sc_size5.json",
+      "sha256": "46f661a6d670d06a37138135dfe689db7775996c1af6f35d088f54a051936964"
+    },
+    "data/candidates/repeat_18/full.npz": {
+      "source": "experiments/sachs_selfcompat_jev/results/inference/repeat_18/full.npz",
+      "sha256": "e4a60158979075bf85a69124fff0b8ce782bd518300b65c9100e8289f2fa4d97"
+    },
+    "data/candidates/repeat_18/evidence.json": {
+      "source": "experiments/sachs_selfcompat_jev/results/inference/repeat_18/evidence.json",
+      "sha256": "6e1f356afe32835fdc4c855e0c73bada9a4e8233608a850fefe5a8356a65623c"
+    },
+    "data/candidates/repeat_18/sc_size6.json": {
+      "source": "experiments/sachs_selfcompat_jev/results/inference/repeat_18/sc_size6.json",
+      "sha256": "0f9f7a9de45fbfa00fbaa1e96502778cba9329e8e16707c70ef335d253f1e74d"
+    },
+    "data/candidates/repeat_18/sc_size5.json": {
+      "source": "experiments/sachs_selfcompat_jev/results/inference/repeat_18/sc_size5.json",
+      "sha256": "2f7568e2eb4312f684ff32b5af4c7469850c001a23494f684af043a6113330c7"
+    },
+    "data/candidates/repeat_19/full.npz": {
+      "source": "experiments/sachs_selfcompat_jev/results/inference/repeat_19/full.npz",
+      "sha256": "cb70842f6b76e2e3374d31439bf5a466045b88dc4639d2b4fcc9aeb2b1e31e63"
+    },
+    "data/candidates/repeat_19/evidence.json": {
+      "source": "experiments/sachs_selfcompat_jev/results/inference/repeat_19/evidence.json",
+      "sha256": "5b3e6c6f657e3ea088fe89160ef3cc2c1c6bd6492a0323f8bdf5af5ff15d621a"
+    },
+    "data/candidates/repeat_19/sc_size6.json": {
+      "source": "experiments/sachs_selfcompat_jev/results/inference/repeat_19/sc_size6.json",
+      "sha256": "9f7a784db6ce4528d2cd96c37e727bcad38a3a77d2fd01a95f08c766965a77e2"
+    },
+    "data/candidates/repeat_19/sc_size5.json": {
+      "source": "experiments/sachs_selfcompat_jev/results/inference/repeat_19/sc_size5.json",
+      "sha256": "38db42b8b27c0d70ccc61ffd6ef216b3c0cf8c78054eb03e41c9490415b9bf84"
+    },
+    "analysis/semantic_report.json": {
+      "source": "experiments/sachs_selfcompat_jev/results/semantic_report.json",
+      "sha256": "2c28d3091f40fb281ba573ab054760d1426aad5f9fd02f3722c1037971b34e6f"
+    },
+    "analysis/semantic_freeze.json": {
+      "source": "experiments/sachs_selfcompat_jev/results/semantic_freeze.json",
+      "sha256": "a2e95de81168a901fbd89d4d71b5630e64c837ad4327a539e1ad83a58efe2307"
+    },
+    "analysis/api/deepseek_bc230e63d6cc1904c4d8fb255eb1961182ad7a8628123f9c83a87e56f782a6b3.json": {
+      "source": "experiments/sachs_selfcompat_jev/results/api/deepseek_bc230e63d6cc1904c4d8fb255eb1961182ad7a8628123f9c83a87e56f782a6b3.json",
+      "sha256": "13a1ef1d81a7bef05b699f95d9f4110c7d58be04a85a0660b8e2b72a1af83595"
+    },
+    "analysis/api/deepseek_bc230e63d6cc1904c4d8fb255eb1961182ad7a8628123f9c83a87e56f782a6b3.raw": {
+      "source": "experiments/sachs_selfcompat_jev/results/api/deepseek_bc230e63d6cc1904c4d8fb255eb1961182ad7a8628123f9c83a87e56f782a6b3.raw",
+      "sha256": "64e2c2a658992d9a4e7d3ad8e869ec06a630206c47d8ca41ab0b82ded4b97ec1"
+    },
+    "analysis/requests/deepseek_bc230e63d6cc1904c4d8fb255eb1961182ad7a8628123f9c83a87e56f782a6b3.json": {
+      "source": "experiments/sachs_selfcompat_jev/results/requests/deepseek_bc230e63d6cc1904c4d8fb255eb1961182ad7a8628123f9c83a87e56f782a6b3.json",
+      "sha256": "bc230e63d6cc1904c4d8fb255eb1961182ad7a8628123f9c83a87e56f782a6b3"
+    }
+  },
+  "excluded": [
+    "encrypted credentials",
+    "Python caches",
+    "original ignore rules"
+  ],
+  "note": "Original experiment source, prompts, results and frozen receipts are copied byte-for-byte. Absolute paths in historical receipts are historical provenance; use offline_verify.py for portable verification. Data samples are materialized from frozen row indices. Original directories remain untouched."
+}

@@ -1,0 +1,7 @@
+__pycache__/
+.pytest_cache/
+*.pyc
+.credentials.xml
+.env
+.env.*
+verification_local.json

@@ -1,0 +1,25 @@
+Metadata-Version: 2.1
+Name: cdt
+Version: 0.6.0
+Summary: A Toolbox for causal graph inference
+Home-page: https://github.com/FenTechSolutions/CausalDiscoveryToolbox
+Author: Diviyan Kalainathan
+Author-email: diviyan.kalainathan@lri.fr
+License: Apache 2.0
+Platform: UNKNOWN
+Description-Content-Type: text/markdown
+License-File: LICENSE.md
+Requires-Dist: numpy
+Requires-Dist: scipy
+Requires-Dist: scikit-learn
+Requires-Dist: joblib
+Requires-Dist: pandas
+Requires-Dist: statsmodels
+Requires-Dist: networkx
+Requires-Dist: skrebate
+Requires-Dist: tqdm
+Requires-Dist: GPUtil
+Requires-Dist: requests
+
+Documentation available at https://fentechsolutions.github.io/CausalDiscoveryToolbox/html/index.html
+

@@ -1,0 +1,1 @@
+{"model":"jev-1.13.0","answers":{"better_graph":{"type":"choice","choice":"unclear","confidence":0.13,"probabilities":{"unclear":0.42,"A":0.35,"B":0.23}}},"usage":{"input_tokens":6175,"output_tokens":41}}

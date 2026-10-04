@@ -1,0 +1,27 @@
+{
+  "passed": true,
+  "reference_hash_matches_original_protocol": true,
+  "csv_matches_evaluation": true,
+  "training_group_membership_verified": 21,
+  "no_additional_calls_on_resume": true,
+  "csv_encoding_only_amendment_verified": true,
+  "original_score_freeze_unchanged_files": true,
+  "encoding_regression": {
+    "bom_bytes": [
+      239,
+      187,
+      191
+    ],
+    "first_header": "run_id",
+    "passed": true,
+    "rows": 21
+  },
+  "amendment_history_files": {
+    "E:\\WhatdoI\\I_Walk_the_Line\\experiments\\sachs_shd_calibration\\protocol_history\\csv_bom_fix\\amendment.json": "8e1727b4a2c64e587fbffc05fb90fa3caa769d99df16797cca7a412ed4b6cd05",
+    "E:\\WhatdoI\\I_Walk_the_Line\\experiments\\sachs_shd_calibration\\protocol_history\\csv_bom_fix\\encoding_regression_check.json": "499cb3bbc126bba234e447042014135e65efc706578ff3f0b2a53b3b029dc0d1",
+    "E:\\WhatdoI\\I_Walk_the_Line\\experiments\\sachs_shd_calibration\\protocol_history\\csv_bom_fix\\protocol.json": "89414e9bc8ae90255084ae312efbc433e0ae723f6d95c3a5a5eea747e6f4eb54",
+    "E:\\WhatdoI\\I_Walk_the_Line\\experiments\\sachs_shd_calibration\\protocol_history\\csv_bom_fix\\run.py": "177b5df7c36ad729f921f80c8afdc5f2ff4dbeb14017c634064b668161b3bb94",
+    "E:\\WhatdoI\\I_Walk_the_Line\\experiments\\sachs_shd_calibration\\protocol_history\\csv_bom_fix\\score_freeze.json": "04137434b6ac08806d4cb90c9258bccd9ce532526372b1b83c59caf912ee6aa3"
+  },
+  "note": "One encoding-only repair after score freeze, before successful evaluation. Original source/protocol/freeze retained; score content and numerical rules unchanged."
+}
